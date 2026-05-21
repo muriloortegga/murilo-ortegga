@@ -1,36 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { BrandHeader } from "@/components/brand-header";
-import { ServiceSelector } from "@/components/service-selector";
-import { Maximize2, X, ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/symplice")({
   head: () => ({
     meta: [
-      { title: "Symplice — Murilo Ortega" },
-      { name: "description", content: "Identidade Visual para Symplice — Facilitando o complexo." },
+      { title: "Symplice, Murilo Ortega" },
+      { name: "description", content: "Identidade Visual para Symplice, Facilitando o complexo." },
     ],
   }),
   component: ProjetoSymplice,
 });
 
 function ProjetoSymplice() {
-  const [activeService, setActiveService] = useState("marca");
-  const [isFullScreen, setIsFullScreen] = useState(false);
-
-  useEffect(() => {
-    if (isFullScreen) {
-      document.body.classList.add("has-fullscreen");
-    } else {
-      document.body.classList.remove("has-fullscreen");
-    }
-    return () => document.body.classList.remove("has-fullscreen");
-  }, [isFullScreen]);
-
-  const services = [
-    { id: "marca", label: "Id Visual" }
-  ];
-
   const metaData = [
     { label: "Cliente", value: "Symplice" },
     { label: "Ano", value: "2024" },
@@ -48,56 +31,173 @@ function ProjetoSymplice() {
         meta={metaData}
       />
 
-      <ServiceSelector 
-        options={services} 
-        activeId={activeService} 
-        onChange={setActiveService} 
-      />
+      {/* Hero Logo Area */}
+      <div className="site-container py-12 md:py-20 text-center border-t border-border/10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="max-w-[280px] md:max-w-[320px] mx-auto"
+        >
+          <img 
+            src="/assets/projects/symplice/logo.png" 
+            alt="Symplice Logo" 
+            className="w-full h-auto object-contain"
+          />
+        </motion.div>
+      </div>
 
-      {activeService === "marca" && (
-        <div className="anim-fade-in site-container pb-32">
-           <div className="relative w-full h-[600px] md:h-[700px] overflow-hidden border border-border group cursor-ns-resize rounded-2xl" onClick={() => setIsFullScreen(true)}>
-             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10 flex items-center justify-center pointer-events-none">
-                <div className="bg-background/80 backdrop-blur px-6 py-3 border border-border rounded-full opacity-0 group-hover:opacity-100 transition-all">
-                   <Maximize2 size={16} className="inline-block" />
-                   <span className="ml-2 text-[10px] font-mono uppercase tracking-widest">Ver Case Completo</span>
-                </div>
-             </div>
-             <div className="w-full h-full overflow-y-auto no-scrollbar scroll-smooth">
-                <img src="/assets/projects/symplice/marca/projeto-completo.jpg" alt="Symplice Branding Showcase" className="w-full h-auto" />
-             </div>
-           </div>
+      {/* Bloco 1 - Centralizado */}
+      <section className="py-20 md:py-32 bg-off-white border-y border-border/10">
+        <div className="site-container text-center max-w-4xl mx-auto px-4">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+            className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+          >
+            Em um cenário empresarial <br className="hidden md:inline" />
+            saturado de processos complexos, <br />
+            <span className="font-extrabold text-foreground">a eficiência exige clareza.</span>
+          </motion.h2>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+          >
+            A Symplice nasce como uma plataforma de soluções digitais desenhada para desmistificar e simplificar a gestão de pequenas e médias empresas. Nosso compromisso foi traduzir tecnologia de ponta, segurança e excelência em uma experiência visual instantaneamente leve, transparente e confiável.
+          </motion.p>
         </div>
-      )}
+        <div className="w-full overflow-hidden">
+          <img 
+            src="/assets/projects/symplice/1.jpg" 
+            alt="Symplice Experiência Visual" 
+            className="w-full h-auto block"
+          />
+        </div>
+      </section>
 
-      {/* Full Screen Overlay */}
-      {isFullScreen && (
-        <div className="fixed inset-0 z-[100] bg-background overflow-y-auto no-scrollbar anim-fade-in">
-          <div className="sticky top-0 right-0 left-0 h-24 flex items-center justify-between site-container z-[101] bg-background/50 backdrop-blur-sm border-b border-border/10 pointer-events-auto">
-            <span className="text-xs font-mono uppercase tracking-widest">Symplice Case — Branding</span>
-            <button 
-              onClick={() => setIsFullScreen(false)}
-              className="p-4 bg-foreground text-background transition-transform hover:scale-110"
+      {/* Bloco 2 - Alinhado à Esquerda (Assimétrico) */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="site-container px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-16">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7 }}
+              className="lg:col-span-7"
             >
-              <X size={24} />
-            </button>
-          </div>
-          <div>
-            <img 
-              src="/assets/projects/symplice/marca/projeto-completo.jpg" 
-              alt="Symplice Full Presentation" 
-              className="w-full h-auto shadow-2xl"
-            />
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95]">
+                Symplice. <br />
+                A fonética do óbvio, <br />
+                a sofisticação do minimalismo.
+              </h2>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="lg:col-span-5 lg:col-start-8"
+            >
+              <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed">
+                Inspirado na inicial de System e na pronúncia literal da palavra Simples, o nome transcende fronteiras linguísticas. Uma abordagem direta e memorável criada para se destacar no ecossistema tecnológico global.
+              </p>
+            </motion.div>
           </div>
         </div>
-      )}
+        <div className="w-full overflow-hidden">
+          <img 
+            src="/assets/projects/symplice/2.jpg" 
+            alt="Symplice Identidade de Nome" 
+            className="w-full h-auto block"
+          />
+        </div>
+      </section>
 
-      <section className="site-section border-t border-border mt-32">
-        <div className="site-container flex justify-between items-center">
-          <Link to="/trabalho" className="btn btn-primary gap-2">
+      {/* Bloco 3 - Alinhado à Esquerda (Assimétrico) */}
+      <section className="py-20 md:py-32 bg-off-white border-y border-border/10">
+        <div className="site-container px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-16">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7 }}
+              className="lg:col-span-7"
+            >
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95]">
+                A fusão geométrica entre o minimalismo e a vanguarda.
+              </h2>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="lg:col-span-5 lg:col-start-8"
+            >
+              <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed">
+                O ícone é o resultado da união de dois arcos em direções opostas que se entrelaçam perfeitamente para formar a letra S. Cada linha foi refinada para destacar o essencial, projetando uma sensação imediata de movimento, fluidez e futurismo digital.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+        <div className="w-full overflow-hidden">
+          <img 
+            src="/assets/projects/symplice/3.jpg" 
+            alt="Symplice Ícone Geométrico" 
+            className="w-full h-auto block"
+          />
+        </div>
+      </section>
+
+      {/* Bloco 4 - Centralizado */}
+      <section className="py-20 md:py-32 bg-background">
+        <div className="site-container text-center max-w-4xl mx-auto px-4">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+            className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+          >
+            Conectando a simplicidade do presente com a inovação do futuro.
+          </motion.h2>
+          
+          <motion.p 
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+          >
+            Na Symplice, a identidade visual não é apenas estética; é uma promessa de entrega sem complicações. Uma assinatura de vanguarda que redefine a relação entre o extraordinário e o descomplicado.
+          </motion.p>
+        </div>
+        <div className="w-full overflow-hidden">
+          <img 
+            src="/assets/projects/symplice/4.jpg" 
+            alt="Symplice Futuro e Simplicidade" 
+            className="w-full h-auto block"
+          />
+        </div>
+      </section>
+
+      {/* Navegação entre Projetos */}
+      <section className="site-section border-t border-border/50 py-16">
+        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6 px-4">
+          <Link to="/trabalho" className="btn btn-primary gap-2 w-full sm:w-auto text-center justify-center rounded-full px-8 py-4">
             <ArrowLeft size={16} /> Voltar Projetos
           </Link>
-          <Link to="/natrave" className="btn btn-primary gap-2">
+          <Link to="/natrave" className="btn btn-primary gap-2 w-full sm:w-auto text-center justify-center rounded-full px-8 py-4">
             Próximo Projeto <ArrowRight size={16} />
           </Link>
         </div>
