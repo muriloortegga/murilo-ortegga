@@ -36,12 +36,12 @@ function ProjetoLivin() {
 
       <div className="anim-fade-in w-full bg-background pb-32">
         {/* Header Minimalista (Estilo OOH) */}
-        <div className="site-container pt-12 pb-16 text-center flex flex-col items-center border-t border-border/10 mt-12 px-4">
+        <div className="site-container pt-12 pb-16 text-center flex flex-col items-center border-t border-border/10 mt-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.7 }} 
-            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter mb-6 max-w-3xl"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter mb-6 max-w-3xl"
           >
             A Experiência Visual Tátil
           </motion.h2>
@@ -49,14 +49,14 @@ function ProjetoLivin() {
             initial={{ opacity: 0, y: 15 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.7, delay: 0.1 }} 
-            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl"
+            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl"
           >
             Catálogos desenvolvidos para materializar a exclusividade dos produtos, com foco na jornada do cliente B2B nas maiores feiras do setor.
           </motion.p>
         </div>
 
         <div className="w-full flex flex-col items-center">
-          <div className="site-container my-12 md:my-20">
+          <div className="site-container">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/1.jpg" 
@@ -72,7 +72,7 @@ function ProjetoLivin() {
             accentColor={accentColor}
           />
 
-          <div className="site-container my-12 md:my-20">
+          <div className="site-container">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/2.jpg" 
@@ -88,7 +88,7 @@ function ProjetoLivin() {
             accentColor={accentColor}
           />
 
-          <div className="site-container my-12 md:my-20">
+          <div className="site-container">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/3.jpg" 
@@ -125,16 +125,16 @@ function IntersticialCopy({ title, text, accentColor }: { title: string, text: s
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   return (
-    <section ref={ref} className="w-full py-20 md:py-32 bg-background border-y border-border/50 my-1">
-      <div className="site-container px-4 flex flex-col md:flex-row items-start gap-8 md:gap-16">
+    <section ref={ref} className="w-full py-20 md:py-28 bg-background border-y border-border/50">
+      <div className="site-container flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className="md:w-1/3">
            <div className="w-8 h-1 mb-6" style={{ backgroundColor: accentColor }} />
-           <h3 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-tighter leading-tight">
+           <h3 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tighter leading-tight">
              {title}
            </h3>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }} className="md:w-2/3">
-           <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl">
+           <p className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl">
              {text}
            </p>
         </motion.div>

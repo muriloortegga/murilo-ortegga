@@ -48,8 +48,8 @@ function ProjetoSymplice() {
       </div>
 
       {/* Bloco 1 - Centralizado */}
-      <section className="py-20 md:py-32 bg-off-white border-y border-border/10">
-        <div className="site-container text-center max-w-4xl mx-auto px-4">
+      <section className="py-20 md:py-28 bg-off-white border-y border-border/10">
+        <div className="site-container text-center max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -67,12 +67,12 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-12 md:mb-16"
           >
-            A Symplice nasce como uma plataforma de soluções digitais desenhada para desmistificar e simplificar a gestão de pequenas e médias empresas. Nosso compromisso foi traduzir tecnologia de ponta, segurança e excelência em uma experiência visual instantaneamente leve, transparente e confiável.
+            A Symplice nasce como uma plataforma de soluções digitais desenhada para desmistificar e simplificar a gestão de pequenas e médias empresas. Nosso compromisso foi traduzir tecnologia de ponta, segurança e excelência em uma experience visual instantaneamente leve, transparente e confiável.
           </motion.p>
         </div>
-        <div className="site-container my-12 md:my-20">
+        <div className="site-container">
           <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
             <img 
               src="/assets/projects/symplice/1.jpg" 
@@ -84,9 +84,9 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 2 - Alinhado à Esquerda (Assimétrico) */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="site-container px-4">
-          <div className="max-w-3xl text-left mb-16 space-y-6">
+      <section className="py-20 md:py-28 bg-background">
+        <div className="site-container">
+          <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -110,7 +110,7 @@ function ProjetoSymplice() {
             </motion.p>
           </div>
         </div>
-        <div className="site-container my-12 md:my-20">
+        <div className="site-container">
           <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
             <img 
               src="/assets/projects/symplice/2.jpg" 
@@ -122,9 +122,9 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 3 - Alinhado à Esquerda (Assimétrico) */}
-      <section className="py-20 md:py-32 bg-off-white border-y border-border/10">
-        <div className="site-container px-4">
-          <div className="max-w-3xl text-left mb-16 space-y-6">
+      <section className="py-20 md:py-28 bg-off-white border-y border-border/10">
+        <div className="site-container">
+          <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ function ProjetoSymplice() {
             </motion.p>
           </div>
         </div>
-        <div className="site-container my-12 md:my-20">
+        <div className="site-container">
           <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
             <img 
               src="/assets/projects/symplice/3.jpg" 
@@ -158,8 +158,8 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 4 - Centralizado */}
-      <section className="py-20 md:py-32 bg-background">
-        <div className="site-container text-center max-w-4xl mx-auto px-4">
+      <section className="py-20 md:py-28 bg-background">
+        <div className="site-container text-center max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -175,12 +175,12 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-12 md:mb-16"
           >
             Na Symplice, a identidade visual não é apenas estética; é uma promessa de entrega sem complicações. Uma assinatura de vanguarda que redefine a relação entre o extraordinário e o descomplicado.
           </motion.p>
         </div>
-        <div className="site-container my-12 md:my-20">
+        <div className="site-container">
           <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
             <img 
               src="/assets/projects/symplice/4.jpg" 
