@@ -5,7 +5,7 @@ import { Plus, Book, Layers, FileText, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/metodos/midia-impressa")({
   head: () => ({
     meta: [
-      { title: "Autoridade de marca - Murilo Ortega" },
+      { title: "Autoridade de Marca - Murilo Ortega" },
       { name: "description", content: "Catálogos, diagramação e materiais institucionais com alta performance gráfica." },
     ],
   }),
@@ -21,12 +21,11 @@ function MidiaImpressaPage() {
       <section className="site-section border-t-0 pt-0 pb-16 md:pb-24">
         <div className="site-container">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 leading-[0.95] uppercase tracking-tighter">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 leading-[1.1] tracking-tighter">
               Mídia Impressa:<br />
-              Onde sua marca<br />
-              ganha <span className="text-secondary font-medium italic">peso</span> real.
+              Onde sua marca ganha <span className="text-secondary font-medium italic">peso real</span>.
             </h1>
-            <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
+            <p className="text-base md:text-lg text-secondary font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
               A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico - da papelaria às apresentações institucionais que fecham negócios.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
@@ -41,19 +40,43 @@ function MidiaImpressaPage() {
         <div className="site-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-2xl overflow-hidden">
              {[
-               { title: "Catálogos Físicos & Digitais", icon: <Book size={20} /> },
-               { title: "Diagramação Editorial", icon: <Layers size={20} /> },
-               { title: "Materiais Institucionais", icon: <FileText size={20} /> },
-               { title: "Peças Promocionais", icon: <FileText size={20} /> },
-               { title: "Papelaria Premium", icon: <Plus size={20} /> },
-               { title: "Arquivo Técnico", icon: <Layers size={20} /> }
+               { 
+                 title: "Catálogos Físicos & Digitais", 
+                 desc: "Do briefing ao fechamento técnico. Catálogos com diagramação profissional, fotografia e identidade visual coesa.", 
+                 icon: <Book size={20} /> 
+               },
+               { 
+                 title: "Diagramação Editorial", 
+                 desc: "Revistas, anuários, livros e publicações com estrutura gráfica e leiturabilidade de alto padrão.", 
+                 icon: <Layers size={20} /> 
+               },
+               { 
+                 title: "Materiais Institucionais", 
+                 desc: "Apresentações, dossiês e propostas comerciais que fazem seu negócio parecer do tamanho que ele é.", 
+                 icon: <FileText size={20} /> 
+               },
+               { 
+                 title: "Peças Promocionais", 
+                 desc: "Flyers, banners e materiais de PDV criados para impactar no momento certo - com design que vende.", 
+                 icon: <FileText size={20} /> 
+               },
+               { 
+                 title: "Papelaria Premium", 
+                 desc: "Cartão, envelope, pasta e tudo que faz a primeira impressão durar.", 
+                 icon: <Plus size={20} /> 
+               },
+               { 
+                 title: "Arquivo Técnico", 
+                 desc: "Entrega em arquivos abertos, prontos para gráfica - com especificação técnica completa.", 
+                 icon: <Layers size={20} /> 
+               }
              ].map((item, i) => (
                <div key={i} className="bg-background p-10 md:p-12 space-y-6 group hover:bg-foreground hover:text-background transition-all duration-500">
                   <div className="w-10 h-10 border border-border flex items-center justify-center mb-4 group-hover:border-background/20 transition-colors rounded-lg">
                      {item.icon}
                   </div>
-                  <h4 className="text-lg md:text-xl font-bold uppercase tracking-tighter leading-tight">{item.title}</h4>
-                  <p className="text-[10px] font-mono uppercase text-secondary group-hover:text-background/60 tracking-tight">Alta performance gráfica e fechamento técnico.</p>
+                  <h4 className="text-lg md:text-xl font-bold tracking-tighter leading-tight">{item.title}</h4>
+                  <p className="text-xs text-secondary group-hover:text-background/60 leading-relaxed">{item.desc}</p>
                </div>
              ))}
           </div>
@@ -74,12 +97,12 @@ function MidiaImpressaPage() {
                 </Link>
              </div>
              <div className="lg:col-span-6">
-                <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">Marco Boni: <br/> Catálogo Nacional</h2>
-                <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10">
-                   Produzi o catálogo nacional de produtos da marca, desde a fotografia e tratamento de imagens de mais de 1000 itens até a linha editorial, identidade visual e diagramação completa.
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-8">Marco Boni: <br/> Catálogo Nacional</h2>
+                <p className="text-base md:text-lg text-secondary font-medium leading-tight mb-10">
+                   Catálogo nacional com mais de 1.000 produtos fotografados, tratados e diagramados do zero. Da direção visual à identidade editorial - tudo criado e entregue pronto para gráfica.
                 </p>
                 <div className="space-y-4 mb-12">
-                   {["Fotografia & Tratamento", "Design Thinking & Exibição", "Direção Visual & Diagramação"].map((task, i) => (
+                   {["Fotografia de Produto", "Direção Visual", "Diagramação Completa"].map((task, i) => (
                      <div key={i} className="flex items-center gap-4">
                         <div className="w-4 h-[1px] bg-foreground opacity-20" />
                         <span className="text-[10px] font-mono uppercase tracking-widest">{task}</span>
@@ -97,7 +120,7 @@ function MidiaImpressaPage() {
       {/* CTA */}
       <section className="py-24 md:py-32 bg-foreground text-background">
         <div className="site-container text-center">
-          <h2 className="text-3xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12">O material que sua marca merece.</h2>
+          <h2 className="text-3xl md:text-6xl font-bold tracking-tighter leading-[1.1] mb-12">Material impresso que fecha reunião e assina contrato.</h2>
           <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-background text-foreground px-12 py-6 text-lg hover:bg-background/90 rounded-full">
             Solicitar orçamento <Plus size={20} className="ml-2" />
           </a>
