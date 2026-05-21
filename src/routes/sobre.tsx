@@ -85,7 +85,7 @@ function BrandBoard() {
           onMouseLeave={() => typeof window !== 'undefined' && window.innerWidth > 768 && setActiveBrand(null)}
         >
           <div className="p-10 md:p-14 flex flex-col items-center justify-center min-h-[200px] md:min-h-[280px] transition-all duration-700">
-            <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tighter transition-all duration-500 group-hover:scale-90 group-hover:opacity-20 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tighter transition-all duration-500 group-hover:scale-90 group-hover:opacity-20 text-center">
               {brand.name}
             </h3>
             <div className="flex flex-col items-center gap-2 mt-4 transition-all duration-500 group-hover:opacity-0">
@@ -99,7 +99,7 @@ function BrandBoard() {
           <div className={`absolute inset-0 bg-foreground text-background p-8 md:p-12 flex flex-col justify-between transition-all duration-700 ease-out-expo ${activeBrand === brand.id ? "translate-y-0" : "translate-y-full"}`}>
             <div className="space-y-4">
                <span className="text-[9px] font-mono uppercase tracking-[0.4em] opacity-40 block">{brand.tag}</span>
-               <p className="text-base md:text-lg leading-tight uppercase font-bold tracking-tight">{brand.desc}</p>
+               <p className="text-base md:text-lg leading-tight font-bold tracking-tight">{brand.desc}</p>
             </div>
             <Link to={brand.to} className="flex items-center justify-between group/btn border-t border-background/10 pt-6 md:pt-8">
               <span className="text-[10px] font-mono uppercase tracking-widest">Ver Projeto</span>
@@ -145,7 +145,7 @@ function SobrePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12 max-w-full md:max-w-[80%] lg:max-w-[70%]"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] mb-12 max-w-full md:max-w-[80%] lg:max-w-[55%]"
             >
               8 anos entre agências, multinacionais e marcas que precisavam <span className="text-secondary font-medium italic">crescer de verdade</span>.
             </motion.h1>
@@ -158,10 +158,10 @@ function SobrePage() {
                 className="space-y-8"
               >
                 <div>
-                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">Design Estratégico & Coordenação de Projetos</span>
+                   <span className="text-sm md:text-base font-bold tracking-tighter">Design Estratégico & Coordenação de Projetos</span>
                 </div>
                 <div>
-                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">São Paulo, Brasil</span>
+                   <span className="text-sm md:text-base font-bold tracking-tighter">São Paulo, Brasil</span>
                 </div>
               </motion.div>
 
@@ -171,7 +171,7 @@ function SobrePage() {
                 transition={{ duration: 0.8, delay: 0.3 }}
                 className="md:col-span-2 flex flex-col md:flex-row gap-8 items-start md:items-end md:justify-end"
               >
-                 <p className="text-base md:text-xl text-secondary uppercase font-medium leading-tight max-w-sm">
+                 <p className="text-base md:text-xl text-secondary font-medium leading-tight max-w-sm">
                    Sou especialista em marca, estratégia e criação. Trabalho onde design e resultado se encontram.
                  </p>
               </motion.div>
@@ -195,11 +195,11 @@ function SobrePage() {
 
         <div className="site-container relative z-10">
           <div className="max-w-5xl space-y-12">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.9] text-foreground">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] text-foreground">
               Oito anos vivenciando o diálogo entre estética e resultado real.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pt-16 border-t border-border/10">
-              <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight">
+              <p className="text-base md:text-lg text-secondary font-medium leading-tight">
                 Construí minha trajetória na prática: do Design ao Marketing 360°, até lideranças de branding, performance e UX. Desenvolvi um método que parte de onde a marca está, e projeta onde ela precisa chegar. Sem achismo, com estética e estrutura.
               </p>
               <div className="flex flex-col gap-6">
@@ -218,7 +218,7 @@ function SobrePage() {
       {/* Design Tools Section */}
       <section className="py-24 md:py-32 bg-background border-t border-border/5">
         <div className="site-container mb-16 md:mb-24">
-          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.8]">Design & <br /><span className="text-secondary font-medium italic">Direção de Arte</span></h2>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-[1.1]">Design & <br /><span className="text-secondary font-medium italic">Direção de Arte</span></h2>
         </div>
         <div className="overflow-hidden mb-12">
            <div className="flex animate-marquee-fast gap-8 md:gap-16 whitespace-nowrap">
@@ -232,7 +232,7 @@ function SobrePage() {
            </div>
         </div>
         <div className="site-container">
-           <p className="text-sm md:text-base font-mono uppercase text-secondary leading-relaxed max-w-xl opacity-60">
+           <p className="text-sm md:text-base font-mono text-secondary leading-relaxed max-w-xl opacity-60">
              Domínio técnico das ferramentas que moldam a estética visual moderna. Agilidade e precisão em Photoshop, Illustrator, After Effects e Figma para entregar designs que performam.
            </p>
         </div>
@@ -241,7 +241,7 @@ function SobrePage() {
       {/* AI Tools Section */}
       <section className="py-24 md:py-32 bg-off-white/50 border-y border-border/5">
         <div className="site-container mb-16 md:mb-24">
-           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.8]">Inteligência <br /><span className="text-secondary font-medium italic">Artificial</span></h2>
+           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-[1.1]">Inteligência <br /><span className="text-secondary font-medium italic">Artificial</span></h2>
         </div>
         <div className="overflow-hidden mb-12">
            <div className="flex animate-marquee-fast gap-8 md:gap-16 whitespace-nowrap direction-reverse">
@@ -255,7 +255,7 @@ function SobrePage() {
            </div>
         </div>
         <div className="site-container">
-           <p className="text-sm md:text-base font-mono uppercase text-secondary leading-relaxed max-w-xl opacity-60">
+           <p className="text-sm md:text-base font-mono text-secondary leading-relaxed max-w-xl opacity-60">
              As IAs potencializam meus skills de copywriting, redação e UX, elevando a performance e a pontualidade de cada projeto através de ferramentas como Claude, GPT e VEO3.
            </p>
         </div>
@@ -266,8 +266,8 @@ function SobrePage() {
         <div className="site-container">
            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
               <div>
-                 <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.8] mb-12">Gestão & <br /><span className="text-secondary font-medium italic">Planejamento</span></h2>
-                 <p className="text-sm md:text-base font-mono uppercase text-secondary leading-relaxed max-w-md opacity-60 mb-12">
+                 <h2 className="text-4xl md:text-6xl font-bold tracking-tighter leading-[1.1] mb-12">Gestão & <br /><span className="text-secondary font-medium italic">Planejamento</span></h2>
+                 <p className="text-sm md:text-base font-mono text-secondary leading-relaxed max-w-md opacity-60 mb-12">
                    Organização absoluta para garantir que a criatividade tenha espaço para performar. Fluxos de trabalho otimizados em Asana, Trello e Notion.
                  </p>
                  <div className="space-y-6">
@@ -277,9 +277,9 @@ function SobrePage() {
                             <div className="w-12 h-12 flex items-center justify-center">
                                <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain transition-all" />
                             </div>
-                            <span className="text-xl md:text-2xl font-bold uppercase tracking-tighter">{tool.name}</span>
+                            <span className="text-xl md:text-2xl font-bold tracking-tighter">{tool.name}</span>
                          </div>
-                         <span className="text-[10px] font-mono uppercase text-secondary opacity-40 group-hover:opacity-100 transition-all">{tool.desc}</span>
+                         <span className="text-[10px] font-mono text-secondary opacity-40 group-hover:opacity-100 transition-all">{tool.desc}</span>
                       </div>
                     ))}
                  </div>
@@ -301,7 +301,7 @@ function SobrePage() {
         <div className="site-container">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20 gap-8">
             <div className="max-w-xl">
-              <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.9]">Projetos e marcas que confiam na minha expertise.</h2>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Projetos e marcas que confiam na minha expertise.</h2>
             </div>
             <p className="text-[9px] font-mono uppercase tracking-widest text-secondary/40 mb-2">Explore os detalhes</p>
           </div>
@@ -325,7 +325,7 @@ function SobrePage() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.8]"
+            className="text-4xl md:text-8xl font-bold tracking-tighter leading-[1.1]"
           >
             Vamos elevar o<br />seu projeto?
           </motion.h2>

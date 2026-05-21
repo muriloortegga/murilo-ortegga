@@ -28,7 +28,7 @@ export function BrandHeader({
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-8 anim-fade-in">
-              <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.95]">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1]">
                 {client} - <br />
                 <span 
                   className="text-secondary font-medium italic"
@@ -55,7 +55,7 @@ export function BrandHeader({
               <span className="text-[10px] font-mono uppercase tracking-tight text-secondary block mb-1">
                 {item.label}
               </span>
-              <span className="text-sm font-bold uppercase">{item.value}</span>
+              <span className="text-sm font-bold">{item.value}</span>
             </div>
           ))}
         </div>

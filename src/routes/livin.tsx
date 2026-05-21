@@ -56,7 +56,7 @@ function ProjetoLivin() {
         </div>
 
         <div className="w-full flex flex-col items-center">
-          <div className="site-container">
+          <div className="site-container my-12 md:my-16">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/1.jpg" 
@@ -72,7 +72,7 @@ function ProjetoLivin() {
             accentColor={accentColor}
           />
 
-          <div className="site-container">
+          <div className="site-container my-12 md:my-16">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/2.jpg" 
@@ -88,7 +88,7 @@ function ProjetoLivin() {
             accentColor={accentColor}
           />
 
-          <div className="site-container">
+          <div className="site-container my-12 md:my-16">
             <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
               <img 
                 src="/assets/projects/livin/print/3.jpg" 
@@ -107,8 +107,8 @@ function ProjetoLivin() {
       </div>
 
       {/* Navegação entre Projetos */}
-      <section className="site-section border-t border-border/50 py-16">
-        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6 px-4">
+      <section className="site-section border-t border-border/50 py-12 md:py-16">
+        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6">
           <Link to="/trabalho" className="btn btn-primary gap-2 w-full sm:w-auto text-center justify-center rounded-full px-8 py-4">
             <ArrowLeft size={16} /> Voltar Projetos
           </Link>
@@ -125,7 +125,7 @@ function IntersticialCopy({ title, text, accentColor }: { title: string, text: s
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   return (
-    <section ref={ref} className="w-full py-20 md:py-28 bg-background border-y border-border/50">
+    <section ref={ref} className="w-full py-12 md:py-16 bg-background border-y border-border/50">
       <div className="site-container flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className="md:w-1/3">
            <div className="w-8 h-1 mb-6" style={{ backgroundColor: accentColor }} />

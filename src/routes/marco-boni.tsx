@@ -15,16 +15,16 @@ function ProjetoMarcoBoni() {
   return (
     <div className="bg-background min-h-screen pt-24">
       {/* Header Clean */}
-      <div className="site-container pt-12 pb-16 text-center flex flex-col items-center px-4">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-6">Marco Boni</h1>
-        <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl">
+      <div className="site-container pt-12 pb-16 text-center flex flex-col items-center">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] mb-6">Marco Boni</h1>
+        <p className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl">
           Desenvolvimento de catálogos e direção de materiais institucionais focados em excelência visual.
         </p>
       </div>
 
       {/* Galeria Imagem (com respiro e cantos arredondados) */}
       <div className="w-full flex flex-col items-center anim-fade-in">
-        <div className="site-container my-12 md:my-20">
+        <div className="site-container my-12 md:my-16">
           <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
             <img 
               src="/assets/projects/marco-boni/print/1.jpg" 
@@ -36,8 +36,8 @@ function ProjetoMarcoBoni() {
       </div>
 
       {/* Navegação entre Projetos */}
-      <section className="site-section border-t border-border/50 py-16">
-        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6 px-4">
+      <section className="site-section border-t border-border/50 py-12 md:py-16">
+        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6">
           <Link to="/trabalho" className="btn btn-primary gap-2 w-full sm:w-auto text-center justify-center rounded-full px-8 py-4">
             <ArrowLeft size={16} /> Voltar Projetos
           </Link>

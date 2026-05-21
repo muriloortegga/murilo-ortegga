@@ -48,7 +48,7 @@ function ProjetoSymplice() {
       </div>
 
       {/* Bloco 1 - Centralizado */}
-      <section className="py-20 md:py-28 bg-off-white border-y border-border/10">
+      <section className="py-12 md:py-16 bg-off-white border-y border-border/10">
         <div className="site-container text-center max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 2 - Alinhado à Esquerda (Assimétrico) */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-12 md:py-16 bg-background">
         <div className="site-container">
           <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
             <motion.h2 
@@ -122,7 +122,7 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 3 - Alinhado à Esquerda (Assimétrico) */}
-      <section className="py-20 md:py-28 bg-off-white border-y border-border/10">
+      <section className="py-12 md:py-16 bg-off-white border-y border-border/10">
         <div className="site-container">
           <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
             <motion.h2 
@@ -158,7 +158,7 @@ function ProjetoSymplice() {
       </section>
 
       {/* Bloco 4 - Centralizado */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-12 md:py-16 bg-background">
         <div className="site-container text-center max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -192,8 +192,8 @@ function ProjetoSymplice() {
       </section>
 
       {/* Navegação entre Projetos */}
-      <section className="site-section border-t border-border/50 py-16">
-        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6 px-4">
+      <section className="site-section border-t border-border/50 py-12 md:py-16">
+        <div className="site-container flex flex-col sm:flex-row justify-between items-center gap-6">
           <Link to="/trabalho" className="btn btn-primary gap-2 w-full sm:w-auto text-center justify-center rounded-full px-8 py-4">
             <ArrowLeft size={16} /> Voltar Projetos
           </Link>

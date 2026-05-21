@@ -82,16 +82,16 @@ function ProjetoMaxi() {
         <div className="anim-fade-in w-full bg-background pb-32">
           {/* Header Minimalista para OOH */}
           <div className="site-container pt-24 pb-16 text-center flex flex-col items-center">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold uppercase tracking-tighter mb-6 max-w-3xl">
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold tracking-tighter mb-6 max-w-3xl leading-[1.1]">
               Presença Urbana e Memória de Marca
             </motion.h2>
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="text-base md:text-lg text-secondary uppercase font-medium leading-tight max-w-2xl">
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="text-base md:text-lg text-secondary font-medium leading-tight max-w-2xl">
               Campanhas externas projetadas para reafirmar a liderança educacional do Colégio Maxi. Mídia OOH desenhada para impacto imediato e clareza na mensagem.
             </motion.p>
           </div>
 
           <div className="w-full flex flex-col items-center">
-            <div className="site-container my-12 md:my-20">
+            <div className="site-container my-12 md:my-16">
               <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
                 <img src="/assets/projects/maxi/ooh/1.jpg" alt="Maxi OOH 1" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
               </div>
@@ -103,7 +103,7 @@ function ProjetoMaxi() {
               accentColor={accentColor}
             />
 
-            <div className="site-container my-12 md:my-20">
+            <div className="site-container my-12 md:my-16">
               <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
                 <img src="/assets/projects/maxi/ooh/2.jpg" alt="Maxi OOH 2" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
               </div>
@@ -115,7 +115,7 @@ function ProjetoMaxi() {
               accentColor={accentColor}
             />
 
-            <div className="site-container my-12 md:my-20">
+            <div className="site-container my-12 md:my-16">
               <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
                 <img src="/assets/projects/maxi/ooh/3.jpg" alt="Maxi OOH 3" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
               </div>
@@ -130,7 +130,7 @@ function ProjetoMaxi() {
         </div>
       )}
 
-      <section className="site-section border-t border-border mt-32">
+      <section className="site-section border-t border-border mt-32 py-12 md:py-16">
         <div className="site-container flex justify-between items-center">
           <Link to="/trabalho" className="btn btn-primary gap-2">
             <ArrowLeft size={16} /> Voltar Projetos
@@ -160,10 +160,10 @@ function ObjetivoProjeto({ accentColor }: { accentColor: string }) {
     { label: "Consistência", desc: "Organizar estrategicamente a comunicação para um visual mais profissional e limpo." },
   ];
   return (
-    <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background relative overflow-hidden">
+    <section ref={ref} className="site-section py-12 md:py-16 bg-foreground text-background relative overflow-hidden">
       <div className="site-container relative z-10">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             O Desafio da Evolução
           </motion.h2>
         </div>
@@ -171,12 +171,12 @@ function ObjetivoProjeto({ accentColor }: { accentColor: string }) {
           {barriers.map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="bg-foreground p-8 md:p-10 border border-background/10 hover:bg-background/5 transition-colors duration-300">
               <div className="text-3xl font-bold tracking-tighter mb-4" style={{ color: accentColor }}>{String(i + 1).padStart(2, "0")}</div>
-              <h3 className="text-xl font-bold uppercase tracking-tighter mb-3 text-background">{b.label}</h3>
-              <p className="text-xs text-background/50 uppercase leading-relaxed">{b.desc}</p>
+              <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
+              <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
             </motion.div>
           ))}
         </div>
-        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 uppercase font-medium max-w-3xl leading-tight">
+        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-tight">
           A estratégia foi desenhada para equilibrar a rica história do Colégio com as demandas de uma comunicação digital dinâmica e atualizada.
         </motion.p>
       </div>
@@ -190,14 +190,14 @@ function DirecaoCriativa({ accentColor }: { accentColor: string }) {
   const steps = ["Identidade Sólida", "Organização", "Linguagem Institucional", "Clareza Visual", "Legibilidade"];
   const roles = ["tradição", "pertencimento", "excelência acadêmica", "visão de futuro"];
   return (
-    <section ref={ref} className="site-section py-24 md:py-32">
+    <section ref={ref} className="site-section py-12 md:py-16">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold uppercase tracking-tighter leading-[0.95]">Direção de Arte & Copywriting</motion.h2>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold tracking-tighter leading-[1.1]">Direção de Arte & Copywriting</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary uppercase font-medium leading-tight">O trabalho exigiu a construção de uma narrativa que respeitasse o legado do colégio enquanto comunicava para novas gerações. Cada material publicado precisava transmitir:</motion.p>
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">O trabalho exigiu a construção de uma narrativa que respeitasse o legado do colégio enquanto comunicava para novas gerações. Cada material publicado precisava transmitir:</motion.p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               {roles.map((r, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }} className="flex items-center gap-3 border border-border p-4 rounded-lg">
@@ -232,14 +232,14 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
   const left = ["Apenas números e estatísticas", "Frieza na comunicação comercial", "Foco exclusivo em vendas sem conexão", "Esquecimento do legado e da história"];
   const right = ["Conceito de reencontro", "Apelo emocional forte e moderno", "Despertar da memória afetiva", "Reforço da relevância do cursinho"];
   return (
-    <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
+    <section ref={ref} className="site-section py-12 md:py-16 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
           <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/50 mb-4 block">Marco do Projeto</span>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             Campanha: Maxi de Volta para Casa
           </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="mt-6 text-lg text-background/60 uppercase font-medium leading-tight max-w-3xl">
+          <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="mt-6 text-lg text-background/60 font-medium leading-tight max-w-3xl">
             O objetivo era promover o retorno do renomado cursinho pré-vestibular, um símbolo histórico de alto número de matrículas e grandes aprovações na instituição.
           </motion.p>
         </div>
@@ -248,7 +248,7 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">O que evitamos</h3>
             <ul className="space-y-4">
               {left.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
                   <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
@@ -259,7 +259,7 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">Minha Estratégia</h3>
             <ul className="space-y-4">
               {right.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background text-xs uppercase font-medium leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
                   <span className="mt-1 flex-shrink-0" style={{ color: accentColor }}>+</span>{item}
                 </li>
               ))}
@@ -267,7 +267,7 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
           </motion.div>
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="mt-16 border-t border-background/10 pt-12 max-w-3xl">
-          <p className="text-lg md:text-xl font-bold uppercase tracking-tighter leading-tight text-background/80">
+          <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
             "Construí uma campanha emocional baseada no reencontro, sem perder a seriedade. Uma lembrança poderosa da tradição de excelência que o cursinho Maxi sempre representou."
           </p>
         </motion.blockquote>
@@ -288,10 +288,10 @@ function ResultadoPercebido({ accentColor }: { accentColor: string }) {
     { icon: <Zap size={18} />, label: "Engajamento", value: "Afetividade", desc: "Conexão com famílias e alunos" },
   ];
   return (
-    <section ref={ref} className="site-section py-24 md:py-32">
+    <section ref={ref} className="site-section py-12 md:py-16">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">O Resultado</motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">O Resultado</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -299,7 +299,7 @@ function ResultadoPercebido({ accentColor }: { accentColor: string }) {
               <div className="mb-5 transition-colors" style={{ color: accentColor }}>{m.icon}</div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary group-hover:text-background/50 mb-2 block">{m.label}</span>
               <div className="text-2xl md:text-3xl font-bold tracking-tighter leading-none mb-2">{m.value}</div>
-              <p className="text-[10px] text-secondary uppercase group-hover:text-background/50">{m.desc}</p>
+              <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -316,16 +316,16 @@ function IntersticialCopy({ title, text, accentColor }: { title: string, text: s
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   return (
-    <section ref={ref} className="w-full py-24 md:py-32 bg-background border-y border-border/50 my-1">
+    <section ref={ref} className="w-full py-12 md:py-16 bg-background border-y border-border/50 my-1">
       <div className="site-container flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className="md:w-1/3">
            <div className="w-8 h-1 mb-6" style={{ backgroundColor: accentColor }} />
-           <h3 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-tighter leading-tight">
+           <h3 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tighter leading-tight">
              {title}
            </h3>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }} className="md:w-2/3">
-           <p className="text-lg md:text-xl text-secondary uppercase font-medium leading-relaxed max-w-2xl">
+           <p className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl">
              {text}
            </p>
         </motion.div>
