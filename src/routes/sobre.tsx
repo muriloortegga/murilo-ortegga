@@ -147,7 +147,7 @@ function SobrePage() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12 max-w-full md:max-w-[80%] lg:max-w-[70%]"
             >
-              8 anos transformando negócios através de <span className="text-secondary font-medium italic">design thinking</span>, <span className="text-secondary font-medium italic">estética premium</span> e estratégias de alta atração.
+              8 anos entre agências, multinacionais e marcas que precisavam <span className="text-secondary font-medium italic">crescer de verdade</span>.
             </motion.h1>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-end">
@@ -158,7 +158,7 @@ function SobrePage() {
                 className="space-y-8"
               >
                 <div>
-                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">Design Estratégico</span>
+                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">Design Estratégico & Coordenação de Projetos</span>
                 </div>
                 <div>
                    <span className="text-sm md:text-base uppercase font-bold tracking-tighter">São Paulo, Brasil</span>
@@ -172,7 +172,7 @@ function SobrePage() {
                 className="md:col-span-2 flex flex-col md:flex-row gap-8 items-start md:items-end md:justify-end"
               >
                  <p className="text-base md:text-xl text-secondary uppercase font-medium leading-tight max-w-sm">
-                   8 anos transformando negócios através de behavioral design, estética premium e estratégias de alta tração.
+                   Sou especialista em marca, estratégia e criação. Trabalho onde design e resultado se encontram.
                  </p>
               </motion.div>
             </div>
@@ -196,11 +196,11 @@ function SobrePage() {
         <div className="site-container relative z-10">
           <div className="max-w-5xl space-y-12">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.9] text-foreground">
-              Oito anos liderando o diálogo entre estética e resultado real.
+              Oito anos vivenciando o diálogo entre estética e resultado real.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pt-16 border-t border-border/10">
               <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight">
-                 Como especialista em marcas, desenvolvi ao longo de 8 anos um método próprio que funde design estratégico e dados. Meu foco é projetar experiências e identidades que não são apenas bonitas, mas desenhadas estruturalmente para converter e dominar o mercado.
+                Construí minha trajetória na prática: do Design ao Marketing 360°, até lideranças de branding, performance e UX. Desenvolvi um método que parte de onde a marca está, e projeta onde ela precisa chegar. Sem achismo, com estética e estrutura.
               </p>
               <div className="flex flex-col gap-6">
                  {["Foco em Performance", "Estratégia de Dados", "Liderança Criativa"].map((text, i) => (
