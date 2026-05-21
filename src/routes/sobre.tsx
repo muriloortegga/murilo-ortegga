@@ -143,11 +143,9 @@ function SobrePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-7xl lg:text-9xl font-bold uppercase tracking-tighter leading-[0.8] mb-12"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12"
             >
-              Marcas que não<br />
-              pedem <span className="text-secondary font-medium italic">licença</span><br />
-              para liderar.
+              8 anos transformando negócios através de <span className="text-secondary font-medium italic">design thinking</span>, <span className="text-secondary font-medium italic">estética premium</span> e estratégias de alta atração.
             </motion.h1>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-end">
@@ -157,13 +155,11 @@ function SobrePage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="space-y-8"
               >
-                <div className="flex flex-col gap-1">
-                   <span className="text-[10px] font-mono uppercase text-secondary/40 tracking-widest">Expertise</span>
+                <div>
                    <span className="text-sm md:text-base uppercase font-bold tracking-tighter">Design Estratégico</span>
                 </div>
-                <div className="flex flex-col gap-1">
-                   <span className="text-[10px] font-mono uppercase text-secondary/40 tracking-widest">Localização</span>
-                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">Brasil / Global</span>
+                <div>
+                   <span className="text-sm md:text-base uppercase font-bold tracking-tighter">São Paulo, Brasil</span>
                 </div>
               </motion.div>
 
