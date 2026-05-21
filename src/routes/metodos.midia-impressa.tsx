@@ -27,7 +27,7 @@ function MidiaImpressaPage() {
               ganha <span className="text-secondary font-medium italic">peso</span> real.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Catálogos físicos e digitais, diagramação, linha editorial e materiais institucionais. Entrego qualidade gráfica que tangibiliza a autoridade da sua marca no mundo físico.
+              A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico — da papelaria às apresentações institucionais que fecham negócios.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Iniciar projeto gráfico <Plus size={18} className="ml-2" />

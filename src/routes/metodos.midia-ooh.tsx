@@ -27,7 +27,7 @@ function MidiaOOHPage() {
               <span className="text-secondary font-medium italic">urbana</span> com impacto.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Do planejamento e orçamento com fornecedores até a administração de budget e entrega final. Crio campanhas externas que garantem visibilidade massiva e autoridade local.
+              Onde sua marca aparece fisicamente diz muito sobre quem ela é. Crio campanhas e sinalização OOH que colocam seu negócio no lugar certo, visto pelas pessoas certas.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Planejar campanha OOH <Plus size={18} className="ml-2" />

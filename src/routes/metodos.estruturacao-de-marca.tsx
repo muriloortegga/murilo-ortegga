@@ -27,7 +27,7 @@ function EstruturacaoMarcaPage() {
               você <span className="text-secondary font-medium italic">entrega</span>.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Do diagnóstico ao brandbook completo. Construo identidades que confrontam o comum e elevam o valor percebido do seu negócio.
+              Sua marca precisa comunicar o que ela vale antes de abrir a boca. Aqui construo a identidade visual e o sistema de marca que fazem seu negócio parecer tão bom quanto ele é.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Iniciar estruturação <Plus size={18} className="ml-2" />

@@ -19,7 +19,7 @@ const products = [
     slug: "estruturacao-de-marca",
     num: "01",
     name: "Estrutura de Marca",
-    resolve: "Marcas estagnadas por falta de clareza estrutural. Identidades que não conversam com o público ou não se sustentam no digital.",
+    resolve: "Sua marca precisa comunicar o que ela vale antes de abrir a boca. Aqui construo a identidade visual e o sistema de marca que fazem seu negócio parecer tão bom quanto ele é.",
     envolve: "Imersão no negócio, aplicação de metodologias de Design Thinking para posicionamento, construção de identidade visual e verbal guiada por comportamento do consumidor.",
     recebe: "Um posicionamento sólido documentado e uma identidade arquitetada para elevar sua percepção de valor.",
   },
@@ -27,7 +27,7 @@ const products = [
     slug: "sistema-de-conteudo",
     num: "02",
     name: "Comunicação de Marca",
-    resolve: "Produção de conteúdo sem tração. O esforço criativo existe, mas não escala ou não retém a atenção do público de forma estratégica.",
+    resolve: "Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo — não apenas ocupe espaço no feed.",
     envolve: "Implementação de mentalidade de Growth no conteúdo. Criação de linhas editoriais baseadas em testes, métricas de retenção e táticas de copywriting avançado para funis de alta performance.",
     recebe: "Um playbook de conteúdo ágil com foco em métricas reais, e não apenas métricas de vaidade.",
   },
@@ -35,7 +35,7 @@ const products = [
     slug: "presenca-digital",
     num: "03",
     name: "Conversão de Marca",
-    resolve: "Tráfego que não converte. Sites e landing pages que são bonitos, mas que possuem jornadas de usuário quebradas e baixo desempenho.",
+    resolve: "Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação — sem deixar dúvida no caminho.",
     envolve: "Auditoria de experiência (UX), prototipagem de alta fidelidade (UI) com foco em Behavioral Design, redação orientada a persuasão e refinamento visual extremo.",
     recebe: "Uma plataforma digital imersiva, desenhada sistematicamente para capturar e converter atenção.",
   },
@@ -43,7 +43,7 @@ const products = [
     slug: "midia-impressa",
     num: "04",
     name: "Autoridade de marca",
-    resolve: "Necessidade de transmitir autoridade instantânea no ambiente físico. Momentos em que o digital não é suficiente para materializar confiança.",
+    resolve: "A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico — da papelaria às apresentações institucionais que fecham negócios.",
     envolve: "Direção de arte rigorosa e projeto gráfico de elite para papelaria, catálogos e materiais institucionais, utilizando princípios de design minimalista e grids estruturados.",
     recebe: "Peças táteis que elevam a percepção de valor da marca em negociações e pontos de contato físicos.",
   },
@@ -51,7 +51,7 @@ const products = [
     slug: "midia-ooh",
     num: "05",
     name: "Percepção de Marca",
-    resolve: "Marcas que precisam expandir awareness em ecossistemas urbanos sem perder a sofisticação da mensagem.",
+    resolve: "Onde sua marca aparece fisicamente diz muito sobre quem ela é. Crio campanhas e sinalização OOH que colocam seu negócio no lugar certo, visto pelas pessoas certas.",
     envolve: "Estratégia de ocupação visual. Direção criativa aplicada a formatos de grande escala, onde cada milissegundo de atenção do público em movimento conta.",
     recebe: "Campanhas de rua com máxima legibilidade, foco em mensagem clara e altíssimo impacto estético.",
   },
@@ -59,7 +59,7 @@ const products = [
     slug: "marketing-de-influencia",
     num: "06",
     name: "Expansão de Marca",
-    resolve: "Marcas tentando forçar autoridade ao invés de pedi-la emprestada de quem já a possui. Ruído na comunicação com creators.",
+    resolve: "Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam — e sem você precisar gerenciar nada disso.",
     envolve: "Curadoria cirúrgica de porta-vozes, alinhamento de valores, roteirização estratégica de campanhas e integração da influência diretamente nas suas etapas do funil.",
     recebe: "Endosso de autoridade real que traciona alcance, transferindo a confiança do creator para a sua marca.",
   },
@@ -76,8 +76,8 @@ function MetodosPage() {
             <div className="lg:col-span-12 anim-fade-in">
               <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12">Métodos</h1>
               <p className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
-                Processos validados de mercado. <br />
-                <span className="text-secondary font-medium italic">Abordagens específicas.</span>
+                O problema não é falta de ação. <br />
+                <span className="text-secondary font-medium italic">É falta de estrutura em Marketing.</span>
               </p>
             </div>
           </div>

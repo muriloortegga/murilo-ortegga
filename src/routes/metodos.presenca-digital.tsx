@@ -27,7 +27,7 @@ function PresencaDigitalPage() {
               e design premium.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Sua marca merece uma casa digital que reflita o seu valor. Este site que você navega agora foi feito por mim — e é esse o nível de excelência que sua marca irá receber.
+              Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação — sem deixar dúvida no caminho.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Construir minha casa digital <Plus size={18} className="ml-2" />

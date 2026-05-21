@@ -27,7 +27,7 @@ function SistemaConteudoPage() {
               de autoridade.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Esqueça postagens isoladas. Crio um ecossistema de conteúdo que sustenta sua marca e converte audiência em clientes reais.
+              Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo — não apenas ocupe espaço no feed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
