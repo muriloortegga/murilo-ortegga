@@ -5,7 +5,7 @@ import { Plus, BookOpen, PenTool, Search, Layout, ArrowRight } from "lucide-reac
 export const Route = createFileRoute("/metodos/estruturacao-de-marca")({
   head: () => ({
     meta: [
-      { title: "Estrutura de Marca — Murilo Ortega" },
+      { title: "Estrutura de Marca, Murilo Ortega" },
       { name: "description", content: "Construindo a base sólida que sua marca precisa para liderar." },
     ],
   }),
@@ -27,7 +27,7 @@ function EstruturacaoMarcaPage() {
               perde para negócio mediano com <span className="text-secondary font-medium italic">marca forte</span>.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Do diagnóstico ao brandbook completo. Construo identidades que fazem seu negócio ser lido do jeito certo — antes de qualquer palavra.
+              Do diagnóstico ao brandbook completo. Construo identidades que fazem seu negócio ser lido do jeito certo, antes de qualquer palavra.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Iniciar estruturação <Plus size={18} className="ml-2" />
@@ -56,13 +56,13 @@ function EstruturacaoMarcaPage() {
               { 
                 num: "03", 
                 title: "Identidade Visual", 
-                desc: "Logo, tipografia, paleta e sistema visual construídos para funcionar juntos — em qualquer canal, in qualquer tamanho, sem perder coerência.",
+                desc: "Logo, tipografia, paleta e sistema visual construídos para funcionar juntos, em qualquer canal, em qualquer tamanho, sem perder coerência.",
                 icon: <Layout size={20} />
               },
               { 
                 num: "04", 
                 title: "Brandbook & Manual", 
-                desc: "Tudo documentado: como usar, como não usar e por quê. Seu time, sua agência e qualquer fornecedor vão saber exatamente como tratar a marca — sem improvisar.",
+                desc: "Tudo documentado: como usar, como não usar e por quê. Seu time, sua agência e qualquer fornecedor vão saber exatamente como tratar a marca, sem improvisar.",
                 icon: <BookOpen size={20} />
               }
             ].map((p, i) => (
@@ -95,7 +95,7 @@ function EstruturacaoMarcaPage() {
             <div className="lg:col-span-6">
                <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">Solid +: Fintech Identity & Systems</h2>
                <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10">
-                 A Solid+ precisava de uma marca que funcionasse tanto em boardrooms do Reino Unido quanto em interfaces digitais de escala global. Construí o sistema visual e institucional completo — do logo ao brandbook — que hoje sustenta a operação em dois mercados.
+                 A Solid+ precisava de uma marca que funcionasse tanto em boardrooms do Reino Unido quanto em interfaces digitais de escala global. Construí o sistema visual e institucional completo, do logo ao brandbook, que hoje sustenta a operação em dois mercados.
                </p>
                <Link to="/solid" className="btn btn-primary rounded-full px-8 py-4">
                  Ver case completo <ArrowRight size={18} className="ml-2" />

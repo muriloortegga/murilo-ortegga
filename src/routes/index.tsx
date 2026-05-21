@@ -50,28 +50,28 @@ const services = [
     id: "conteudo",
     num: "02",
     title: "Sistema de Conteúdo",
-    body: "Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo — não apenas ocupe espaço no feed.",
+    body: "Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo, não apenas ocupe espaço no feed.",
     image: "/assets/projects/thumbnails/natrave.jpg",
   },
   {
     id: "digital",
     num: "03",
     title: "Presença Digital",
-    body: "Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação — sem deixar dúvida no caminho.",
+    body: "Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação, sem deixar dúvida no caminho.",
     image: "/assets/projects/kmillion/website-scroll.gif",
   },
   {
     id: "impressa",
     num: "04",
     title: "Mídia Impressa",
-    body: "A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico — da papelaria às apresentações institucionais que fecham negócios.",
+    body: "A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico, da papelaria às apresentações institucionais que fecham negócios.",
     image: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "influencia",
     num: "05",
     title: "Marketing de Influência",
-    body: "Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam — e sem você precisar gerenciar nada disso.",
+    body: "Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam, e sem você precisar gerenciar nada disso.",
     image: "/assets/projects/evidive/thumbs/influencia.jpg",
   },
   {
@@ -285,11 +285,11 @@ function MethodsSection() {
 
   const methods = [
     { slug: "estruturacao-de-marca", title: "Estrutura de Marca", preview: "Sua marca precisa comunicar o que ela vale antes de abrir a boca. Aqui construo a identidade visual e o sistema de marca que fazem seu negócio parecer tão bom quanto ele é." },
-    { slug: "sistema-de-conteudo", title: "Comunicação de Marca", preview: "Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo — não apenas ocupe espaço no feed." },
-    { slug: "presenca-digital", title: "Conversão de Marca", preview: "Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação — sem deixar dúvida no caminho." },
-    { slug: "midia-impressa", title: "Autoridade de marca", preview: "A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico — da papelaria às apresentações institucionais que fecham negócios." },
+    { slug: "sistema-de-conteudo", title: "Comunicação de Marca", preview: "Postar sem estratégia é só barulho. Desenvolvo a linha editorial e a narrativa da sua marca para que cada peça de conteúdo construa algo, não apenas ocupe espaço no feed." },
+    { slug: "presenca-digital", title: "Conversão de Marca", preview: "Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação, sem deixar dúvida no caminho." },
+    { slug: "midia-impressa", title: "Autoridade de marca", preview: "A marca que só existe no digital tem metade do impacto. Desenvolvo tudo que faz seu negócio parecer sólido e profissional no mundo físico, da papelaria às apresentações institucionais que fecham negócios." },
     { slug: "midia-ooh", title: "Percepção de Marca", preview: "Onde sua marca aparece fisicamente diz muito sobre quem ela é. Crio campanhas e sinalização OOH que colocam seu negócio no lugar certo, visto pelas pessoas certas." },
-    { slug: "marketing-de-influencia", title: "Expansão de Marca", preview: "Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam — e sem você precisar gerenciar nada disso." }
+    { slug: "marketing-de-influencia", title: "Expansão de Marca", preview: "Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam, e sem você precisar gerenciar nada disso." }
   ];
 
   return (
