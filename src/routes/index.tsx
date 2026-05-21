@@ -317,7 +317,7 @@ function MethodsSection() {
                 <p className="text-secondary font-medium uppercase tracking-tight mb-8 leading-relaxed text-sm md:text-base">{m.preview}</p>
               </div>
               <div>
-                <Link to={`/metodos/${m.slug}`} className="btn btn-hero-primary w-full md:w-auto">
+                <Link to={`/metodos/${m.slug}` as string} className="btn btn-hero-primary w-full md:w-auto">
                   Ver Mais
                 </Link>
               </div>
