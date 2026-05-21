@@ -43,7 +43,7 @@ export function SocialHero({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-7">
             <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">
-              {client} — <br />
+              {client} - <br />
               <span className="text-secondary font-medium italic">{phrase}</span>
             </h1>
           </div>

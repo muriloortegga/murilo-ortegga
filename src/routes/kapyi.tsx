@@ -15,7 +15,7 @@ export const Route = createFileRoute("/kapyi")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Agência Kapyi — Case Study — Murilo Ortega" },
+      { title: "Agência Kapyi - Case Study - Murilo Ortega" },
       { name: "description", content: "Direção criativa, branding e estratégia digital na Agência Kapyi." },
     ],
   }),

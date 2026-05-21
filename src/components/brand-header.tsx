@@ -29,7 +29,7 @@ export function BrandHeader({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-8 anim-fade-in">
               <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.95]">
-                {client} — <br />
+                {client} - <br />
                 <span 
                   className="text-secondary font-medium italic"
                   style={accentColor ? { color: accentColor } : {}}

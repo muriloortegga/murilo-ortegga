@@ -8,9 +8,9 @@ import { ProjectMedia } from "@/components/project-media";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Murilo Ortega — Design Estratégico & Identidade de Marca" },
+      { title: "Murilo Ortega - Design Estratégico & Identidade de Marca" },
       { name: "description", content: "Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um sistema de alto nível." },
-      { property: "og:title", content: "Murilo Ortega — Design Estratégico & Identidade de Marca" },
+      { property: "og:title", content: "Murilo Ortega - Design Estratégico & Identidade de Marca" },
       { property: "og:description", content: "Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um sistema de alto nível." },
     ],
   }),
@@ -19,19 +19,19 @@ export const Route = createFileRoute("/")({
 
 const projects = [
   {
-    name: "NaTrave App — O Ecossistema do Futebol Amador",
+    name: "NaTrave App - O Ecossistema do Futebol Amador",
     category: "Social Media · 2024",
     image: "/assets/projects/thumbnails/natrave.jpg",
     to: "/natrave",
   },
   {
-    name: "Solid + — Fintech Identity & Systems",
+    name: "Solid + - Fintech Identity & Systems",
     category: "Id Visual · 2024",
     image: "/solid-full.png",
     to: "/solid",
   },
   {
-    name: "Kmillion — Inteligência Promocional",
+    name: "Kmillion - Inteligência Promocional",
     category: "Websites · 2024",
     image: "/assets/projects/thumbnails/kmillion.jpg",
     to: "/kmillion",

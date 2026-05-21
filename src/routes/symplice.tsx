@@ -55,7 +55,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
           >
             Em um cenário empresarial <br className="hidden md:inline" />
             saturado de processos complexos, <br />
@@ -72,12 +72,14 @@ function ProjetoSymplice() {
             A Symplice nasce como uma plataforma de soluções digitais desenhada para desmistificar e simplificar a gestão de pequenas e médias empresas. Nosso compromisso foi traduzir tecnologia de ponta, segurança e excelência em uma experiência visual instantaneamente leve, transparente e confiável.
           </motion.p>
         </div>
-        <div className="w-full overflow-hidden">
-          <img 
-            src="/assets/projects/symplice/1.jpg" 
-            alt="Symplice Experiência Visual" 
-            className="w-full h-auto block"
-          />
+        <div className="site-container my-12 md:my-20">
+          <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+            <img 
+              src="/assets/projects/symplice/1.jpg" 
+              alt="Symplice Experiência Visual" 
+              className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+            />
+          </div>
         </div>
       </section>
 
@@ -92,7 +94,7 @@ function ProjetoSymplice() {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7"
             >
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95]">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95]">
                 Symplice. <br />
                 A fonética do óbvio, <br />
                 a sofisticação do minimalismo.
@@ -112,12 +114,14 @@ function ProjetoSymplice() {
             </motion.div>
           </div>
         </div>
-        <div className="w-full overflow-hidden">
-          <img 
-            src="/assets/projects/symplice/2.jpg" 
-            alt="Symplice Identidade de Nome" 
-            className="w-full h-auto block"
-          />
+        <div className="site-container my-12 md:my-20">
+          <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+            <img 
+              src="/assets/projects/symplice/2.jpg" 
+              alt="Symplice Identidade de Nome" 
+              className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+            />
+          </div>
         </div>
       </section>
 
@@ -132,7 +136,7 @@ function ProjetoSymplice() {
               transition={{ duration: 0.7 }}
               className="lg:col-span-7"
             >
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95]">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95]">
                 A fusão geométrica entre o minimalismo e a vanguarda.
               </h2>
             </motion.div>
@@ -150,12 +154,14 @@ function ProjetoSymplice() {
             </motion.div>
           </div>
         </div>
-        <div className="w-full overflow-hidden">
-          <img 
-            src="/assets/projects/symplice/3.jpg" 
-            alt="Symplice Ícone Geométrico" 
-            className="w-full h-auto block"
-          />
+        <div className="site-container my-12 md:my-20">
+          <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+            <img 
+              src="/assets/projects/symplice/3.jpg" 
+              alt="Symplice Ícone Geométrico" 
+              className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+            />
+          </div>
         </div>
       </section>
 
@@ -167,7 +173,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
           >
             Conectando a simplicidade do presente com a inovação do futuro.
           </motion.h2>
@@ -182,12 +188,14 @@ function ProjetoSymplice() {
             Na Symplice, a identidade visual não é apenas estética; é uma promessa de entrega sem complicações. Uma assinatura de vanguarda que redefine a relação entre o extraordinário e o descomplicado.
           </motion.p>
         </div>
-        <div className="w-full overflow-hidden">
-          <img 
-            src="/assets/projects/symplice/4.jpg" 
-            alt="Symplice Futuro e Simplicidade" 
-            className="w-full h-auto block"
-          />
+        <div className="site-container my-12 md:my-20">
+          <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+            <img 
+              src="/assets/projects/symplice/4.jpg" 
+              alt="Symplice Futuro e Simplicidade" 
+              className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+            />
+          </div>
         </div>
       </section>
 

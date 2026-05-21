@@ -15,7 +15,7 @@ export const Route = createFileRoute("/evidive")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "EviDive — Case Study — Murilo Ortega" },
+      { title: "EviDive - Case Study - Murilo Ortega" },
       { name: "description", content: "Estratégia de Social Media e Marketing de Influência para EviDive." },
     ],
   }),
@@ -213,7 +213,7 @@ function DesafiosProjeto() {
             <ul className="space-y-4">
               {left.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
-                  <span className="text-background/30 mt-1 flex-shrink-0">—</span>{item}
+                  <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
             </ul>
@@ -587,7 +587,7 @@ function Comparacao() {
             <ul className="space-y-4">
               {left.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
-                  <span className="text-background/30 mt-1 flex-shrink-0">—</span>{item}
+                  <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
             </ul>

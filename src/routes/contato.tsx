@@ -5,9 +5,9 @@ import { ArrowRight, Calendar, MessageSquare } from "lucide-react";
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — Murilo Ortega" },
+      { title: "Contato - Murilo Ortega" },
       { name: "description", content: "Vamos conversar. Se sua marca está abaixo do nível do seu negócio, é aqui que começa." },
-      { property: "og:title", content: "Contato — Murilo Ortega" },
+      { property: "og:title", content: "Contato - Murilo Ortega" },
       { property: "og:description", content: "Vamos conversar sobre sua marca." },
     ],
   }),

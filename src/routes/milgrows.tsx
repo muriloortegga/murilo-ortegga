@@ -22,7 +22,7 @@ export const Route = createFileRoute("/milgrows")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Milgrows — Murilo Ortega" },
+      { title: "Milgrows - Murilo Ortega" },
       { name: "description", content: "Estratégia de Social Media e Educação sobre Cannabis Medicinal para Milgrows." },
     ],
   }),

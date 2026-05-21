@@ -5,7 +5,7 @@ import { Plus, ArrowRight, Zap } from "lucide-react";
 export const Route = createFileRoute("/metodos/presenca-digital")({
   head: () => ({
     meta: [
-      { title: "Conversão de Marca — Murilo Ortega" },
+      { title: "Conversão de Marca - Murilo Ortega" },
       { name: "description", content: "Sites e Landing Pages premium de alta performance. O diferencial que sua marca merece." },
     ],
   }),
@@ -27,7 +27,7 @@ function PresencaDigitalPage() {
               e design premium.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação — sem deixar dúvida no caminho.
+              Seu site precisa trabalhar por você. Crio sites e interfaces que organizam sua comunicação, deixam claro o que você oferece e conduzem o visitante até a ação, sem deixar dúvida no caminho.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Construir minha casa digital <Plus size={18} className="ml-2" />

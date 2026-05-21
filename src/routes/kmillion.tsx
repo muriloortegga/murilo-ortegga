@@ -15,7 +15,7 @@ export const Route = createFileRoute("/kmillion")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Kmillion — Case Study — Murilo Ortega" },
+      { title: "Kmillion - Case Study - Murilo Ortega" },
       { name: "description", content: "Identidade Visual e Inteligência Promocional para Kmillion Promotech." },
     ],
   }),
@@ -96,7 +96,7 @@ function ProjetoKmillion() {
       {isFullScreen && (
         <div className="fixed inset-0 z-[100] bg-background overflow-y-auto no-scrollbar anim-fade-in">
           <div className="sticky top-0 right-0 left-0 h-24 flex items-center justify-between site-container z-[101] bg-background/50 backdrop-blur-sm border-b border-border/10 pointer-events-auto">
-            <span className="text-xs font-mono uppercase tracking-widest">Kmillion Case — Branding</span>
+            <span className="text-xs font-mono uppercase tracking-widest">Kmillion Case - Branding</span>
             <button 
               onClick={() => setIsFullScreen(false)}
               className="p-4 bg-foreground text-background transition-transform hover:scale-110"

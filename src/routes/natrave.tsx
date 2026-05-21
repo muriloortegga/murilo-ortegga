@@ -24,7 +24,7 @@ export const Route = createFileRoute("/natrave")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "NaTrave App — Murilo Ortega" },
+      { title: "NaTrave App - Murilo Ortega" },
       { name: "description", content: "Estratégia de Social Media e Branding para o NaTrave App." },
     ],
   }),
@@ -64,7 +64,7 @@ function ProjetoNaTrave() {
         client="NaTrave App"
         phrase="Virando o Jogo"
         description="O futebol amador elevado ao nível de elite. Uma plataforma para conectar jogadores, organizadores e a paixão pelo esporte sem burocracia."
-        niche="Projeto Autoral — Esporte & Tech"
+        niche="Projeto Autoral - Esporte & Tech"
         meta={metaData}
         accentColor="#FF6B00"
       />
@@ -165,7 +165,7 @@ function ProjetoNaTrave() {
       {isFullScreen && (
         <div className="fixed inset-0 z-[100] bg-background overflow-y-auto no-scrollbar anim-fade-in">
           <div className="sticky top-0 right-0 left-0 h-24 flex items-center justify-between site-container z-[101] bg-background/50 backdrop-blur-sm border-b border-border/10 pointer-events-auto">
-            <span className="text-xs font-mono uppercase tracking-widest">NaTrave App Case — Branding</span>
+            <span className="text-xs font-mono uppercase tracking-widest">NaTrave App Case - Branding</span>
             <button 
               onClick={() => setIsFullScreen(false)}
               className="p-4 bg-foreground text-background transition-transform hover:scale-110"

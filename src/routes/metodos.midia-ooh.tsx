@@ -5,7 +5,7 @@ import { Plus, ArrowRight, MapPin, Maximize, Target, Settings } from "lucide-rea
 export const Route = createFileRoute("/metodos/midia-ooh")({
   head: () => ({
     meta: [
-      { title: "Percepção de Marca — Murilo Ortega" },
+      { title: "Percepção de Marca - Murilo Ortega" },
       { name: "description", content: "Mídia Off-Home: Planejamento, design e gestão de campanhas externas de alto impacto." },
     ],
   }),

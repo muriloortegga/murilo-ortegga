@@ -5,7 +5,7 @@ import { Plus, ArrowRight, CheckCircle2, Star, Users, Zap, MessageSquare } from 
 export const Route = createFileRoute("/metodos/marketing-de-influencia")({
   head: () => ({
     meta: [
-      { title: "Expansão de Marca — Murilo Ortega" },
+      { title: "Expansão de Marca - Murilo Ortega" },
       { name: "description", content: "Construindo sistemas de influência que transformam audiência em clientes." },
     ],
   }),
@@ -26,7 +26,7 @@ function MarketingInfluenciaPage() {
               É sobre <span className="text-secondary font-medium italic">desejo</span>, autoridade e conversão.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam — e sem você precisar gerenciar nada disso.
+              Cuido de todo o processo: do casting ao briefing, da gestão dos creators à entrega final. Sua marca chega a novos públicos com a voz de quem eles já confiam, e sem você precisar gerenciar nada disso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">

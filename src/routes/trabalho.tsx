@@ -9,9 +9,9 @@ import { ProjectMedia } from "@/components/project-media";
 export const Route = createFileRoute("/trabalho")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Murilo Ortega" },
+      { title: "Portfolio - Murilo Ortega" },
       { name: "description", content: "Projetos selecionados de branding, conteúdo e presença digital." },
-      { property: "og:title", content: "Portfolio — Murilo Ortega" },
+      { property: "og:title", content: "Portfolio - Murilo Ortega" },
       { property: "og:description", content: "Projetos selecionados de branding, conteúdo e presença digital." },
     ],
   }),

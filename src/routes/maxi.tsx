@@ -15,7 +15,7 @@ export const Route = createFileRoute("/maxi")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Colégio Maxi — Case Study — Murilo Ortega" },
+      { title: "Colégio Maxi - Case Study - Murilo Ortega" },
       { name: "description", content: "Estratégia de Social Media e Mídia OOH para o Colégio Maxi." },
     ],
   }),
@@ -82,7 +82,7 @@ function ProjetoMaxi() {
         <div className="anim-fade-in w-full bg-background pb-32">
           {/* Header Minimalista para OOH */}
           <div className="site-container pt-24 pb-16 text-center flex flex-col items-center">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-6 max-w-3xl">
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold uppercase tracking-tighter mb-6 max-w-3xl">
               Presença Urbana e Memória de Marca
             </motion.h2>
             <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="text-base md:text-lg text-secondary uppercase font-medium leading-tight max-w-2xl">
@@ -91,7 +91,11 @@ function ProjetoMaxi() {
           </div>
 
           <div className="w-full flex flex-col items-center">
-            <img src="/assets/projects/maxi/ooh/1.jpg" alt="Maxi OOH 1" className="w-full h-auto block" />
+            <div className="site-container my-12 md:my-20">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img src="/assets/projects/maxi/ooh/1.jpg" alt="Maxi OOH 1" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
+              </div>
+            </div>
             
             <IntersticialCopy 
               title="A Força da Escala" 
@@ -99,7 +103,11 @@ function ProjetoMaxi() {
               accentColor={accentColor}
             />
 
-            <img src="/assets/projects/maxi/ooh/2.jpg" alt="Maxi OOH 2" className="w-full h-auto block" />
+            <div className="site-container my-12 md:my-20">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img src="/assets/projects/maxi/ooh/2.jpg" alt="Maxi OOH 2" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
+              </div>
+            </div>
             
             <IntersticialCopy 
               title="Consistência em Múltiplos Formatos" 
@@ -107,7 +115,11 @@ function ProjetoMaxi() {
               accentColor={accentColor}
             />
 
-            <img src="/assets/projects/maxi/ooh/3.jpg" alt="Maxi OOH 3" className="w-full h-auto block" />
+            <div className="site-container my-12 md:my-20">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img src="/assets/projects/maxi/ooh/3.jpg" alt="Maxi OOH 3" className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo" />
+              </div>
+            </div>
             
             <IntersticialCopy 
               title="Autoridade Pela Presença" 
@@ -151,7 +163,7 @@ function ObjetivoProjeto({ accentColor }: { accentColor: string }) {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background relative overflow-hidden">
       <div className="site-container relative z-10">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
             O Desafio da Evolução
           </motion.h2>
         </div>
@@ -182,7 +194,7 @@ function DirecaoCriativa({ accentColor }: { accentColor: string }) {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85]">Direção de Arte & Copywriting</motion.h2>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl font-bold uppercase tracking-tighter leading-[0.95]">Direção de Arte & Copywriting</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
             <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary uppercase font-medium leading-tight">O trabalho exigiu a construção de uma narrativa que respeitasse o legado do colégio enquanto comunicava para novas gerações. Cada material publicado precisava transmitir:</motion.p>
@@ -224,7 +236,7 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
       <div className="site-container">
         <div className="mb-16">
           <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/50 mb-4 block">Marco do Projeto</span>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
             Campanha: Maxi de Volta para Casa
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="mt-6 text-lg text-background/60 uppercase font-medium leading-tight max-w-3xl">
@@ -237,7 +249,7 @@ function CampanhaDeVoltaParaCasa({ accentColor }: { accentColor: string }) {
             <ul className="space-y-4">
               {left.map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
-                  <span className="text-background/30 mt-1 flex-shrink-0">—</span>{item}
+                  <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
             </ul>
@@ -279,7 +291,7 @@ function ResultadoPercebido({ accentColor }: { accentColor: string }) {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">O Resultado</motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">O Resultado</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -308,7 +320,7 @@ function IntersticialCopy({ title, text, accentColor }: { title: string, text: s
       <div className="site-container flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <motion.div initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className="md:w-1/3">
            <div className="w-8 h-1 mb-6" style={{ backgroundColor: accentColor }} />
-           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold uppercase tracking-tighter leading-tight">
+           <h3 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-tighter leading-tight">
              {title}
            </h3>
         </motion.div>

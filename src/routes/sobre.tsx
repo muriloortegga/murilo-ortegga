@@ -8,7 +8,7 @@ import { ProjectMedia } from "@/components/project-media";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre Mim — Murilo Ortega — Design Estratégico & Identidade de Marca" },
+      { title: "Sobre Mim - Murilo Ortega - Design Estratégico & Identidade de Marca" },
       { name: "description", content: "8 anos de experiência transformando marcas através de dados, criatividade e estratégia." },
     ],
   }),

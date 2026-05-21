@@ -7,7 +7,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/solid")({
   head: () => ({
     meta: [
-      { title: "Solid+ — Murilo Ortega" },
+      { title: "Solid+ - Murilo Ortega" },
       { name: "description", content: "Identidade Visual e Fintech Systems para Solid+." },
     ],
   }),

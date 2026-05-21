@@ -22,7 +22,7 @@ export const Route = createFileRoute("/talk2buy")({
   validateSearch: (search) => projectSearchSchema.parse(search),
   head: () => ({
     meta: [
-      { title: "Talk2Buy — Social Media · Murilo Ortega" },
+      { title: "Talk2Buy - Social Media - Murilo Ortega" },
       { name: "description", content: "Estratégia de Social Media e Posicionamento para a plataforma Talk2Buy." },
     ],
   }),

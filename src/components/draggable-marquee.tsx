@@ -63,7 +63,11 @@ export function DraggableMarquee({ items, baseVelocity = -1.8 }: DraggableMarque
             <img
               src={logo.url}
               alt={logo.name}
-              className="h-[140px] md:h-[220px] w-auto object-contain transition-all duration-500"
+              className={`w-auto object-contain transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 ${
+                logo.name.toLowerCase() === "symplice"
+                  ? "h-[50px] md:h-[80px]"
+                  : "h-[140px] md:h-[220px]"
+              }`}
               draggable={false}
             />
           </Link>
