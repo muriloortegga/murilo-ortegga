@@ -127,14 +127,16 @@ function SobrePage() {
   return (
     <div ref={revealRef} className="bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+        <div className="absolute top-0 right-0 w-full md:w-[45%] lg:w-[40%] h-full z-0">
           <ProjectMedia 
             src="/assets/about/photos/hero-bg.jpg" 
             alt="Murilo Ortega Portrait" 
-            className="w-full h-full object-cover grayscale opacity-30 md:opacity-40 object-[50%_25%] md:object-[50%_10%]" 
+            className="w-full h-full object-cover grayscale opacity-30 md:opacity-50 object-[50%_25%] md:object-[50%_15%]" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+          {/* Gradient overlays to blend the image seamlessly */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent hidden md:block" />
         </div>
 
         <div className="site-container relative z-10 w-full pt-32 pb-24">
@@ -143,7 +145,7 @@ function SobrePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12 max-w-full md:max-w-[80%] lg:max-w-[70%]"
             >
               8 anos transformando negócios através de <span className="text-secondary font-medium italic">design thinking</span>, <span className="text-secondary font-medium italic">estética premium</span> e estratégias de alta atração.
             </motion.h1>
