@@ -23,11 +23,11 @@ function EstruturacaoMarcaPage() {
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 leading-[0.95] uppercase tracking-tighter">
               Estruturação de Marca:<br />
-              A base de tudo o que<br />
-              você <span className="text-secondary font-medium italic">entrega</span>.
+              porque negócio bom com marca fraca<br />
+              perde para negócio mediano com <span className="text-secondary font-medium italic">marca forte</span>.
             </h1>
             <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
-              Sua marca precisa comunicar o que ela vale antes de abrir a boca. Aqui construo a identidade visual e o sistema de marca que fazem seu negócio parecer tão bom quanto ele é.
+              Do diagnóstico ao brandbook completo. Construo identidades que fazem seu negócio ser lido do jeito certo — antes de qualquer palavra.
             </p>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary px-10 py-5 rounded-full">
               Iniciar estruturação <Plus size={18} className="ml-2" />
@@ -44,25 +44,25 @@ function EstruturacaoMarcaPage() {
               { 
                 num: "01", 
                 title: "Diagnóstico & Estratégia", 
-                desc: "Entendimento profundo do mercado, público e diferenciais competitivos. Definimos o território que sua marca irá ocupar.",
+                desc: "Mapeio onde você está, onde o mercado está e o espaço que ninguém ainda ocupou. Daqui saem as decisões que guiam tudo que vem depois.",
                 icon: <Search size={20} />
               },
               { 
                 num: "02", 
                 title: "Naming & Tom de Voz", 
-                desc: "Damos nome à sua visão e definimos como ela fala com o mundo. Personalidade e clareza em cada palavra.",
+                desc: "Defino como sua marca se chama, como ela escreve e como ela soa. Porque o cliente decide se confia em você antes mesmo de entrar em contato.",
                 icon: <PenTool size={20} />
               },
               { 
                 num: "03", 
                 title: "Identidade Visual", 
-                desc: "Construção de logo, tipografia, paleta de cores e sistema visual completo que comunica autoridade instantânea.",
+                desc: "Logo, tipografia, paleta e sistema visual construídos para funcionar juntos — em qualquer canal, in qualquer tamanho, sem perder coerência.",
                 icon: <Layout size={20} />
               },
               { 
                 num: "04", 
                 title: "Brandbook & Manual", 
-                desc: "A bíblia da sua marca. Todas as regras e diretrizes documentadas para garantir consistência em qualquer canal.",
+                desc: "Tudo documentado: como usar, como não usar e por quê. Seu time, sua agência e qualquer fornecedor vão saber exatamente como tratar a marca — sem improvisar.",
                 icon: <BookOpen size={20} />
               }
             ].map((p, i) => (
@@ -88,11 +88,14 @@ function EstruturacaoMarcaPage() {
       {/* Case Section */}
       <section className="site-section py-24 md:py-32">
         <div className="site-container">
+          <div className="mb-8 md:mb-12">
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary">Na prática, é assim que fica:</span>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-20 items-center">
             <div className="lg:col-span-6">
                <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">Solid +: Fintech Identity & Systems</h2>
                <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10">
-                 Construí uma identidade que equilibra a solidez institucional com a agilidade das startups do Reino Unido. Um sistema completo de marca que permitiu a escala global da operação.
+                 A Solid+ precisava de uma marca que funcionasse tanto em boardrooms do Reino Unido quanto em interfaces digitais de escala global. Construí o sistema visual e institucional completo — do logo ao brandbook — que hoje sustenta a operação em dois mercados.
                </p>
                <Link to="/solid" className="btn btn-primary rounded-full px-8 py-4">
                  Ver case completo <ArrowRight size={18} className="ml-2" />
@@ -110,7 +113,7 @@ function EstruturacaoMarcaPage() {
       {/* CTA */}
       <section className="py-24 md:py-32 bg-foreground text-background">
         <div className="site-container text-center">
-          <h2 className="text-3xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12">Sua marca pronta para o topo.</h2>
+          <h2 className="text-3xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12">Pronto para parar de perder para marcas piores que a sua?</h2>
           <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-background text-foreground px-12 py-6 text-lg hover:bg-background/90 rounded-full">
             Solicitar orçamento <Plus size={20} className="ml-2" />
           </a>
