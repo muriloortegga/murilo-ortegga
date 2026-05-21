@@ -55,7 +55,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1] mb-8"
           >
             Em um cenário empresarial <br className="hidden md:inline" />
             saturado de processos complexos, <br />
@@ -67,7 +67,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-16"
           >
             A Symplice nasce como uma plataforma de soluções digitais desenhada para desmistificar e simplificar a gestão de pequenas e médias empresas. Nosso compromisso foi traduzir tecnologia de ponta, segurança e excelência em uma experiência visual instantaneamente leve, transparente e confiável.
           </motion.p>
@@ -86,32 +86,28 @@ function ProjetoSymplice() {
       {/* Bloco 2 - Alinhado à Esquerda (Assimétrico) */}
       <section className="py-20 md:py-32 bg-background">
         <div className="site-container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-16">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+          <div className="max-w-3xl text-left mb-16 space-y-6">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7 }}
-              className="lg:col-span-7"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1]"
             >
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95]">
-                Symplice. <br />
-                A fonética do óbvio, <br />
-                a sofisticação do minimalismo.
-              </h2>
-            </motion.div>
+              Symplice. <br />
+              A fonética do óbvio, <br />
+              a sofisticação do minimalismo.
+            </motion.h2>
             
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+            <motion.p 
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="lg:col-span-5 lg:col-start-8"
+              className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
             >
-              <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed">
-                Inspirado na inicial de System e na pronúncia literal da palavra Simples, o nome transcende fronteiras linguísticas. Uma abordagem direta e memorável criada para se destacar no ecossistema tecnológico global.
-              </p>
-            </motion.div>
+              Inspirado na inicial de System e na pronúncia literal da palavra Simples, o nome transcende fronteiras linguísticas. Uma abordagem direta e memorável criada para se destacar no ecossistema tecnológico global.
+            </motion.p>
           </div>
         </div>
         <div className="site-container my-12 md:my-20">
@@ -128,30 +124,26 @@ function ProjetoSymplice() {
       {/* Bloco 3 - Alinhado à Esquerda (Assimétrico) */}
       <section className="py-20 md:py-32 bg-off-white border-y border-border/10">
         <div className="site-container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start mb-16">
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+          <div className="max-w-3xl text-left mb-16 space-y-6">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7 }}
-              className="lg:col-span-7"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1]"
             >
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95]">
-                A fusão geométrica entre o minimalismo e a vanguarda.
-              </h2>
-            </motion.div>
+              A fusão geométrica entre o minimalismo e a vanguarda.
+            </motion.h2>
             
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+            <motion.p 
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="lg:col-span-5 lg:col-start-8"
+              className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
             >
-              <p className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed">
-                O ícone é o resultado da união de dois arcos em direções opostas que se entrelaçam perfeitamente para formar a letra S. Cada linha foi refinada para destacar o essencial, projetando uma sensação imediata de movimento, fluidez e futurismo digital.
-              </p>
-            </motion.div>
+              O ícone é o resultado da união de dois arcos em direções opostas que se entrelaçam perfeitamente para formar a letra S. Cada linha foi refinada para destacar o essencial, projetando uma sensação imediata de movimento, fluidez e futurismo digital.
+            </motion.p>
           </div>
         </div>
         <div className="site-container my-12 md:my-20">
@@ -173,7 +165,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1] mb-8"
           >
             Conectando a simplicidade do presente com a inovação do futuro.
           </motion.h2>
@@ -183,7 +175,7 @@ function ProjetoSymplice() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-2xl mx-auto mb-16"
+            className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-16"
           >
             Na Symplice, a identidade visual não é apenas estética; é uma promessa de entrega sem complicações. Uma assinatura de vanguarda que redefine a relação entre o extraordinário e o descomplicado.
           </motion.p>
