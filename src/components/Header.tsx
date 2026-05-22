@@ -28,7 +28,7 @@ export function Header() {
         )}
       >
         <div className="site-container flex items-center justify-between h-24">
-          <Link to="/" className="text-foreground text-lg font-bold tracking-tight uppercase">
+ <Link to="/" className="text-foreground text-lg font-bold tracking-tight ">
             Murilo Ortega
           </Link>
 
@@ -41,7 +41,7 @@ export function Header() {
                   href={link.to}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-regular uppercase tracking-tight text-foreground/60 transition-opacity duration-250 hover:opacity-100"
+ className="text-sm font-regular tracking-tight text-foreground/60 transition-opacity duration-250 hover:opacity-100"
                 >
                   {link.label}
                 </a>
@@ -49,7 +49,7 @@ export function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="text-sm font-regular uppercase tracking-tight text-foreground/60 transition-opacity duration-250 hover:opacity-100"
+ className="text-sm font-regular tracking-tight text-foreground/60 transition-opacity duration-250 hover:opacity-100"
                   activeProps={{
                     className: "text-foreground opacity-100",
                   }}
@@ -81,7 +81,7 @@ export function Header() {
           <div className="site-container flex items-center justify-between h-24">
             <Link
               to="/"
-              className="text-foreground text-lg font-bold tracking-tight uppercase"
+ className="text-foreground text-lg font-bold tracking-tight "
               onClick={() => setMenuOpen(false)}
             >
               Murilo Ortega
@@ -105,7 +105,7 @@ export function Header() {
                   href={link.to}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[40px] text-foreground font-bold uppercase leading-none tracking-tight"
+ className="text-[40px] text-foreground font-bold leading-none tracking-tight"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
@@ -114,7 +114,7 @@ export function Header() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="text-[40px] text-foreground font-bold uppercase leading-none tracking-tight"
+ className="text-[40px] text-foreground font-bold leading-none tracking-tight"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

@@ -131,7 +131,7 @@ function PortfolioPage() {
       <section className="site-section border-t-0">
         <div className="site-container">
           <div className="mb-16 md:mb-20">
-            <h1 className="uppercase tracking-tighter anim-fade-in leading-[0.95] flex flex-col">
+ <h1 className=" tracking-tighter anim-fade-in leading-[1.1] flex flex-col">
               <span className="text-2xl md:text-4xl lg:text-5xl mb-2">Conheça meu</span>
               <span className="text-secondary font-medium text-[12vw] md:text-[8vw]">Trabalho</span>
             </h1>
@@ -147,7 +147,7 @@ function PortfolioPage() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="py-12 md:py-20 border-y border-border/50 mb-16 md:mb-20 flex flex-col items-center text-center"
               >
-                <div className="text-2xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-none max-w-4xl">
+ <div className="text-2xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-none max-w-4xl">
                   8 anos de experiência com: <br className="hidden md:block" />
                   <div className="h-[1.2em] relative overflow-hidden inline-block align-bottom md:block mt-2 md:mt-4">
                     <AnimatePresence mode="wait">
@@ -164,7 +164,7 @@ function PortfolioPage() {
                     </AnimatePresence>
                   </div>
                 </div>
-                <p className="mt-6 md:mt-8 text-[10px] md:text-xs text-secondary uppercase tracking-[0.2em] max-w-lg mx-auto leading-relaxed">
+ <p className="mt-6 md:mt-8 text-[10px] md:text-xs text-secondary tracking-[0.2em] max-w-lg mx-auto leading-relaxed">
                   Selecione abaixo a especialidade que deseja explorar.
                 </p>
               </motion.div>
@@ -250,7 +250,7 @@ function PortfolioPage() {
                           <div className="mt-5 flex justify-between items-end">
                              <div>
                                 <span className="text-[10px] font-mono uppercase text-secondary mb-1 block">{project.year}</span>
-                                <h4 className="text-base md:text-lg font-bold uppercase tracking-tight">{project.name}</h4>
+ <h4 className="text-base md:text-lg font-bold tracking-tight">{project.name}</h4>
                              </div>
                              <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 md:-translate-x-4 group-hover:translate-x-0 transition-all" />
                           </div>
@@ -274,12 +274,12 @@ function PortfolioPage() {
                 className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center"
               >
                 <div className="lg:col-span-5">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-6 md:mb-8">
+ <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] mb-6 md:mb-8">
                     {currentInsight ? currentInsight.copy : "Sua marca pronta para o próximo nível."}
                   </h2>
                 </div>
                 <div className="lg:col-span-7 flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-center">
-                  <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight max-w-md">
+ <p className="text-base md:text-lg text-secondary font-medium leading-[1.1] max-w-md">
                     {currentInsight ? currentInsight.preview : "Combinamos estratégia, design e tecnologia para criar ecossistemas de marca que lideram mercados."}
                   </p>
                   {currentInsight && (

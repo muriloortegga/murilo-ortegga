@@ -42,7 +42,7 @@ export function SocialHero({
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-7">
-            <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">
+ <h1 className="text-4xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-8">
               {client} - <br />
               <span className="text-secondary font-medium italic">{phrase}</span>
             </h1>
@@ -71,7 +71,7 @@ export function BeforeAfter({
     <section className="site-section bg-off-white py-24">
       <div className="site-container">
         <div className="mb-16">
-           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">Crescimento Exponencial</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Crescimento Exponencial</h2>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -103,7 +103,7 @@ export function TopPosts({ posts }: { posts: { img: string, context: string, sta
     <section className="site-section py-24">
       <div className="site-container">
         <div className="mb-16">
-           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">Performance de Elite</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Performance de Elite</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -114,7 +114,7 @@ export function TopPosts({ posts }: { posts: { img: string, context: string, sta
                </div>
                <div className="space-y-2">
                   <p className="text-[10px] font-mono uppercase tracking-tight text-secondary leading-tight">{post.context}</p>
-                  <p className="text-lg font-bold uppercase tracking-tighter">{post.stats}</p>
+ <p className="text-lg font-bold tracking-tighter">{post.stats}</p>
                </div>
             </div>
           ))}
@@ -131,7 +131,7 @@ export function TopCopies({ copies }: { copies: { text: string, img: string }[] 
     <section className="site-section bg-foreground text-background py-24">
       <div className="site-container">
         <div className="mb-16">
-           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">Narrativas que Convertem</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Narrativas que Convertem</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -190,7 +190,7 @@ export function GridEvolution({ grids }: { grids: { month: string, img: string }
     <section className="site-section py-24">
       <div className="site-container">
         <div className="mb-16">
-           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">A Transformação Visual</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">A Transformação Visual</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -212,7 +212,7 @@ export function VerticalGallery({ items }: { items: { type: 'Reel' | 'Story', im
   return (
     <section className="py-24 md:py-32 border-t border-border overflow-hidden bg-background">
       <div className="site-container mb-12">
-        <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">Variedade de Formatos</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Variedade de Formatos</h2>
       </div>
       
       <div className="flex gap-6 overflow-x-auto no-scrollbar px-[var(--grid-padding)] md:px-[calc((100vw-var(--grid-width))/2+var(--grid-padding))]">
@@ -250,7 +250,7 @@ export function TestimonialCTA({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-20 items-center">
           <div className="lg:col-span-8">
             <MessageCircle size={32} className="text-background/20 mb-8" />
-            <blockquote className="text-2xl md:text-4xl font-bold uppercase tracking-tighter leading-[0.95] mb-12">
+ <blockquote className="text-2xl md:text-4xl font-bold tracking-tighter leading-[1.1] mb-12">
               "{testimonial}"
             </blockquote>
             <div className="flex items-center gap-5">
@@ -258,7 +258,7 @@ export function TestimonialCTA({
                   <img src={clientImage} alt={clientName} className="w-full h-full object-cover" />
                </div>
                <div>
-                  <span className="text-base md:text-lg font-bold uppercase block leading-none mb-1">{clientName}</span>
+ <span className="text-base md:text-lg font-bold block leading-none mb-1">{clientName}</span>
                   <span className="text-[10px] font-mono uppercase tracking-widest opacity-40">{clientRole}</span>
                </div>
             </div>
@@ -315,12 +315,12 @@ export function EditorialSocialCase({
       <section className="site-section py-24">
         <div className="site-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div className="md:sticky md:top-32">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95]">
+ <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1]">
               {designTitle}
             </h2>
           </div>
           <div className="pt-4 md:pt-24">
-            <p className="text-lg md:text-xl text-secondary uppercase font-medium leading-tight max-w-xl">
+ <p className="text-lg md:text-xl text-secondary font-medium leading-[1.1] max-w-xl">
               {designText}
             </p>
             {stats && (
@@ -340,13 +340,13 @@ export function EditorialSocialCase({
       <section className="site-section bg-foreground text-background py-24">
         <div className="site-container grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div className="order-2 md:order-1 pt-4 md:pt-24">
-            <p className="text-lg md:text-xl text-background/60 uppercase font-medium leading-tight max-w-xl whitespace-pre-line">
+ <p className="text-lg md:text-xl text-background/60 font-medium leading-[1.1] max-w-xl whitespace-pre-line">
               {copyText}
             </p>
           </div>
           <div className="order-1 md:order-2 md:sticky md:top-32 text-left">
             <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6 block">Copywriting</span>
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] text-background">
+ <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] text-background">
               {copyTitle}
             </h2>
           </div>

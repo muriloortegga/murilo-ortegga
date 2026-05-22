@@ -165,7 +165,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         <figcaption className="mt-6 flex justify-between items-start">
           <div>
             <span className="text-[10px] font-mono uppercase tracking-widest text-secondary mb-1 block">{project.category}</span>
-            <span className="font-bold text-lg leading-tight block uppercase tracking-tight">{project.name}</span>
+ <span className="font-bold text-lg leading-tight block tracking-tight">{project.name}</span>
           </div>
           <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
         </figcaption>
@@ -202,12 +202,12 @@ function HomePage() {
                   transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease-out'
                 }}
               >
-                <h1 className="anim-fade-in text-3xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-tighter uppercase">
+ <h1 className="anim-fade-in text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tighter ">
                   Trabalho para transformar <br />
                   marcas comuns em marcas <br />
                   com <span className="text-secondary font-medium italic">impacto real</span>
                 </h1>
-                <p className="mt-8 text-base md:text-xl text-secondary leading-relaxed max-w-[600px] anim-fade-in delay-250 uppercase font-medium">
+ <p className="mt-8 text-base md:text-xl text-secondary leading-relaxed max-w-[600px] anim-fade-in delay-250 font-medium">
                   Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um método infalível.
                 </p>
               </div>
@@ -241,7 +241,7 @@ function HomePage() {
       {/* Brand Marquee */}
       <section className="py-24 overflow-hidden border-t border-border/5">
         <div className="site-container mb-12">
-          <h3 className="text-xl md:text-2xl font-bold uppercase tracking-tighter scroll-reveal">Marcas que já trabalhei</h3>
+ <h3 className="text-xl md:text-2xl font-bold tracking-tighter scroll-reveal">Marcas que já trabalhei</h3>
         </div>
         
         <DraggableMarquee 
@@ -255,7 +255,7 @@ function HomePage() {
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-10">
-              <p className="scroll-reveal text-2xl md:text-3xl lg:text-4xl font-bold line-height-tight tracking-tighter uppercase leading-[0.95]">
+ <p className="scroll-reveal text-2xl md:text-3xl lg:text-4xl font-bold line-height-tight tracking-tighter leading-[1.1]">
                 O problema não é falta de ação. É falta de estrutura em Marketing. <br/><br/>
                 <span className="text-background/50">Atuo com empresas que cresceram pela qualidade do serviço, mas cuja marca não sustenta mais o nível que entregam.</span>
               </p>
@@ -268,7 +268,7 @@ function HomePage() {
       <section className="site-section border-t border-border relative z-10 bg-background">
         <div className="site-container">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl scroll-reveal">
+ <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl scroll-reveal">
               Processos e abordagens testadas e validadas, com mais de 8 anos de atuação
             </h2>
           </div>
@@ -299,7 +299,7 @@ function MethodsSection() {
           <button 
             key={i}
             onClick={() => setActiveIndex(i)}
-            className={`px-6 py-4 border border-foreground rounded-full font-bold uppercase tracking-tighter text-sm transition-all ${activeIndex === i ? 'bg-foreground text-background' : 'hover:bg-foreground/5'}`}
+ className={`px-6 py-4 border border-foreground rounded-full font-bold tracking-tighter text-sm transition-all ${activeIndex === i ? 'bg-foreground text-background' : 'hover:bg-foreground/5'}`}
           >
             {m.title}
           </button>
@@ -311,17 +311,17 @@ function MethodsSection() {
             key={i}
             className={`absolute inset-0 transition-all duration-500 ${activeIndex === i ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none translate-y-4'}`}
           >
-            <div className="bg-card border border-border p-8 rounded-2xl h-full flex flex-col justify-between">
+            <Link to={`/metodos/${m.slug}` as string} className="block bg-card hover:bg-card/80 transition-colors border border-border p-8 rounded-2xl h-full flex flex-col justify-between group">
               <div>
-                <h3 className="text-2xl font-bold uppercase tracking-tighter mb-4">{m.title}</h3>
-                <p className="text-secondary font-medium uppercase tracking-tight mb-8 leading-relaxed text-sm md:text-base">{m.preview}</p>
+                <h3 className="text-2xl font-bold tracking-tighter mb-4 group-hover:text-primary transition-colors">{m.title}</h3>
+                <p className="text-secondary font-medium tracking-tight mb-8 leading-relaxed text-sm md:text-base">{m.preview}</p>
               </div>
               <div>
-                <Link to={`/metodos/${m.slug}` as string} className="btn btn-hero-primary w-full md:w-auto">
+                <span className="btn btn-hero-primary w-full md:w-auto inline-block text-center">
                   Ver Mais
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

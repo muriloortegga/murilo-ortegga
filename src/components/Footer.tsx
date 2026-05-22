@@ -30,14 +30,21 @@ export function Footer() {
         <span className="text-[10px] font-mono uppercase tracking-tight text-secondary">
           © {new Date().getFullYear()} Murilo Ortega
         </span>
-        <div className="flex items-center gap-12">
-          {["LinkedIn", "Upwork", "Instagram"].map((social) => (
+        <div className="flex items-center gap-6 md:gap-12">
+          {[
+            { name: "LinkedIn", url: "https://linkedin.com/in/muriloortega" },
+            { name: "Instagram", url: "https://instagram.com/muriloortega" },
+            { name: "Behance", url: "https://behance.net/muriloortega" },
+            { name: "Upwork", url: "https://upwork.com" }
+          ].map((social) => (
             <a
-              key={social}
-              href="#"
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[10px] font-mono uppercase tracking-tight text-secondary hover:text-foreground transition-colors"
             >
-              {social}
+              {social.name}
             </a>
           ))}
         </div>

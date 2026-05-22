@@ -21,12 +21,12 @@ function SistemaConteudoPage() {
       <section className="site-section border-t-0 pt-0 pb-16 md:pb-24">
         <div className="site-container">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 leading-[0.95] uppercase tracking-tighter">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 md:mb-12 leading-[1.1] tracking-tighter">
               Comunicação de Marca:<br />
               conteúdo que constrói algo,<br />
               não só <span className="text-secondary font-medium italic">preenche</span> o feed.
             </h1>
-            <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10 md:mb-12 max-w-2xl">
+            <p className="text-base md:text-lg text-secondary font-medium leading-[1.1] mb-10 md:mb-12 max-w-2xl">
               Esqueça postagens isoladas. Desenvolvo um sistema de conteúdo que sustenta sua marca ao longo do tempo e converte audiência em clientes reais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -42,10 +42,10 @@ function SistemaConteudoPage() {
       </section>
 
       {/* Passo a Passo */}
-      <section className="site-section py-24 md:py-32 bg-off-white">
+      <section className="site-section py-16 md:py-24 bg-off-white">
         <div className="site-container">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.95]">7 etapas. Do diagnóstico à entrega, sem improvisação:</h2>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">7 etapas. Do diagnóstico à entrega, sem improvisação:</h2>
           </div>
           <div className="space-y-px bg-border border border-border rounded-2xl overflow-hidden">
             {[
@@ -58,11 +58,11 @@ function SistemaConteudoPage() {
               { title: "Agendamento & Garantia", desc: "Todo o conteúdo aprovado é agendado com antecedência. Sua marca publica com consistência, independente de prazo, demanda ou imprevisto.", icon: <Plus size={18} /> }
             ].map((step, i) => (
               <div key={i} className="bg-background p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between group hover:bg-foreground hover:text-background transition-all duration-500">
-                <div className="flex items-center gap-6 md:gap-10">
-                  <span className="text-[10px] font-mono opacity-20 uppercase tracking-widest">0{i+1}</span>
-                  <div className="space-y-1">
-                    <h4 className="text-lg md:text-xl font-bold uppercase tracking-tighter leading-none">{step.title}</h4>
-                    <p className="text-[10px] md:text-[11px] font-mono uppercase text-secondary group-hover:text-background/60 leading-relaxed">{step.desc}</p>
+                <div className="flex items-start md:items-center gap-6 md:gap-10">
+                  <span className="text-[10px] font-mono opacity-20 uppercase tracking-widest mt-1 md:mt-0">0{i+1}</span>
+                  <div className="space-y-2 max-w-3xl">
+                    <h4 className="text-lg md:text-xl font-bold tracking-tighter leading-[1.1]">{step.title}</h4>
+                    <p className="text-sm font-medium text-secondary group-hover:text-background/80 leading-[1.4]">{step.desc}</p>
                   </div>
                 </div>
                 <div className="hidden md:block opacity-0 group-hover:opacity-100 transition-opacity">
@@ -75,7 +75,7 @@ function SistemaConteudoPage() {
       </section>
 
       {/* Case Section */}
-      <section className="site-section py-24 md:py-32">
+      <section className="site-section py-16 md:py-24">
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-20 items-center">
             <div className="lg:col-span-6 order-2 lg:order-1">
@@ -84,8 +84,8 @@ function SistemaConteudoPage() {
                </div>
             </div>
             <div className="lg:col-span-6 order-1 lg:order-2">
-               <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-8">NaTrave: <br/> O Ecossistema do Futebol</h2>
-               <p className="text-base md:text-lg text-secondary uppercase font-medium leading-tight mb-10">
+               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-8">NaTrave: <br/> O Ecossistema do Futebol</h2>
+               <p className="text-base md:text-lg text-secondary font-medium leading-[1.1] mb-10">
                  A NaTrave precisava de uma comunicação que fizesse o futebol amador parecer tão sério quanto o profissional. Desenvolvi o sistema editorial completo, linha de conteúdo, design e copywriting, que transformou a presença digital da plataforma e acelerou o crescimento orgânico da comunidade.
                </p>
                <Link to="/natrave" className="btn btn-primary px-8 py-4 rounded-full">
@@ -97,9 +97,9 @@ function SistemaConteudoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32 bg-foreground text-background">
+      <section className="py-16 md:py-24 bg-foreground text-background">
         <div className="site-container text-center">
-          <h2 className="text-3xl md:text-6xl font-bold uppercase tracking-tighter leading-[0.95] mb-12">Chega de postar quando dá.<br /><span className="text-secondary font-medium italic">Vamos construir um sistema que funciona.</span></h2>
+          <h2 className="text-3xl md:text-6xl font-bold tracking-tighter leading-[1.1] mb-12">Chega de postar quando dá.<br /><span className="text-secondary font-medium italic">Vamos construir um sistema que funciona.</span></h2>
           <a href="https://calendly.com/contato-muriloortega1/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-background text-foreground px-12 py-6 text-lg hover:bg-background/90 rounded-full">
             Agendar diagnóstico <Plus size={20} className="ml-2" />
           </a>

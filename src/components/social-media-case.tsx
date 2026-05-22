@@ -112,7 +112,7 @@ export function CopyFeature({
 
       <div className="site-container relative z-10">
         <motion.h2 
-          className="text-white text-3xl md:text-5xl font-bold uppercase leading-[1.1] tracking-tighter mb-10 max-w-3xl"
+ className="text-white text-3xl md:text-5xl font-bold leading-[1.1] tracking-tighter mb-10 max-w-3xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -188,7 +188,7 @@ export function FeedTimeline({
       <div className="site-container">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">{title}</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">{title}</h2>
           </div>
           
           <div className="flex border-b border-border w-full md:w-auto">
@@ -373,7 +373,7 @@ export function VideoGallery({
     <section className="site-section bg-background overflow-hidden py-24">
       <div className="site-container">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">Conteúdo em Movimento</h2>
+ <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Conteúdo em Movimento</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[700px]">
@@ -414,7 +414,7 @@ export function ReelsShowcase({
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] mb-4"
+ className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] mb-4"
           >
             {headline}
           </motion.h2>
@@ -423,7 +423,7 @@ export function ReelsShowcase({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-sm md:text-base text-secondary uppercase font-medium leading-relaxed max-w-xl"
+ className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
           >
             {subheadline}
           </motion.p>

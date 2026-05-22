@@ -25,7 +25,7 @@ function BrandPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="site-container relative z-10 text-center">
           <span className="text-[10px] font-mono uppercase tracking-[0.3em] mb-8 block anim-fade-in">Brand Case</span>
-          <h1 className="text-[12vw] leading-[0.8] tracking-tighter uppercase anim-fade-in">
+ <h1 className="text-[12vw] leading-[1.1] tracking-tighter anim-fade-in">
             {brandName}
           </h1>
           <p className="mt-12 text-xl text-secondary max-w-2xl mx-auto anim-fade-in delay-250">
@@ -59,7 +59,7 @@ function BrandPage() {
       {/* Placeholder for content */}
       <section className="site-section bg-card">
         <div className="site-container text-center">
-          <h2 className="text-4xl font-bold uppercase mb-8">Mais detalhes em breve</h2>
+ <h2 className="text-4xl font-bold mb-8">Mais detalhes em breve</h2>
           <Link to="/trabalho" className="text-link">Voltar para Projetos</Link>
         </div>
       </section>

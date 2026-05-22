@@ -23,14 +23,14 @@ function ContatoPage() {
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-12 anim-fade-in">
-              <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12">Contato</h1>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
+ <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[1.1] mb-8 md:mb-12">Contato</h1>
+ <p className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
                 Vamos <span className="text-secondary font-medium italic">conversar.</span>
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 md:pt-16 border-t border-border mt-12 md:mt-16">
                 <div className="space-y-10 md:space-y-12">
-                  <p className="text-lg md:text-xl text-foreground font-medium uppercase tracking-tight leading-tight max-w-md">
+ <p className="text-lg md:text-xl text-foreground font-medium tracking-tight leading-[1.1] max-w-md">
                     Se você sente que sua marca está abaixo do nível do seu negócio, é aqui que começa.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -46,14 +46,19 @@ function ContatoPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12">
                   <div className="space-y-4">
                     <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary/40">E-mail</span>
-                    <p className="text-base md:text-lg font-bold uppercase tracking-tighter hover:text-secondary transition-colors cursor-pointer">contato@muriloortega.com</p>
+                    <a href="mailto:contato@muriloortega.com" className="text-base md:text-lg font-bold tracking-tighter hover:text-secondary transition-colors cursor-pointer block">contato@muriloortega.com</a>
                   </div>
                   <div className="space-y-4">
                     <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary/40">Social</span>
                     <div className="flex flex-col gap-3">
-                       {["LinkedIn", "Instagram", "Upwork"].map(social => (
-                         <a key={social} href="#" className="text-xs font-bold uppercase tracking-widest flex items-center gap-2 group hover:text-secondary transition-all">
-                           {social} <ArrowRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                       {[
+                         { name: "LinkedIn", url: "https://linkedin.com/in/muriloortega" },
+                         { name: "Instagram", url: "https://instagram.com/muriloortega" },
+                         { name: "Behance", url: "https://behance.net/muriloortega" },
+                         { name: "Upwork", url: "https://upwork.com" }
+                       ].map(social => (
+                         <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="text-xs font-bold tracking-widest flex items-center gap-2 group hover:text-secondary transition-all">
+                           {social.name} <ArrowRight size={14} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                          </a>
                        ))}
                     </div>

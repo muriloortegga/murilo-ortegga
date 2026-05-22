@@ -130,7 +130,7 @@ function ObjetivoProjeto() {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background relative overflow-hidden">
       <div className="site-container relative z-10">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             O Objetivo do Projeto
           </motion.h2>
         </div>
@@ -138,12 +138,12 @@ function ObjetivoProjeto() {
           {barriers.map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="bg-foreground p-8 md:p-10 border border-background/10 hover:bg-background/5 transition-colors duration-300">
               <div className="text-3xl font-bold tracking-tighter mb-4" style={{ color: '#1ec4b4' }}>{String(i + 1).padStart(2, "0")}</div>
-              <h3 className="text-xl font-bold uppercase tracking-tighter mb-3 text-background">{b.label}</h3>
-              <p className="text-xs text-background/50 uppercase leading-relaxed">{b.desc}</p>
+ <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
+ <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
             </motion.div>
           ))}
         </div>
-        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 uppercase font-medium max-w-3xl leading-tight">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
           Mais do que gerar volume de postagens, o foco estava em criar uma comunicação que representasse corretamente o tamanho, a capacidade técnica e o posicionamento da Evidive.
         </motion.p>
       </div>
@@ -161,10 +161,10 @@ function DirecaoCriativa() {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85]">Direção Criativa e Estratégica</motion.h2>
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Direção Criativa e Estratégica</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary uppercase font-medium leading-tight">A estratégia criativa foi baseada em um equilíbrio entre sofisticação visual e clareza técnica. O conteúdo precisava transmitir:</motion.p>
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">A estratégia criativa foi baseada em um equilíbrio entre sofisticação visual e clareza técnica. O conteúdo precisava transmitir:</motion.p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               {roles.map((r, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }} className="flex items-center gap-3 border border-border p-4 rounded-lg">
@@ -172,7 +172,7 @@ function DirecaoCriativa() {
                 </motion.div>
               ))}
             </div>
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4 }} className="text-lg text-secondary uppercase font-medium leading-tight mt-6">A copy também foi desenvolvida com foco em objetividade e autoridade, sem exageros comerciais ou promessas vazias.</motion.p>
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4 }} className="text-lg text-secondary font-medium leading-tight mt-6">A copy também foi desenvolvida com foco em objetividade e autoridade, sem exageros comerciais ou promessas vazias.</motion.p>
           </div>
         </div>
         <div className="overflow-x-auto pb-4 no-scrollbar">
@@ -203,7 +203,7 @@ function DesafiosProjeto() {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] max-w-3xl">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
             Os Desafios do Projeto
           </motion.h2>
         </div>
@@ -212,7 +212,7 @@ function DesafiosProjeto() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">O Que Evitamos</h3>
             <ul className="space-y-4">
               {left.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
+ <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
                   <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
@@ -223,7 +223,7 @@ function DesafiosProjeto() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">O Que Entrego</h3>
             <ul className="space-y-4">
               {right.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background text-xs uppercase font-medium leading-relaxed">
+ <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
                   <span className="mt-1 flex-shrink-0" style={{ color: '#1ec4b4' }}>+</span>{item}
                 </li>
               ))}
@@ -231,7 +231,7 @@ function DesafiosProjeto() {
           </motion.div>
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="mt-16 border-t border-background/10 pt-12 max-w-3xl">
-          <p className="text-lg md:text-xl font-bold uppercase tracking-tighter leading-tight text-background/80">
+ <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
             "Um dos principais desafios foi encontrar o equilíbrio ideal entre técnica e comunicação, transmitindo profissionalismo sem perder dinamismo visual."
           </p>
         </motion.blockquote>
@@ -255,7 +255,7 @@ function ResultadoPercebido() {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">Resultado Percebido</motion.h2>
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Resultado Percebido</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -263,12 +263,12 @@ function ResultadoPercebido() {
               <div className="mb-5 transition-colors" style={{ color: '#1ec4b4' }}>{m.icon}</div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary group-hover:text-background/50 mb-2 block">{m.label}</span>
               <div className="text-2xl md:text-3xl font-bold tracking-tighter leading-none mb-2">{m.value}</div>
-              <p className="text-[10px] text-secondary uppercase group-hover:text-background/50">{m.desc}</p>
+ <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
             </motion.div>
           ))}
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 pl-8 max-w-2xl border-l-4" style={{ borderColor: '#1ec4b4' }}>
-          <p className="text-xl md:text-2xl font-bold uppercase tracking-tighter leading-tight">"O projeto mostrou como design estratégico e copywriting podem transformar a forma como empresas técnicas são percebidas no digital."</p>
+ <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"O projeto mostrou como design estratégico e copywriting podem transformar a forma como empresas técnicas são percebidas no digital."</p>
         </motion.blockquote>
       </div>
     </section>
@@ -287,10 +287,10 @@ function InfluenciaHero() {
         <div className="absolute inset-0 bg-black/40" />
       </div>
       <div className="site-container relative z-10">
-        <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tighter leading-[0.85] mb-8 max-w-5xl">
+ <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-5xl">
           Como transformei creators em motor de crescimento para a Evidive
         </motion.h1>
-        <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-base md:text-lg text-background/60 uppercase font-medium leading-tight max-w-3xl mb-16">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-3xl mb-16">
           Uma estratégia de influência focada em descoberta, confiança e expansão de audiência que gerou crescimento exponencial de alcance, autoridade e presença digital.
         </motion.p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-background/10 border border-background/10 rounded-xl overflow-hidden">
@@ -320,13 +320,13 @@ function SobreCliente() {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="lg:col-span-5">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85]">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
             Um ecossistema muito além do mergulho
           </motion.h2>
         </div>
         <div className="lg:col-span-7 space-y-5">
           {["A Evidive não é apenas uma escola de mergulho. A marca construiu um ecossistema completo voltado para experiências premium, formação técnica e comunidade.", "O desafio estava em tornar o mergulho algo desejável, acessível e possível para pessoas que nunca haviam considerado viver essa experiência.", "A barreira não era apenas comercial. Era cultural e emocional."].map((p, i) => (
-            <motion.p key={i} initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }} className="text-lg text-secondary uppercase font-medium leading-tight">
+ <motion.p key={i} initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }} className="text-lg text-secondary font-medium leading-tight">
               {p}
             </motion.p>
           ))}
@@ -352,7 +352,7 @@ function OProblema() {
       </div>
       <div className="site-container relative z-10">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             O desafio era quebrar o imaginário
           </motion.h2>
         </div>
@@ -360,12 +360,12 @@ function OProblema() {
           {barriers.map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="bg-foreground p-8 md:p-10 border border-background/10 hover:bg-background/5 transition-colors duration-300">
               <div className="text-3xl font-bold tracking-tighter text-background/20 mb-4">{String(i + 1).padStart(2, "0")}</div>
-              <h3 className="text-xl font-bold uppercase tracking-tighter mb-3 text-background">{b.label}</h3>
-              <p className="text-xs text-background/50 uppercase leading-relaxed">{b.desc}</p>
+ <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
+ <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
             </motion.div>
           ))}
         </div>
-        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 uppercase font-medium max-w-3xl leading-tight">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
           O objetivo não era apenas vender cursos. Era transformar: desconhecimento → curiosidade → confiança → desejo real de experiência.
         </motion.p>
       </div>
@@ -383,10 +383,10 @@ function AEstrategia() {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85]">Creators como pontes de confiança</motion.h2>
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Creators como pontes de confiança</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary uppercase font-medium leading-tight">Em vez de publicidade tradicional, usamos experiências reais para gerar identificação imediata. O creator deixa de ser apenas mídia. Ele se torna:</motion.p>
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">Em vez de publicidade tradicional, usamos experiências reais para gerar identificação imediata. O creator deixa de ser apenas mídia. Ele se torna:</motion.p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               {roles.map((r, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }} className="flex items-center gap-3 border border-border p-4 rounded-lg">
@@ -422,7 +422,7 @@ function Metodologia() {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] max-w-3xl">Uma análise baseada em crescimento real</motion.h2>
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">Uma análise baseada em crescimento real</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-background/10 border border-background/10 rounded-xl overflow-hidden">
           {[
@@ -431,8 +431,8 @@ function Metodologia() {
           ].map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: i * 0.15 }} className="p-10 md:p-14">
               <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-4 block">{p.period}</span>
-              <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tighter mb-4 text-background">{p.tag}</h3>
-              <p className="text-background/60 uppercase text-xs leading-relaxed max-w-sm">{p.desc}</p>
+ <h3 className="text-2xl md:text-3xl font-bold tracking-tighter mb-4 text-background">{p.tag}</h3>
+ <p className="text-background/60 text-xs leading-relaxed max-w-sm">{p.desc}</p>
               {i === 1 && <div className="mt-8 inline-block px-4 py-2 border border-background/30 text-[9px] font-mono uppercase tracking-widest text-background/60 rounded-full">Variável ativa</div>}
             </motion.div>
           ))}
@@ -457,7 +457,7 @@ function Resultados() {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">Os resultados da estratégia</motion.h2>
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Os resultados da estratégia</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -465,12 +465,12 @@ function Resultados() {
               <div className="mb-5 group-hover:text-background/60 transition-colors">{m.icon}</div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary group-hover:text-background/50 mb-2 block">{m.label}</span>
               <div className="text-2xl md:text-3xl font-bold tracking-tighter leading-none mb-2">{m.value}</div>
-              <p className="text-[10px] text-secondary uppercase group-hover:text-background/50">{m.desc}</p>
+ <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
             </motion.div>
           ))}
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 border-l-2 border-foreground pl-8 max-w-2xl">
-          <p className="text-xl md:text-2xl font-bold uppercase tracking-tighter leading-tight">"Influência não foi acessória. Ela foi responsável pela descoberta."</p>
+ <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"Influência não foi acessória. Ela foi responsável pela descoberta."</p>
         </motion.blockquote>
       </div>
     </section>
@@ -491,10 +491,10 @@ function CasalDayOff() {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-start">
           <div className="lg:col-span-5">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] mb-8">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-8">
               Um único conteúdo gerou um pico de crescimento massivo
             </motion.h2>
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.15 }} className="text-background/60 uppercase text-xs leading-relaxed mb-8">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.15 }} className="text-background/60 text-xs leading-relaxed mb-8">
               Um conteúdo publicado pelo creator Casal Day Off se tornou a materialização da estratégia. Mesmo sem collab direto no perfil da marca, o conteúdo gerou impacto massivo.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.25 }} className="border border-background/20 p-8 rounded-xl">
@@ -512,11 +512,11 @@ function CasalDayOff() {
               ))}
             </div>
             <motion.div initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="border-l-2 border-background/30 pl-8">
-              <p className="text-base md:text-lg text-background/70 uppercase font-medium leading-tight mb-2">Insight</p>
-              <p className="text-xl md:text-2xl font-bold uppercase tracking-tighter text-background leading-tight">
+ <p className="text-base md:text-lg text-background/70 font-medium leading-tight mb-2">Insight</p>
+ <p className="text-xl md:text-2xl font-bold tracking-tighter text-background leading-tight">
                 Grande parte do valor da influência acontece fora do feed da marca.
               </p>
-              <p className="mt-4 text-xs md:text-sm text-background/50 uppercase leading-relaxed">
+ <p className="mt-4 text-xs md:text-sm text-background/50 leading-relaxed">
                 O creator funciona como um imã de descoberta que leva novas audiências para dentro do ecossistema proprietário da empresa.
               </p>
             </motion.div>
@@ -542,12 +542,12 @@ function InteligenciaEstrategica() {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-16">
           <div className="lg:col-span-6">
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tighter leading-[0.85]">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1]">
               Não era sobre posts. Era sobre engenharia de crescimento.
             </motion.h2>
           </div>
           <div className="lg:col-span-6 flex items-end">
-            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-secondary uppercase font-medium leading-tight">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
               Marketing de influência eficiente não opera como campanha pontual. Opera como ecossistema.
             </motion.p>
           </div>
@@ -557,8 +557,8 @@ function InteligenciaEstrategica() {
             <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.1 + i * 0.1 }} className="flex items-center gap-6 md:gap-8 border-b border-border last:border-b-0 p-6 md:p-8 group hover:bg-foreground hover:text-background transition-all duration-500">
               <span className="text-[9px] md:text-[10px] font-mono text-secondary group-hover:text-background/50 w-6 flex-shrink-0">{l.step}</span>
               <div className="w-px h-6 bg-border group-hover:bg-background/20 flex-shrink-0" />
-              <h4 className="text-lg md:text-xl font-bold uppercase tracking-tighter w-40 flex-shrink-0">{l.label}</h4>
-              <p className="text-xs text-secondary uppercase group-hover:text-background/60 hidden md:block">{l.desc}</p>
+ <h4 className="text-lg md:text-xl font-bold tracking-tighter w-40 flex-shrink-0">{l.label}</h4>
+ <p className="text-xs text-secondary group-hover:text-background/60 hidden md:block">{l.desc}</p>
               <ArrowRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           ))}
@@ -577,7 +577,7 @@ function Comparacao() {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] max-w-3xl">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
             O que muda quando creators entram em cena
           </motion.h2>
         </div>
@@ -586,7 +586,7 @@ function Comparacao() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">Publicidade Tradicional</h3>
             <ul className="space-y-4">
               {left.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background/70 text-xs uppercase leading-relaxed">
+ <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
                   <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
@@ -596,7 +596,7 @@ function Comparacao() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">Creator Experience</h3>
             <ul className="space-y-4">
               {right.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-background text-xs uppercase font-medium leading-relaxed">
+ <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
                   <span className="text-background/40 mt-1 flex-shrink-0">+</span>{item}
                 </li>
               ))}
@@ -604,7 +604,7 @@ function Comparacao() {
           </motion.div>
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="mt-16 border-t border-background/10 pt-12 max-w-3xl">
-          <p className="text-lg md:text-xl font-bold uppercase tracking-tighter leading-tight text-background/80">
+ <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
             "Pessoas confiam mais em pessoas vivendo experiências reais do que em marcas falando sobre si mesmas."
           </p>
         </motion.blockquote>
@@ -623,12 +623,12 @@ function Conclusao() {
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16">
             <div className="lg:col-span-5">
-              <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85]">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
                 Quanto mais pessoas contam a história, mais pessoas entram no ecossistema da marca
               </motion.h2>
             </div>
             <div className="lg:col-span-7 space-y-6 md:space-y-8">
-              <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg md:text-xl text-secondary uppercase font-medium leading-tight">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
                 O case da Evidive mostrou que influência não é apenas alcance. É:
               </motion.p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -639,7 +639,7 @@ function Conclusao() {
                   </motion.div>
                 ))}
               </div>
-              <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="text-base md:text-lg text-secondary uppercase font-medium leading-tight pt-4 border-t border-border">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="text-base md:text-lg text-secondary font-medium leading-tight pt-4 border-t border-border">
                 Quando creators certos entram em ação, a marca deixa de depender apenas de anúncios e começa a construir autoridade contínua.
               </motion.p>
             </div>
@@ -650,10 +650,10 @@ function Conclusao() {
       {/* CTA Final */}
       <section className="site-section py-24 md:py-32 bg-foreground text-background border-none">
         <div className="site-container text-center">
-          <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-3xl md:text-5xl lg:text-7xl font-bold uppercase tracking-tighter leading-[0.85] mb-8 max-w-4xl mx-auto">
+ <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-4xl mx-auto">
             Sua marca também pode transformar influência em crescimento real.
           </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-background/60 uppercase font-medium leading-tight max-w-2xl mx-auto mb-12">
+ <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-2xl mx-auto mb-12">
             Estruturamos operações de influência focadas em descoberta, autoridade, comunidade e performance.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.35 }}>

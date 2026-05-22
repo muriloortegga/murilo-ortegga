@@ -74,8 +74,8 @@ function MetodosPage() {
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-12 anim-fade-in">
-              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold uppercase tracking-tighter leading-[0.9] mb-8 md:mb-12">Métodos</h1>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter leading-[0.95] max-w-4xl">
+ <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter leading-[1.1] mb-8 md:mb-12">Métodos</h1>
+ <p className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
                 O problema não é falta de ação. <br />
                 <span className="text-secondary font-medium italic">É falta de estrutura em Marketing.</span>
               </p>
@@ -95,7 +95,7 @@ function MetodosPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 pt-12 pb-12 md:pt-16 md:pb-16 group-hover:bg-off-white/50 transition-colors duration-500 rounded-xl px-4 md:px-8 -mx-4 md:-mx-8">
               <div className="lg:col-span-4">
                 <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary">{p.num}</span>
-                <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-tighter mt-4 flex items-center gap-4">
+ <h2 className="text-2xl md:text-4xl font-bold tracking-tighter mt-4 flex items-center gap-4">
                   {p.name}
                   <Plus size={20} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                 </h2>
@@ -103,7 +103,7 @@ function MetodosPage() {
               <div className="lg:col-span-8 space-y-10 md:space-y-12">
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-widest text-secondary/60">O que resolve</span>
-                  <p className="text-lg md:text-xl text-foreground font-medium mt-4 max-w-[600px] leading-tight uppercase tracking-tight">{p.resolve}</p>
+ <p className="text-lg md:text-xl text-foreground font-medium mt-4 max-w-[600px] leading-[1.1] tracking-tight">{p.resolve}</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-10 md:pt-12 border-t border-border/50">
                   <div>
@@ -113,7 +113,7 @@ function MetodosPage() {
                   <div className="flex justify-between items-end">
                     <div>
                       <span className="text-[10px] font-mono uppercase tracking-widest text-secondary/60">Entrega</span>
-                      <p className="text-sm text-foreground font-bold mt-4 uppercase tracking-tighter">{p.recebe}</p>
+ <p className="text-sm text-foreground font-bold mt-4 tracking-tighter">{p.recebe}</p>
                     </div>
                     <div className="hidden md:block">
                        <ArrowRight size={20} className="opacity-20 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500" />

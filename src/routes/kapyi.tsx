@@ -111,10 +111,10 @@ function AbordagemEstrategica({ accentColor }: { accentColor: string }) {
       <div className="site-container">
         <div className="mb-16">
           <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/50 mb-4 block">A Visão Kapyi</span>
-          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-[0.85] max-w-4xl">
+ <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             A Diferença na Execução
           </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="mt-6 text-lg text-background/60 uppercase font-medium leading-tight max-w-3xl">
+ <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="mt-6 text-lg text-background/60 font-medium leading-[1.1] max-w-3xl">
             O resultado de mais de dois anos de liderança criativa foi a construção de projetos robustos, onde clareza visual e impacto se equilibravam com sofisticação.
           </motion.p>
         </div>
@@ -123,8 +123,8 @@ function AbordagemEstrategica({ accentColor }: { accentColor: string }) {
           {pilares.map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="p-10 md:p-14 bg-foreground relative hover:bg-background/5 transition-colors">
               <div className="absolute top-0 left-0 w-full h-1" style={{ backgroundColor: accentColor }} />
-              <div className="text-xl font-bold uppercase tracking-tighter mb-4 text-background">{p.label}</div>
-              <p className="text-xs text-background/60 uppercase leading-relaxed font-medium">{p.desc}</p>
+ <div className="text-xl font-bold tracking-tighter mb-4 text-background">{p.label}</div>
+ <p className="text-xs text-background/60 leading-relaxed font-medium">{p.desc}</p>
             </motion.div>
           ))}
         </div>
