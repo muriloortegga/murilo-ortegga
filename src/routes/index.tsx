@@ -36,6 +36,24 @@ const projects = [
     image: "/assets/projects/thumbnails/kmillion.jpg",
     to: "/kmillion",
   },
+  {
+    name: "Symplice - Facilitando o Complexo",
+    category: "Id Visual · 2024",
+    image: "/assets/projects/thumbnails/symplice.jpg",
+    to: "/symplice",
+  },
+  {
+    name: "Evidive - Social Media & Creators",
+    category: "Social Media · 2024",
+    image: "/assets/projects/thumbnails/social/evidive.jpg",
+    to: "/evidive",
+  },
+  {
+    name: "Talk2Buy - Conversão Conversacional",
+    category: "Social Media · 2024",
+    image: "/assets/projects/thumbnails/social/talk2buy.jpg",
+    to: "/talk2buy",
+  },
 ];
 
 const services = [
@@ -159,7 +177,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
             src={isVisible && project.gif ? project.gif : project.image} 
             alt={project.name} 
             isVisible={isVisible}
-            className="grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+            className="transition-all duration-700 group-hover:scale-105"
           />
         </div>
         <figcaption className="mt-6 flex justify-between items-start">
@@ -246,7 +264,7 @@ function HomePage() {
         
         <DraggableMarquee 
           items={dynamicLogos.length > 0 ? dynamicLogos : brands.map(b => ({ name: b.name, url: "" }))} 
-          baseVelocity={-1.5}
+          baseVelocity={-3.0}
         />
       </section>
 

@@ -17,7 +17,7 @@ interface DraggableMarqueeProps {
   baseVelocity?: number;
 }
 
-export function DraggableMarquee({ items, baseVelocity = -1.8 }: DraggableMarqueeProps) {
+export function DraggableMarquee({ items, baseVelocity = -3.0 }: DraggableMarqueeProps) {
   const baseX = useMotionValue(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -63,7 +63,7 @@ export function DraggableMarquee({ items, baseVelocity = -1.8 }: DraggableMarque
             <img
               src={logo.url}
               alt={logo.name}
-              className={`w-auto object-contain transition-all duration-500 grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 ${
+              className={`w-auto object-contain transition-all duration-500 opacity-40 group-hover:opacity-100 ${
                 logo.name.toLowerCase() === "symplice"
                   ? "h-[50px] md:h-[80px]"
                   : "h-[140px] md:h-[220px]"
