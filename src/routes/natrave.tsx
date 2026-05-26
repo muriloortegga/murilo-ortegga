@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { 
   PerformanceHero, 
   CopyFeature, 
@@ -11,7 +12,7 @@ import {
 } from "@/components/social-case-layout";
 import { BrandHeader } from "@/components/brand-header";
 import { ServiceSelector } from "@/components/service-selector";
-import { Maximize2, X, ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { WebsiteShowcase } from "@/components/website-scroll-showcase";
 
 import { z } from "zod";
@@ -34,16 +35,6 @@ export const Route = createFileRoute("/natrave")({
 function ProjetoNaTrave() {
   const { service } = Route.useSearch();
   const [activeService, setActiveService] = useState(service || "marca");
-  const [isFullScreen, setIsFullScreen] = useState(false);
-
-  useEffect(() => {
-    if (isFullScreen) {
-      document.body.classList.add("has-fullscreen");
-    } else {
-      document.body.classList.remove("has-fullscreen");
-    }
-    return () => document.body.classList.remove("has-fullscreen");
-  }, [isFullScreen]);
 
   const services = [
     { id: "marca", label: "Id Visual" },
@@ -134,18 +125,168 @@ function ProjetoNaTrave() {
       )}
 
       {activeService === "marca" && (
-        <div className="anim-fade-in site-container pb-32">
-           <div className="relative w-full h-[600px] md:h-[700px] overflow-hidden border border-border group cursor-ns-resize rounded-2xl" onClick={() => setIsFullScreen(true)}>
-             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors z-10 flex items-center justify-center pointer-events-none">
-                <div className="bg-background/80 backdrop-blur px-6 py-3 border border-border rounded-full opacity-0 group-hover:opacity-100 transition-all">
-                   <Maximize2 size={16} className="inline-block" />
-                   <span className="ml-2 text-[10px] font-mono uppercase tracking-widest">Ver Case Completo</span>
-                </div>
-             </div>
-             <div className="w-full h-full overflow-y-auto no-scrollbar scroll-smooth">
-                <img src="/natrave-marca.png" alt="NaTrave Branding Showcase" className="w-full h-auto" />
-             </div>
-           </div>
+        <div className="anim-fade-in pb-32">
+          {/* Hero Logo Area */}
+          <div className="site-container py-12 md:py-20 text-center border-t border-border/10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="max-w-[280px] md:max-w-[320px] mx-auto"
+            >
+              <img 
+                src="/assets/projects/natrave/logo.svg" 
+                alt="NaTrave Logo" 
+                className="w-full h-auto object-contain"
+              />
+            </motion.div>
+          </div>
+
+          {/* Bloco 1 - Centralizado */}
+          <section className="py-12 md:py-16 bg-off-white border-y border-border/10">
+            <div className="site-container text-center max-w-4xl mx-auto">
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.7 }}
+                className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1] mb-8"
+              >
+                O futebol amador elevado <br />
+                <span className="font-extrabold text-foreground">ao nível de elite.</span>
+              </motion.h2>
+              
+              <motion.p 
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.7, delay: 0.1 }}
+                className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-2xl mx-auto mb-12 md:mb-16"
+              >
+                Uma identidade desenvolvida para dar visibilidade e profissionalismo aos campeonatos de várzea, conectando paixão, tecnologia e comunidade em uma única experiência visual.
+              </motion.p>
+            </div>
+            <div className="site-container">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img 
+                  src="/assets/projects/natrave/1.png" 
+                  alt="NaTrave Experiência Visual" 
+                  className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Bloco 2 - Alinhado à Esquerda */}
+          <section className="py-12 md:py-16 bg-background">
+            <div className="site-container">
+              <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
+                <motion.h2 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7 }}
+                  className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1]"
+                >
+                  Design focado em <br />
+                  energia e performance.
+                </motion.h2>
+                
+                <motion.p 
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
+                >
+                  A combinação do laranja vibrante com pretos e cinzas profundos cria um contraste dinâmico que evoca a emoção das quadras e campos, mantendo o rigor técnico de uma plataforma digital moderna.
+                </motion.p>
+              </div>
+            </div>
+            <div className="site-container">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img 
+                  src="/assets/projects/natrave/2.png" 
+                  alt="NaTrave Cores e Performance" 
+                  className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Bloco 3 - Alinhado à Esquerda */}
+          <section className="py-12 md:py-16 bg-off-white border-y border-border/10">
+            <div className="site-container">
+              <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
+                <motion.h2 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7 }}
+                  className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1]"
+                >
+                  Uma linguagem conectada <br />
+                  à comunidade de base.
+                </motion.h2>
+                
+                <motion.p 
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
+                >
+                  Do desenho do ícone à escolha tipográfica, cada detalhe foi planejado para refletir a autenticidade e a garra do esporte de base, construindo identificação imediata com os atletas.
+                </motion.p>
+              </div>
+            </div>
+            <div className="site-container">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img 
+                  src="/assets/projects/natrave/3.png" 
+                  alt="NaTrave Identidade" 
+                  className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Bloco 4 - Alinhado à Esquerda */}
+          <section className="py-12 md:py-16 bg-background">
+            <div className="site-container">
+              <div className="max-w-3xl text-left mb-12 md:mb-16 space-y-6">
+                <motion.h2 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7 }}
+                  className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-[1.1]"
+                >
+                  Flexibilidade para <br />
+                  um ecossistema completo.
+                </motion.h2>
+                
+                <motion.p 
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.7, delay: 0.1 }}
+                  className="text-sm md:text-base text-secondary font-medium leading-relaxed max-w-xl"
+                >
+                  A identidade se desdobra de forma consistente e adaptável entre o aplicativo móvel, materiais de comunicação impressos e ativos digitais para redes sociais.
+                </motion.p>
+              </div>
+            </div>
+            <div className="site-container">
+              <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+                <img 
+                  src="/assets/projects/natrave/4.png" 
+                  alt="NaTrave Ecossistema" 
+                  className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+                />
+              </div>
+            </div>
+          </section>
         </div>
       )}
 
@@ -158,28 +299,6 @@ function ProjetoNaTrave() {
             roleTitle="Identidade & Conversão"
             roleDescription="A identidade visual do projeto web seguiu rigorosamente as diretrizes do brandbook estabelecido, garantindo que a transição do aplicativo para a experiência desktop fosse totalmente coesa, intuitiva e voltada para alta performance."
           />
-        </div>
-      )}
-
-      {/* Full Screen Overlay */}
-      {isFullScreen && (
-        <div className="fixed inset-0 z-[100] bg-background overflow-y-auto no-scrollbar anim-fade-in">
-          <div className="sticky top-0 right-0 left-0 h-24 flex items-center justify-between site-container z-[101] bg-background/50 backdrop-blur-sm border-b border-border/10 pointer-events-auto">
-            <span className="text-xs font-mono uppercase tracking-widest">NaTrave App Case - Branding</span>
-            <button 
-              onClick={() => setIsFullScreen(false)}
-              className="p-4 bg-foreground text-background transition-transform hover:scale-110"
-            >
-              <X size={24} />
-            </button>
-          </div>
-          <div>
-            <img 
-              src="/natrave-marca.png" 
-              alt="NaTrave Full Presentation" 
-              className="w-full h-auto shadow-2xl"
-            />
-          </div>
         </div>
       )}
 
