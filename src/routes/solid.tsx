@@ -204,7 +204,7 @@ function ProjetoSolid() {
 
       {/* Bloco 5 - Centralizado (Finalização) */}
       <section className="py-12 md:py-20 bg-off-white border-t border-border/10">
-        <div className="site-container text-center max-w-4xl mx-auto">
+        <div className="site-container text-center max-w-4xl mx-auto mb-12 md:mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -225,6 +225,15 @@ function ProjetoSolid() {
           >
             O universo visual da Solid+ adota o conceito de "luz entrando pela janela" como metáfora para a clareza que chega à tecnologia. Uma identidade projetada para transmitir confiança e autoridade de mercado sem perder a proximidade e o otimismo humano.
           </motion.p>
+        </div>
+        <div className="site-container">
+          <div className="overflow-hidden rounded-2xl border border-border/10 shadow-md">
+            <img 
+              src="/assets/projects/solid/5.png" 
+              alt="Solid+ Universo Visual" 
+              className="w-full h-auto block hover:scale-[1.01] transition-transform duration-700 ease-out-expo"
+            />
+          </div>
         </div>
       </section>
 
