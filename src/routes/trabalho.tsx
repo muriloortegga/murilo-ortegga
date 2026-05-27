@@ -226,7 +226,7 @@ function PortfolioPage() {
                               alt={project.name}
                               playGifOnHover={activeCategory === "Websites" || activeCategory === "Marketing de Influência"}
                               className={cn(
-                                "w-full h-full transition-all duration-700 md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-105",
+                                "w-full h-full transition-all duration-700 md:group-hover:scale-105",
                                 activeCategory === "Websites" ? "" : "object-cover",
                                 // On mobile, we use motion variants to control grayscale
                               )}
@@ -237,14 +237,6 @@ function PortfolioPage() {
                                 animate: { opacity: 0 }
                               }}
                               className="absolute inset-0 bg-background/20 md:hidden pointer-events-none"
-                            />
-                            {/* Color overlay logic for mobile */}
-                            <motion.div
-                              variants={{
-                                initial: { filter: "grayscale(1)" },
-                                animate: { filter: "grayscale(0)" }
-                              }}
-                              className="absolute inset-0 md:hidden pointer-events-none"
                             />
                           </figure>
                           <div className="mt-5 flex justify-between items-end">

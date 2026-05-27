@@ -92,7 +92,7 @@ function MidiaImpressaPage() {
                    <img 
                      src="/assets/projects/marco-boni/print/1.jpg" 
                      alt="Marco Boni Catalog" 
-                     className="w-full grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" 
+                     className="w-full transition-all duration-700 group-hover:scale-105" 
                    />
                 </Link>
              </div>

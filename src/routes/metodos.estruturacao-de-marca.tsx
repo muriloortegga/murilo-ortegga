@@ -102,8 +102,8 @@ function EstruturacaoMarcaPage() {
                </Link>
             </div>
             <div className="lg:col-span-6">
-              <div className="shadow-2xl overflow-hidden rounded-2xl border border-border/5">
-                <img src="/solid-full.png" alt="Solid+ Brandbook" className="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+              <div className="w-full max-w-[400px] mb-8 shadow-xl overflow-hidden rounded-2xl border border-border/5">
+                <img src="/solid-full.png" alt="Solid+ Brandbook" className="w-full transition-all duration-700 hover:scale-105" />
               </div>
             </div>
           </div>

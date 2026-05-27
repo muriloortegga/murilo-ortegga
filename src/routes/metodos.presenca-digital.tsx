@@ -154,7 +154,7 @@ function PresencaDigitalPage() {
                { 
                  name: "EviDive", 
                  tag: "Branding & Web", 
-                 desc: "EviDive — Branding e site institucional para empresa de mergulho com operações internacionais.", 
+                 desc: "EviDive — Branding, site institucional e ecossistema digital para o maior centro de mergulho da América Latina.", 
                  to: "/evidive",
                  img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80"
                },
@@ -168,7 +168,7 @@ function PresencaDigitalPage() {
              ].map((c, i) => (
                <Link key={i} to={c.to} className="group flex flex-col space-y-6">
                   <div className="relative overflow-hidden aspect-[16/10] rounded-2xl border border-border/5 bg-secondary/10 shadow-lg">
-                    <img src={c.img} alt={c.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                    <img src={c.img} alt={c.name} className="w-full h-full object-cover transition-all duration-700 hover:scale-105" />
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">

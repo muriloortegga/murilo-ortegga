@@ -98,7 +98,7 @@ function MarketingInfluenciaPage() {
             <div className="lg:col-span-5">
               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-12">De marca nichada a referência aspiracional.</h2>
               <div className="w-full max-w-[400px] mb-8 shadow-xl overflow-hidden rounded-2xl border border-border/5">
-                <img src="/hero-brandding.jpg" alt="Case EviDive" className="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                <img src="/hero-brandding.jpg" alt="Case EviDive" className="w-full transition-all duration-700 hover:scale-105" />
               </div>
               <div className="flex justify-between items-end px-2 font-mono uppercase opacity-30 text-[9px] tracking-widest">
                 <span>CASE EVIDIVE</span>
@@ -109,7 +109,7 @@ function MarketingInfluenciaPage() {
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-widest text-secondary mb-4 block">Contexto</span>
                 <p className="text-lg md:text-xl text-foreground font-medium leading-[1.4]">
-                  A EviDive queria crescer no nicho de mergulho, mas tinha um problema maior do que visibilidade: precisava ser percebida como experiência premium — não como mais um operador de mergulho.
+                  O maior centro de mergulho da América Latina e o primeiro Concept Dive Center da região precisava traduzir toda a sua estrutura premium física para o ambiente digital, indo além de um simples operador de mergulho para se consolidar como um estilo de vida desejável.
                 </p>
               </div>
               <div>
@@ -122,15 +122,15 @@ function MarketingInfluenciaPage() {
                 <span className="text-[10px] font-mono uppercase tracking-widest text-secondary mb-6 block">Resultados</span>
                 <div className="space-y-6">
                    <p className="text-lg font-medium leading-[1.4] text-foreground">
-                     <strong className="font-bold">Posicionamento</strong> como referência premium no nicho.
+                     <strong className="font-bold">Posicionamento</strong> como referência de luxo e estilo de vida no mergulho.
                    </p>
                    <div className="h-[1px] bg-border w-full" />
                    <p className="text-lg font-medium leading-[1.4] text-foreground">
-                     <strong className="font-bold">Crescimento orgânico</strong> de público qualificado.
+                     <strong className="font-bold">Ecossistema Conectado</strong> integrando creators, cursos internacionais e comunidade.
                    </p>
                    <div className="h-[1px] bg-border w-full" />
                    <p className="text-lg font-medium leading-[1.4] text-foreground">
-                     <strong className="font-bold">Demanda inbound</strong> de novos clientes atraídos pela percepção de exclusividade construída pelas campanhas.
+                     <strong className="font-bold">Demanda inbound</strong> qualificada e atração orgânica constante.
                    </p>
                 </div>
               </div>

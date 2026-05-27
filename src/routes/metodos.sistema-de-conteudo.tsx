@@ -80,7 +80,7 @@ function SistemaConteudoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-20 items-center">
             <div className="lg:col-span-6 order-2 lg:order-1">
                <div className="shadow-2xl overflow-hidden rounded-2xl border border-border/5">
-                 <img src="/assets/projects/thumbnails/natrave.jpg" alt="NaTrave Content System" className="w-full grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+                 <img src="/assets/projects/thumbnails/natrave.jpg" alt="NaTrave Content System" className="w-full transition-all duration-700 hover:scale-105" />
                </div>
             </div>
             <div className="lg:col-span-6 order-1 lg:order-2">

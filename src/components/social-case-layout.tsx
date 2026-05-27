@@ -307,7 +307,7 @@ export function EditorialSocialCase({
           <ProjectMedia 
             src={mainImg}
             alt={designTitle}
-            className="grayscale hover:grayscale-0 transition-all duration-1000"
+            className="transition-all duration-1000"
           />
         </motion.div>
       </section>

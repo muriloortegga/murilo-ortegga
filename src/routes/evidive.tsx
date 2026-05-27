@@ -34,17 +34,17 @@ function ProjetoEviDive() {
   const metaData = [
     { label: "Cliente", value: "EviDive" },
     { label: "Ano", value: "2024" },
-    { label: "Nicho", value: "Engenharia & Tech" },
-    { label: "Skills", value: "Social Media, Estratégia" }
+    { label: "Nicho", value: "Mergulho & Experiências" },
+    { label: "Skills", value: "Social Media, Influência" }
   ];
 
   return (
     <div className="bg-background">
       <BrandHeader
         client="EviDive"
-        phrase="Inteligência & Precisão"
-        description="A Evidive é uma marca do mercado de engenharia e soluções técnicas. O diferencial está em unir conhecimento especializado com uma apresentação moderna e estratégica."
-        niche="Engenharia & Soluções"
+        phrase="Concept Dive Center"
+        description="A EviDive é o maior centro de mergulho da América Latina. Um Concept Dive Center completo que une infraestrutura de ponta, formação internacional de mergulhadores e um ecossistema voltado a experiências memoráveis sob a água."
+        niche="Mergulho & Experiências"
         meta={metaData}
         accentColor="#1ec4b4"
       />
@@ -59,13 +59,13 @@ function ProjetoEviDive() {
         <div className="anim-fade-in bg-background">
           <EditorialSocialCase
             mainImg="/assets/projects/evidive/thumbs/casevi.png"
-            designTitle="Estética Premium & Autoridade"
-            designText="Transformo temas complexos em conteúdos acessíveis, organizados e visualmente impactantes. O design foge da estética engessada comum no setor para uma visão contemporânea."
-            copyTitle="Comunicação Estratégica"
-            copyText="O desafio era transformar um nicho naturalmente técnico em uma presença online forte. O objetivo não era apenas postar, mas conversar com tomadores de decisão."
+            designTitle="Estética Premium & Experiência Subaquática"
+            designText="Transformamos o universo do mergulho em conteúdos desejáveis, organizados e visualmente impactantes. O design foge da estética tradicional para uma visão premium e aspiracional."
+            copyTitle="Comunicação de Alto Padrão"
+            copyText="O desafio era traduzir a experiência única de um Concept Dive Center em uma presença digital forte. O objetivo era educar o público sobre o mergulho, quebrar objeções e despertar o desejo de explorar o oceano."
             stats={[
-              { label: "Percepção", value: "Premium" },
-              { label: "Foco", value: "Excelência" }
+              { label: "Ecossistema", value: "Completo" },
+              { label: "Posicionamento", value: "Premium" }
             ]}
           />
 
@@ -121,16 +121,16 @@ function ObjetivoProjeto() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const barriers = [
-    { label: "Autoridade", desc: "Construir autoridade digital sólida no segmento." },
-    { label: "Percepção", desc: "Elevar a percepção de valor da marca." },
-    { label: "Tradução", desc: "Transformar conteúdos técnicos em materiais atrativos." },
-    { label: "Consistência", desc: "Criar uma identidade visual consistente e moderna." },
+    { label: "Autoridade", desc: "Consolidar a EviDive como a principal referência e autoridade em mergulho no país." },
+    { label: "Percepção", desc: "Refletir a infraestrutura premium do maior centro de mergulho da América Latina no ambiente digital." },
+    { label: "Desejo", desc: "Desmistificar o mergulho e transformá-lo em uma aspiração acessível e segura." },
+    { label: "Consistência", desc: "Criar uma identidade visual e de conteúdo que acompanhe o padrão de excelência da marca." },
   ];
   return (
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background relative overflow-hidden">
       <div className="site-container relative z-10">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             O Objetivo do Projeto
           </motion.h2>
         </div>
@@ -138,13 +138,13 @@ function ObjetivoProjeto() {
           {barriers.map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="bg-foreground p-8 md:p-10 border border-background/10 hover:bg-background/5 transition-colors duration-300">
               <div className="text-3xl font-bold tracking-tighter mb-4" style={{ color: '#1ec4b4' }}>{String(i + 1).padStart(2, "0")}</div>
- <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
- <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
+              <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
+              <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
             </motion.div>
           ))}
         </div>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
-          Mais do que gerar volume de postagens, o foco estava em criar uma comunicação que representasse corretamente o tamanho, a capacidade técnica e o posicionamento da Evidive.
+        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
+          Mais do que gerar volume de postagens, o foco estava em criar uma comunicação que representasse a grandiosidade, a segurança e a experiência de alto padrão que definem a EviDive.
         </motion.p>
       </div>
     </section>
@@ -154,17 +154,17 @@ function ObjetivoProjeto() {
 function DirecaoCriativa() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const steps = ["Grid Organizado", "Hierarquia", "Tipografia", "Contraste", "Minimalismo"];
-  const roles = ["inovação", "confiabilidade", "precisão", "excelência"];
+  const steps = ["Imagens Vivas", "Legendas Fluidas", "Design Limpo", "Desejo Visual", "Conexão Real"];
+  const roles = ["experiência", "segurança", "descoberta", "comunidade"];
   return (
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Direção Criativa e Estratégica</motion.h2>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Direção Criativa e Estratégica</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">A estratégia criativa foi baseada em um equilíbrio entre sofisticação visual e clareza técnica. O conteúdo precisava transmitir:</motion.p>
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">A estratégia criativa foi baseada em um equilíbrio entre o estilo de vida do mergulho e a excelência técnica da marca. O conteúdo precisava transmitir:</motion.p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               {roles.map((r, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }} className="flex items-center gap-3 border border-border p-4 rounded-lg">
@@ -172,7 +172,7 @@ function DirecaoCriativa() {
                 </motion.div>
               ))}
             </div>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4 }} className="text-lg text-secondary font-medium leading-tight mt-6">A copy também foi desenvolvida com foco em objetividade e autoridade, sem exageros comerciais ou promessas vazias.</motion.p>
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.4 }} className="text-lg text-secondary font-medium leading-tight mt-6">A copy também foi desenvolvida com foco em conexão emocional e autoridade, eliminando o tom puramente técnico e convidando o público a mergulhar.</motion.p>
           </div>
         </div>
         <div className="overflow-x-auto pb-4 no-scrollbar">
@@ -197,13 +197,13 @@ function DirecaoCriativa() {
 function DesafiosProjeto() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const left = ["Comunicação fria e complexa", "Linguagem excessivamente publicitária", "Estética visual ultrapassada", "Desconexão com a realidade operacional"];
-  const right = ["Acessibilidade de conteúdos técnicos", "Organização estratégica", "Estética premium e contemporânea", "Alinhamento entre branding e engenharia"];
+  const left = ["Comunicação técnica e fria", "Estética visual de banco de imagens genérico", "Percepção de atividade perigosa ou inacessível", "Falta de foco na experiência e estilo de vida"];
+  const right = ["Narrativa baseada na emoção de mergulhar", "Design sofisticado e fotos reais autorais", "Desmistificação com foco em segurança e facilidade", "Posicionamento como o maior ecossistema de mergulho"];
   return (
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
             Os Desafios do Projeto
           </motion.h2>
         </div>
@@ -212,7 +212,7 @@ function DesafiosProjeto() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">O Que Evitamos</h3>
             <ul className="space-y-4">
               {left.map((item, i) => (
- <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
                   <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
@@ -223,7 +223,7 @@ function DesafiosProjeto() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">O Que Entrego</h3>
             <ul className="space-y-4">
               {right.map((item, i) => (
- <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
                   <span className="mt-1 flex-shrink-0" style={{ color: '#1ec4b4' }}>+</span>{item}
                 </li>
               ))}
@@ -231,8 +231,8 @@ function DesafiosProjeto() {
           </motion.div>
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="mt-16 border-t border-background/10 pt-12 max-w-3xl">
- <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
-            "Um dos principais desafios foi encontrar o equilíbrio ideal entre técnica e comunicação, transmitindo profissionalismo sem perder dinamismo visual."
+          <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
+            "Um dos principais desafios foi traduzir a sensação indescritível de respirar embaixo d'água em design e palavras, conectando o maior centro da América Latina a novas audiências."
           </p>
         </motion.blockquote>
       </div>
@@ -244,18 +244,18 @@ function ResultadoPercebido() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const metrics = [
-    { icon: <Shield size={18} />, label: "Credibilidade", value: "Autoridade", desc: "Mais confiança no mercado" },
-    { icon: <Award size={18} />, label: "Estética", value: "Sofisticação", desc: "Design premium" },
-    { icon: <Eye size={18} />, label: "Comunicação", value: "Clareza", desc: "Conteúdo acessível" },
-    { icon: <Target size={18} />, label: "Postura", value: "Profissionalismo", desc: "Alinhamento com a operação" },
-    { icon: <TrendingUp size={18} />, label: "Market Share", value: "Valor Percebido", desc: "Diferenciação clara" },
-    { icon: <Zap size={18} />, label: "Identidade", value: "Consistência", desc: "Fuga do modelo genérico" },
+    { icon: <Shield size={18} />, label: "Credibilidade", value: "Autoridade", desc: "Posicionamento de líder" },
+    { icon: <Award size={18} />, label: "Estética", value: "Sofisticação", desc: "Visual aspiracional" },
+    { icon: <Eye size={18} />, label: "Comunicação", value: "Clareza", desc: "Desmistificação da prática" },
+    { icon: <Target size={18} />, label: "Postura", value: "Excelência", desc: "Alinhamento com a estrutura física" },
+    { icon: <TrendingUp size={18} />, label: "Valor Percebido", value: "Premium", desc: "Conexão com público de alto padrão" },
+    { icon: <Zap size={18} />, label: "Identidade", value: "Diferenciação", desc: "Identidade visual proprietária" },
   ];
   return (
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Resultado Percebido</motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Resultado Percebido</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -263,12 +263,12 @@ function ResultadoPercebido() {
               <div className="mb-5 transition-colors" style={{ color: '#1ec4b4' }}>{m.icon}</div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary group-hover:text-background/50 mb-2 block">{m.label}</span>
               <div className="text-2xl md:text-3xl font-bold tracking-tighter leading-none mb-2">{m.value}</div>
- <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
+              <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
             </motion.div>
           ))}
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 pl-8 max-w-2xl border-l-4" style={{ borderColor: '#1ec4b4' }}>
- <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"O projeto mostrou como design estratégico e copywriting podem transformar a forma como empresas técnicas são percebidas no digital."</p>
+          <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"O projeto demonstrou como design de alto padrão e storytelling direcionado consolidam uma marca premium e impulsionam seu ecossistema no digital."</p>
         </motion.blockquote>
       </div>
     </section>
@@ -283,15 +283,15 @@ function InfluenciaHero() {
   return (
     <section className="min-h-[80vh] flex flex-col justify-end pb-24 pt-32 site-section border-none bg-foreground text-background overflow-hidden relative">
       <div className="absolute inset-0 z-0">
-        <img src="/assets/projects/evidive/backgrounds/hero.gif" alt="Background" className="w-full h-full object-cover opacity-20 grayscale" />
+        <img src="/assets/projects/evidive/backgrounds/hero.gif" alt="Background" className="w-full h-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       <div className="site-container relative z-10">
- <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-5xl">
-          Como transformei creators em motor de crescimento para a Evidive
+        <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-5xl">
+          Como transformamos creators no motor de crescimento do maior centro de mergulho da América Latina
         </motion.h1>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-3xl mb-16">
-          Uma estratégia de influência focada em descoberta, confiança e expansão de audiência que gerou crescimento exponencial de alcance, autoridade e presença digital.
+        <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-3xl mb-16">
+          Uma estratégia de influência focada na vivência da experiência real, gerando identificação imediata, quebra de objeções e crescimento contínuo de comunidade.
         </motion.p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-background/10 border border-background/10 rounded-xl overflow-hidden">
           {[
@@ -320,13 +320,17 @@ function SobreCliente() {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-center">
         <div className="lg:col-span-5">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
-            Um ecossistema muito além do mergulho
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
+            Um ecossistema completo sob e sobre a água
           </motion.h2>
         </div>
         <div className="lg:col-span-7 space-y-5">
-          {["A Evidive não é apenas uma escola de mergulho. A marca construiu um ecossistema completo voltado para experiências premium, formação técnica e comunidade.", "O desafio estava em tornar o mergulho algo desejável, acessível e possível para pessoas que nunca haviam considerado viver essa experiência.", "A barreira não era apenas comercial. Era cultural e emocional."].map((p, i) => (
- <motion.p key={i} initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }} className="text-lg text-secondary font-medium leading-tight">
+          {[
+            "A EviDive é o maior centro de mergulho da América Latina e o primeiro Concept Dive Center da região. A marca desenvolveu uma infraestrutura inigualável para unir ensino de excelência, turismo de aventura e comunidade.",
+            "O desafio de marketing estava em transformar a percepção do mergulho: de um esporte considerado complexo ou distante para um estilo de vida aspiracional, acessível e inesquecível.",
+            "A barreira de entrada da marca é essencialmente educacional e emocional — necessitando de pontes humanas para gerar confiança."
+          ].map((p, i) => (
+            <motion.p key={i} initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 + i * 0.1 }} className="text-lg text-secondary font-medium leading-tight">
               {p}
             </motion.p>
           ))}
@@ -340,19 +344,19 @@ function OProblema() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const barriers = [
-    { label: "Distante", desc: "Mergulho percebido como algo fora do alcance da maioria." },
-    { label: "Perigoso", desc: "Medo e desconhecimento gerando resistência emocional." },
-    { label: "Inacessível", desc: "Alto custo percebido como barreira de entrada." },
-    { label: "Complexo", desc: "Processo de aprendizado visto como intimidador." },
+    { label: "Complexo", desc: "Medo do desconhecido e receios sobre a segurança do esporte." },
+    { label: "Distante", desc: "Percepção de que o mergulho exige viagens longas ou preparo extremo." },
+    { label: "Inacessível", desc: "Falta de clareza sobre como começar e o real investimento necessário." },
+    { label: "Desconhecido", desc: "Desconhecimento sobre a existência de um Concept Center completo em São Paulo." },
   ];
   return (
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/assets/projects/evidive/backgrounds/problema.png" alt="Background" className="w-full h-full object-cover opacity-10 grayscale" />
+        <img src="/assets/projects/evidive/backgrounds/problema.png" alt="Background" className="w-full h-full object-cover opacity-10" />
       </div>
       <div className="site-container relative z-10">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
             O desafio era quebrar o imaginário
           </motion.h2>
         </div>
@@ -360,13 +364,13 @@ function OProblema() {
           {barriers.map((b, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.1 }} className="bg-foreground p-8 md:p-10 border border-background/10 hover:bg-background/5 transition-colors duration-300">
               <div className="text-3xl font-bold tracking-tighter text-background/20 mb-4">{String(i + 1).padStart(2, "0")}</div>
- <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
- <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
+              <h3 className="text-xl font-bold tracking-tighter mb-3 text-background">{b.label}</h3>
+              <p className="text-xs text-background/50 leading-relaxed">{b.desc}</p>
             </motion.div>
           ))}
         </div>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
-          O objetivo não era apenas vender cursos. Era transformar: desconhecimento → curiosidade → confiança → desejo real de experiência.
+        <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 text-lg md:text-xl text-background/60 font-medium max-w-3xl leading-[1.1]">
+          O objetivo da influência era reverter esse cenário, promovendo a transição: desconhecimento → curiosidade → segurança → desejo de viver a primeira experiência.
         </motion.p>
       </div>
     </section>
@@ -376,17 +380,17 @@ function OProblema() {
 function AEstrategia() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const steps = ["Creator", "Descoberta", "Curiosidade", "Confiança", "Conversa", "Conversão"];
-  const roles = ["descoberta", "validação", "confiança", "aproximação emocional"];
+  const steps = ["Creator", "Descoberta", "Vivência Prática", "Quebra de Objeções", "Confiança", "Conversão"];
+  const roles = ["identificação", "validação real", "quebra de medos", "desejo de viver igual"];
   return (
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="lg:col-span-5">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Creators como pontes de confiança</motion.h2>
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">Creators como pontes de confiança</motion.h2>
           </div>
           <div className="lg:col-span-7 space-y-5">
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">Em vez de publicidade tradicional, usamos experiências reais para gerar identificação imediata. O creator deixa de ser apenas mídia. Ele se torna:</motion.p>
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg text-secondary font-medium leading-tight">Em vez de anúncios formais, trouxemos influenciadores para viver a experiência real na piscina da EviDive. O creator deixa de ser apenas mídia. Ele se torna:</motion.p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               {roles.map((r, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -15 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.2 + i * 0.08 }} className="flex items-center gap-3 border border-border p-4 rounded-lg">
@@ -422,17 +426,17 @@ function Metodologia() {
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">Uma análise baseada em crescimento real</motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">Uma análise baseada em crescimento real</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-background/10 border border-background/10 rounded-xl overflow-hidden">
           {[
-            { period: "Período 01", tag: "Sem Influência", desc: "Operação padrão, sem ações estruturadas com creators. Crescimento orgânico baseline de 10 meses." },
-            { period: "Período 02", tag: "Com Creators", desc: "Estratégia ativa. Mesmos 10 meses, variável analisada: a presença de ações estruturadas de influência." },
+            { period: "Período 01", tag: "Sem Influência", desc: "Operação padrão sem ações estruturadas com creators. Crescimento orgânico baseline de 10 meses." },
+            { period: "Período 02", tag: "Com Creators", desc: "Estratégia ativa. Mesmos 10 meses de análise, com a variável ativa de ações integradas com creators." },
           ].map((p, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: i * 0.15 }} className="p-10 md:p-14">
               <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-4 block">{p.period}</span>
- <h3 className="text-2xl md:text-3xl font-bold tracking-tighter mb-4 text-background">{p.tag}</h3>
- <p className="text-background/60 text-xs leading-relaxed max-w-sm">{p.desc}</p>
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tighter mb-4 text-background">{p.tag}</h3>
+              <p className="text-background/60 text-xs leading-relaxed max-w-sm">{p.desc}</p>
               {i === 1 && <div className="mt-8 inline-block px-4 py-2 border border-background/30 text-[9px] font-mono uppercase tracking-widest text-background/60 rounded-full">Variável ativa</div>}
             </motion.div>
           ))}
@@ -457,7 +461,7 @@ function Resultados() {
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Os resultados da estratégia</motion.h2>
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl">Os resultados da estratégia</motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-xl overflow-hidden">
           {metrics.map((m, i) => (
@@ -465,12 +469,12 @@ function Resultados() {
               <div className="mb-5 group-hover:text-background/60 transition-colors">{m.icon}</div>
               <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary group-hover:text-background/50 mb-2 block">{m.label}</span>
               <div className="text-2xl md:text-3xl font-bold tracking-tighter leading-none mb-2">{m.value}</div>
- <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
+              <p className="text-[10px] text-secondary group-hover:text-background/50">{m.desc}</p>
             </motion.div>
           ))}
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="mt-16 border-l-2 border-foreground pl-8 max-w-2xl">
- <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"Influência não foi acessória. Ela foi responsável pela descoberta."</p>
+          <p className="text-xl md:text-2xl font-bold tracking-tighter leading-tight">"Influência não foi acessória. Ela foi responsável pela descoberta."</p>
         </motion.blockquote>
       </div>
     </section>
@@ -491,11 +495,11 @@ function CasalDayOff() {
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 items-start">
           <div className="lg:col-span-5">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-8">
-              Um único conteúdo gerou um pico de crescimento massivo
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] mb-8">
+              Um único criador gerou um pico histórico de novos alunos
             </motion.h2>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.15 }} className="text-background/60 text-xs leading-relaxed mb-8">
-              Um conteúdo publicado pelo creator Casal Day Off se tornou a materialização da estratégia. Mesmo sem collab direto no perfil da marca, o conteúdo gerou impacto massivo.
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.15 }} className="text-background/60 text-xs leading-relaxed mb-8">
+              O conteúdo orgânico produzido pelo Casal Day Off trouxe a experiência do mergulho para um público massivo. A naturalidade e o encantamento do casal geraram um engajamento sem precedentes para a EviDive.
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.25 }} className="border border-background/20 p-8 rounded-xl">
               <div className="text-3xl md:text-5xl font-bold tracking-tighter text-background mb-1">+4.500</div>
@@ -512,12 +516,12 @@ function CasalDayOff() {
               ))}
             </div>
             <motion.div initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="border-l-2 border-background/30 pl-8">
- <p className="text-base md:text-lg text-background/70 font-medium leading-tight mb-2">Insight</p>
- <p className="text-xl md:text-2xl font-bold tracking-tighter text-background leading-tight">
-                Grande parte do valor da influência acontece fora do feed da marca.
+              <p className="text-base md:text-lg text-background/70 font-medium leading-tight mb-2">Insight estratégico</p>
+              <p className="text-xl md:text-2xl font-bold tracking-tighter text-background leading-tight">
+                A validação da experiência por terceiros é o maior atalho para a conversão de marcas premium.
               </p>
- <p className="mt-4 text-xs md:text-sm text-background/50 leading-relaxed">
-                O creator funciona como um imã de descoberta que leva novas audiências para dentro do ecossistema proprietário da empresa.
+              <p className="mt-4 text-xs md:text-sm text-background/50 leading-relaxed">
+                O influenciador funciona como o elemento de confiança que quebra a barreira do medo, despertando a vontade imediata de fazer o primeiro mergulho.
               </p>
             </motion.div>
           </div>
@@ -531,23 +535,23 @@ function InteligenciaEstrategica() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const layers = [
-    { step: "01", label: "Creators", desc: "Gerando descoberta e alcance qualificado" },
-    { step: "02", label: "Conteúdo", desc: "Criando identificação e prova social" },
-    { step: "03", label: "Social Seller", desc: "Convertendo interesse em conversa" },
-    { step: "04", label: "Comunidade", desc: "Fortalecendo retenção e pertencimento" },
-    { step: "05", label: "Remarketing", desc: "Transformando intenção em venda real" },
+    { step: "01", label: "Creators", desc: "Garantindo descoberta e eliminando a barreira inicial do medo" },
+    { step: "02", label: "Experiência", desc: "Apresentando a piscina aquecida e a infraestrutura premium" },
+    { step: "03", label: "Conteúdo", desc: "Educando sobre os cursos, credenciais internacionais e segurança" },
+    { step: "04", label: "Social Seller", desc: "Convertendo o fluxo de interessados através de atendimento consultivo" },
+    { step: "05", label: "Comunidade", desc: "Fidelizando clientes em viagens de mergulho e novos treinos" },
   ];
   return (
     <section ref={ref} className="site-section py-24 md:py-32">
       <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16 mb-16">
           <div className="lg:col-span-6">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1]">
+            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1]">
               Não era sobre posts. Era sobre engenharia de crescimento.
             </motion.h2>
           </div>
           <div className="lg:col-span-6 flex items-end">
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
               Marketing de influência eficiente não opera como campanha pontual. Opera como ecossistema.
             </motion.p>
           </div>
@@ -557,8 +561,8 @@ function InteligenciaEstrategica() {
             <motion.div key={i} initial={{ opacity: 0, x: -20 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.1 + i * 0.1 }} className="flex items-center gap-6 md:gap-8 border-b border-border last:border-b-0 p-6 md:p-8 group hover:bg-foreground hover:text-background transition-all duration-500">
               <span className="text-[9px] md:text-[10px] font-mono text-secondary group-hover:text-background/50 w-6 flex-shrink-0">{l.step}</span>
               <div className="w-px h-6 bg-border group-hover:bg-background/20 flex-shrink-0" />
- <h4 className="text-lg md:text-xl font-bold tracking-tighter w-40 flex-shrink-0">{l.label}</h4>
- <p className="text-xs text-secondary group-hover:text-background/60 hidden md:block">{l.desc}</p>
+              <h4 className="text-lg md:text-xl font-bold tracking-tighter w-40 flex-shrink-0">{l.label}</h4>
+              <p className="text-xs text-secondary group-hover:text-background/60 hidden md:block">{l.desc}</p>
               <ArrowRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>
           ))}
@@ -571,14 +575,14 @@ function InteligenciaEstrategica() {
 function Comparacao() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const left = ["Maior resistência do público", "Linguagem comercial explícita", "Menor identificação emocional", "Jornada de compra mais longa"];
-  const right = ["Narrativa orgânica e autêntica", "Identificação imediata", "Quebra de objeções naturalmente", "Confiança acelerada"];
+  const left = ["Foco puramente em dados e especificações técnicas", "Barreira do medo e da insegurança permanece alta", "Falta de conexão humana e apelo estético", "Jornada de decisão longa e cheia de dúvidas"];
+  const right = ["Foco na sensação de respirar sob a água pela primeira vez", "Quebra de medos ao ver pessoas comuns mergulhando", "Alta conexão emocional e desejo estético", "Decisão acelerada pela confiança gerada na experiência"];
   return (
     <section ref={ref} className="site-section py-24 md:py-32 bg-foreground text-background">
       <div className="site-container">
         <div className="mb-16">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
-            O que muda quando creators entram em cena
+          <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1] max-w-3xl">
+            O impacto real da experiência vivida
           </motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-background/10 rounded-xl overflow-hidden border border-background/10">
@@ -586,7 +590,7 @@ function Comparacao() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">Publicidade Tradicional</h3>
             <ul className="space-y-4">
               {left.map((item, i) => (
- <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background/70 text-xs leading-relaxed">
                   <span className="text-background/30 mt-1 flex-shrink-0">-</span>{item}
                 </li>
               ))}
@@ -596,7 +600,7 @@ function Comparacao() {
             <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-background/40 mb-6">Creator Experience</h3>
             <ul className="space-y-4">
               {right.map((item, i) => (
- <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
+                <li key={i} className="flex items-start gap-3 text-background text-xs font-medium leading-relaxed">
                   <span className="text-background/40 mt-1 flex-shrink-0">+</span>{item}
                 </li>
               ))}
@@ -604,8 +608,8 @@ function Comparacao() {
           </motion.div>
         </div>
         <motion.blockquote initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.5 }} className="mt-16 border-t border-background/10 pt-12 max-w-3xl">
- <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
-            "Pessoas confiam mais em pessoas vivendo experiências reais do que em marcas falando sobre si mesmas."
+          <p className="text-lg md:text-xl font-bold tracking-tighter leading-tight text-background/80">
+            "O mergulho é uma experiência altamente sensorial. A melhor forma de vendê-lo é mostrando a transformação de quem já mergulhou."
           </p>
         </motion.blockquote>
       </div>
@@ -616,20 +620,20 @@ function Comparacao() {
 function Conclusao() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const points = ["construção de percepção", "expansão de audiência qualificada", "prova social", "comunidade", "retenção", "crescimento sustentável"];
+  const points = ["construção de desejo", "desmistificação da prática", "prova social de alto impacto", "comunidade de mergulhadores", "fidelização em viagens", "crescimento sustentável"];
   return (
     <>
       <section ref={ref} className="site-section py-24 md:py-32">
         <div className="site-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-16">
             <div className="lg:col-span-5">
- <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
-                Quanto mais pessoas contam a história, mais pessoas entram no ecossistema da marca
+              <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
+                Quanto mais vozes contam a experiência, mais forte se torna o ecossistema
               </motion.h2>
             </div>
             <div className="lg:col-span-7 space-y-6 md:space-y-8">
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
-                O case da Evidive mostrou que influência não é apenas alcance. É:
+              <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.1 }} className="text-lg md:text-xl text-secondary font-medium leading-tight">
+                Ao engajar creators certos para experimentar e validar a infraestrutura da EviDive, a marca acelera a tomada de decisão e atrai novos alunos qualificados. A influência constrói:
               </motion.p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {points.map((p, i) => (
@@ -639,8 +643,8 @@ function Conclusao() {
                   </motion.div>
                 ))}
               </div>
- <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="text-base md:text-lg text-secondary font-medium leading-tight pt-4 border-t border-border">
-                Quando creators certos entram em ação, a marca deixa de depender apenas de anúncios e começa a construir autoridade contínua.
+              <motion.p initial={{ opacity: 0, y: 15 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.6 }} className="text-base md:text-lg text-secondary font-medium leading-tight pt-4 border-t border-border">
+                Quando a história é contada a partir de experiências reais, o mergulho deixa de ser visto como um obstáculo e se torna uma aspiração realizável.
               </motion.p>
             </div>
           </div>
@@ -650,11 +654,11 @@ function Conclusao() {
       {/* CTA Final */}
       <section className="site-section py-24 md:py-32 bg-foreground text-background border-none">
         <div className="site-container text-center">
- <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-4xl mx-auto">
-            Sua marca também pode transformar influência em crescimento real.
+          <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-[1.1] mb-8 max-w-4xl mx-auto">
+            Sua marca também pode dominar seu mercado através da influência estratégica.
           </motion.h2>
- <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-2xl mx-auto mb-12">
-            Estruturamos operações de influência focadas em descoberta, autoridade, comunidade e performance.
+          <motion.p initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-base md:text-lg text-background/60 font-medium leading-[1.1] max-w-2xl mx-auto mb-12">
+            Desenhamos estratégias de creators que constroem desejo, superam objeções de compra e geram crescimento de alta performance.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.35 }}>
             <a href="https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!" target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-background text-foreground px-10 py-5 rounded-full">
