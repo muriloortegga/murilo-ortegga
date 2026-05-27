@@ -34,6 +34,8 @@ export function PerformanceHero({
   followersLabel = "Seguidores",
   contentLabel = "Conteúdos Criados",
   accentColor,
+  title = "Resultados reais que geram autoridade e conexão.",
+  description = "A estratégia de social media foi desenhada para ir além de posts avulsos, focando em posicionamento estratégico, crescimento orgânico e construção de presença a longo prazo."
 }: { 
   followers: number; 
   contentCount?: number; 
@@ -42,30 +44,44 @@ export function PerformanceHero({
   followersLabel?: string;
   contentLabel?: string;
   accentColor?: string;
+  title?: string;
+  description?: string;
 }) {
   return (
-    <section className="min-h-[70vh] w-full flex flex-col justify-center site-section border-none bg-background overflow-hidden py-12 md:py-20">
-      <div className="site-container grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
-        <div className="lg:col-span-5 z-10 order-2 lg:order-1">
-          <div style={accentColor ? { color: accentColor } : {}}>
-            <Counter target={followers} label={followersLabel} />
+    <section className="min-h-[70vh] w-full flex flex-col justify-center site-section border-none bg-background overflow-hidden py-16 md:py-28">
+      <div className="site-container grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className="lg:col-span-6 z-10 order-2 lg:order-1 space-y-8">
+          <div className="space-y-4">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary">Métricas de Impacto</span>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
+              {title}
+            </h2>
+            <p className="text-base text-secondary font-medium leading-relaxed max-w-md">
+              {description}
+            </p>
           </div>
-          {contentCount !== undefined && (
-            <div className="mt-[-1rem] md:mt-[-1.5rem]" style={accentColor ? { color: accentColor } : {}}>
-              <Counter target={contentCount} label={contentLabel} suffix="+" />
+          
+          <div className="grid grid-cols-2 gap-8 border-t border-border/50 pt-8">
+            <div style={accentColor ? { color: accentColor } : {}}>
+              <Counter target={followers} label={followersLabel} />
             </div>
-          )}
+            {contentCount !== undefined && (
+              <div style={accentColor ? { color: accentColor } : {}}>
+                <Counter target={contentCount} label={contentLabel} suffix="+" />
+              </div>
+            )}
+          </div>
         </div>
         
-        <div className="lg:col-span-7 relative h-auto flex items-center justify-center lg:justify-end order-1 lg:order-2">
+        <div className="lg:col-span-6 relative h-auto flex items-center justify-center lg:justify-end order-1 lg:order-2">
           <motion.div 
-            initial={{ x: 30, opacity: 0, scale: 0.95 }}
-            whileInView={{ x: 0, opacity: 1, scale: 1 }}
-            transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="w-full relative"
+            className="w-full max-w-xl overflow-hidden rounded-2xl border border-border/10 shadow-lg"
           >
-             <ProjectMedia src={mockupImg} alt="Performance Mockup" className="w-full h-auto drop-shadow-xl rounded-xl" />
+             <ProjectMedia src={mockupImg} alt="Performance Mockup" className="w-full h-auto object-cover" />
           </motion.div>
         </div>
       </div>
@@ -80,7 +96,8 @@ export function CopyFeature({
   bgImage,
   accentColor = "rgba(0,0,0,0.95)",
   contentCount,
-  contentLabel = "Conteúdos Criados"
+  contentLabel = "Conteúdos Criados",
+  description = "Desenvolvimento de narrativas estratégicas e redação focada em conversão. O copywriting foi desenhado para educar o público-alvo, quebrar objeções comuns de mercado e direcionar o tráfego de maneira qualificada."
 }: { 
   headline: string; 
   mockupImg: string;
@@ -88,6 +105,7 @@ export function CopyFeature({
   accentColor?: string;
   contentCount?: number;
   contentLabel?: string;
+  description?: string;
 }) {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -95,46 +113,46 @@ export function CopyFeature({
     offset: ["start end", "end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [30, -30]);
+  const y = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
     <section 
       ref={containerRef}
-      className="site-section flex flex-col justify-center overflow-hidden relative py-16 md:py-24"
-      style={{ backgroundColor: !bgImage ? accentColor : 'transparent' }}
+      className="site-section flex flex-col justify-center overflow-hidden relative py-20 md:py-32 bg-off-white border-y border-border/10"
     >
       {bgImage && (
         <div className="absolute inset-0 z-0">
-          <ProjectMedia src={bgImage} alt="Background Texture" className="opacity-30 object-cover w-full h-full" />
-          <div className="absolute inset-0 bg-black/80" />
+          <ProjectMedia src={bgImage} alt="Background Texture" className="opacity-10 object-cover w-full h-full" />
+          <div className="absolute inset-0 bg-background/80" />
         </div>
       )}
 
-      <div className="site-container relative z-10">
-        <motion.h2 
- className="text-white text-3xl md:text-5xl font-bold leading-[1.1] tracking-tighter mb-10 max-w-3xl"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          {headline}
-        </motion.h2>
-
-        <div className="relative flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-          <motion.div 
-            style={{ y }}
-            className="w-full md:w-[60%] relative"
-          >
-            <ProjectMedia src={mockupImg} alt="Copy Showcase" className="w-full h-auto drop-shadow-2xl rounded-xl" />
-          </motion.div>
-
+      <div className="site-container relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className="lg:col-span-6 space-y-8">
+          <div className="space-y-4">
+            <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary">Narrativa & Copywriting</span>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter leading-[1.1]">
+              {headline}
+            </h2>
+            <p className="text-base text-secondary font-medium leading-relaxed max-w-md">
+              {description}
+            </p>
+          </div>
+          
           {contentCount !== undefined && (
-            <div className="flex-shrink-0 text-white w-full md:w-auto">
-               <div className="py-6 border-t border-b border-white/20 md:border-none md:py-0">
-                 <Counter target={contentCount} label={contentLabel} suffix="+" />
-               </div>
+            <div className="border-t border-border/50 pt-8">
+              <Counter target={contentCount} label={contentLabel} suffix="+" />
             </div>
           )}
+        </div>
+
+        <div className="lg:col-span-6 flex items-center justify-center lg:justify-end">
+          <motion.div 
+            style={{ y }}
+            className="w-full max-w-xl overflow-hidden rounded-2xl border border-border/10 shadow-lg bg-background"
+          >
+            <ProjectMedia src={mockupImg} alt="Copy Showcase" className="w-full h-auto object-cover" />
+          </motion.div>
         </div>
       </div>
     </section>
@@ -357,7 +375,7 @@ function InteractiveImage({ src, onClick, index }: { src: string; onClick: () =>
         layoutId={`gallery-img-${index}`}
         src={src} 
         alt="" 
-        className="w-full h-auto shadow-lg border border-border/10 rounded-xl grayscale hover:grayscale-0 transition-all duration-700" 
+        className="w-full h-auto shadow-lg border border-border/10 rounded-xl transition-all duration-700" 
       />
     </motion.div>
   );
@@ -483,7 +501,7 @@ function VideoCard({
         muted
         loop
         playsInline
-        className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 drop-shadow-lg"
+        className="w-full h-auto transition-all duration-700 drop-shadow-lg"
       />
       
       <div className="absolute top-5 left-5 flex items-center gap-2 z-10">
@@ -526,7 +544,7 @@ export function SingleImageShowcase({ src }: { src: string }) {
           src={src} 
           alt="Showcase"
           style={{ y: useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]) }}
-          className="absolute inset-0 w-full h-[120%] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+          className="absolute inset-0 w-full h-[120%] object-cover transition-all duration-700"
         />
       </div>
 
@@ -575,7 +593,7 @@ export function ScrollHorizontalGallery({ images }: { images: string[] }) {
           <div key={idx} className="relative w-[180vw] lg:w-[140vw] h-[35vh] md:h-[65vh] flex">
             <motion.div style={{ x }} className="flex w-full h-full px-4 gap-4 md:gap-6">
               {[...Array(4)].map((_, i) => (
-                <img key={i} src={src} className="w-[85vw] md:w-[55vw] h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-xl rounded-xl" alt="Gallery item" />
+                <img key={i} src={src} className="w-[85vw] md:w-[55vw] h-full object-cover transition-all duration-700 shadow-xl rounded-xl" alt="Gallery item" />
               ))}
             </motion.div>
           </div>

@@ -70,14 +70,17 @@ function ProjetoMilgrows() {
             anchorText="Identidade e base consolidada"
             mockupImg="/assets/projects/milgrows/social/mockups/performance.png" 
             accentColor="#2ECC71"
+            title="Comunicação educativa e crescimento de base."
+            description="Para a Milgrows, o foco foi desenvolver um tom de voz informativo e acolhedor. Traduzimos termos técnicos e científicos da cannabis medicinal em posts leves e compreensíveis, gerando confiança na comunidade."
           />
 
           <CopyFeature 
-            headline="COPYWRITING, REDAÇÃO E DESIGN QUE IA NENHUMA CONSEGUE CRIAR."
+            headline="Conteúdo relevante que constrói autoridade."
             contentCount={100}
             contentLabel="Conteúdos Criados"
             accentColor="#0C2D1C"
             mockupImg="/assets/projects/milgrows/social/mockups/copy-showcase.png"
+            description="Através de uma curadoria de conteúdo precisa e copywriting focado em validação científica, quebramos preconceitos históricos do setor e posicionamos a marca como referência de responsabilidade social e científica."
           />
 
           <SingleImageShowcase 

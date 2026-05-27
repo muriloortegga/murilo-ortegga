@@ -74,14 +74,17 @@ function ProjetoNaTrave() {
             contentCount={100}
             mockupImg="/assets/projects/natrave/social/mockups/performance-overview.png" 
             accentColor="#FF6B00"
+            title="Engajamento orgânico da comunidade futebolística."
+            description="Conectando a emoção das quadras e campos com a tecnologia do app. A presença digital do NaTrave foi desenhada para falar a língua real dos boleiros, gerando identificação e tração imediata."
           />
 
           <CopyFeature 
-            headline="COPYWRITING, REDAÇÃO E DESIGN QUE IA NENHUMA CONSEGUE CRIAR."
+            headline="Voz proprietária que engaja."
             contentCount={100}
             contentLabel="Conteúdos Criados"
             accentColor="#111111"
             mockupImg="/assets/projects/natrave/social/mockups/copy-showcase.png"
+            description="Criação de editorias dinâmicas com foco em jornalismo de base, memes esportivos e análise de campeonatos amadores. O resultado foi um feed vivo e altamente compartilhado."
           />
 
           <LiveArtGallery 

@@ -72,15 +72,18 @@ function ProjetoTalk2Buy() {
             anchorText="Identidade e base consolidada"
             mockupImg="/assets/projects/talk2buy/social/mockups/performance.png" 
             accentColor="#2563EB"
+            title="Posicionamento B2B focado em conversão."
+            description="A estratégia para a Talk2Buy consistiu em posicionar a plataforma de automação de vendas via WhatsApp como indispensável para lojistas. Focamos nos diferenciais de agilidade e autonomia."
           />
 
           {/* Mockup 2: Grid de posts para copy */}
           <CopyFeature 
-            headline="COPYWRITING, REDAÇÃO E DESIGN QUE IA NENHUMA CONSEGUE CRIAR."
+            headline="Narrativas persuasivas direcionadas ao lojista."
             contentCount={100}
             contentLabel="Conteúdos Criados"
             accentColor="#0A0F1E"
             mockupImg="/assets/projects/talk2buy/social/mockups/grid-copy.png"
+            description="Copywriting estruturado para evidenciar a dor do lojista (falta de tempo e atendimento ineficiente) e apresentar a automação como a solução definitiva, desmistificando o processo de configuração."
           />
 
           {/* Duas imagens horizontais passando em tela cheia com scroll */}

@@ -49,7 +49,7 @@ export function SocialHero({
           </div>
           <div className="lg:col-span-5">
             <div className="aspect-[4/3] overflow-hidden shadow-2xl rounded-2xl">
-              <img src={image} alt={client} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105" />
+              <img src={image} alt={client} className="w-full h-full object-cover transition-all duration-700 hover:scale-105" />
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ export function BeforeAfter({
               <div className="space-y-4">
                  <span className="text-[10px] font-mono uppercase opacity-40">Start</span>
                  <div className="aspect-[9/16] border border-border overflow-hidden bg-background rounded-xl">
-                    <img src={beforeImg} alt="Before" className="w-full h-full object-cover grayscale" />
+                    <img src={beforeImg} alt="Before" className="w-full h-full object-cover" />
                  </div>
               </div>
               <div className="space-y-4">
@@ -110,7 +110,7 @@ export function TopPosts({ posts }: { posts: { img: string, context: string, sta
           {posts.map((post, i) => (
             <div key={i} className="space-y-6 group">
                <div className="aspect-square overflow-hidden bg-card border border-border rounded-xl">
-                  <img src={post.img} alt="Post" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                  <img src={post.img} alt="Post" className="w-full h-full object-cover transition-all duration-700" />
                </div>
                <div className="space-y-2">
                   <p className="text-[10px] font-mono uppercase tracking-tight text-secondary leading-tight">{post.context}</p>
@@ -198,7 +198,7 @@ export function GridEvolution({ grids }: { grids: { month: string, img: string }
              <div key={i} className="space-y-6">
                 <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary">{grid.month}</span>
                 <div className="aspect-square overflow-hidden border border-border shadow-lg rounded-xl">
-                   <img src={grid.img} alt={grid.month} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                   <img src={grid.img} alt={grid.month} className="w-full h-full object-cover transition-all duration-700" />
                 </div>
              </div>
            ))}
@@ -218,7 +218,7 @@ export function VerticalGallery({ items }: { items: { type: 'Reel' | 'Story', im
       <div className="flex gap-6 overflow-x-auto no-scrollbar px-[var(--grid-padding)] md:px-[calc((100vw-var(--grid-width))/2+var(--grid-padding))]">
          {items.map((item, i) => (
            <div key={i} className="min-w-[240px] md:min-w-[280px] aspect-[9/16] relative group overflow-hidden bg-card border border-border rounded-xl">
-              <img src={item.img} alt={item.type} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" />
+              <img src={item.img} alt={item.type} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
               <div className="absolute bottom-6 left-6 flex items-center gap-3">
                  <div className="w-8 h-8 rounded-full bg-background flex items-center justify-center">
@@ -254,7 +254,7 @@ export function TestimonialCTA({
               "{testimonial}"
             </blockquote>
             <div className="flex items-center gap-5">
-               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden grayscale bg-background/10">
+               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-background/10">
                   <img src={clientImage} alt={clientName} className="w-full h-full object-cover" />
                </div>
                <div>
