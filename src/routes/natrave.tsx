@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { 
@@ -23,12 +24,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/natrave")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "NaTrave App - Murilo Ortega" },
-      { name: "description", content: "Estratégia de Social Media e Branding para o NaTrave App." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/natrave", title: "NaTrave App — Case Study · Murilo Ortega", description: "Estratégia de Social Media e Branding para o NaTrave App.", type: "article" }),
   component: ProjetoNaTrave,
 });
 

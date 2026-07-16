@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState } from "react";
 import { 
   PerformanceHero, 
@@ -20,12 +21,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/milgrows")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "Milgrows - Murilo Ortega" },
-      { name: "description", content: "Estratégia de Social Media e Educação sobre Cannabis Medicinal para Milgrows." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/milgrows", title: "Milgrows — Case Study · Murilo Ortega", description: "Social Media e educação sobre cannabis medicinal para Milgrows.", type: "article" }),
   component: ProjetoMilgrows,
 });
 

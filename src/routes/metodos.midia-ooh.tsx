@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, ArrowRight, MapPin, Maximize, Target, Settings } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/midia-ooh")({
-  head: () => ({
-    meta: [
-      { title: "Percepção de Marca - Murilo Ortega" },
-      { name: "description", content: "Mídia Off-Home: Planejamento, design e gestão de campanhas externas de alto impacto." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/midia-ooh", title: "Mídia OOH — Métodos · Murilo Ortega", description: "Método de mídia OOH: campanhas out-of-home com direção estratégica." }),
   component: MidiaOOHPage,
 });
 

@@ -1,13 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/marco-boni")({
-  head: () => ({
-    meta: [
-      { title: "Marco Boni - Mídia Impressa - Murilo Ortega" },
-      { name: "description", content: "Mídia Impressa e Catálogos de Alta Performance para Marco Boni." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/marco-boni", title: "Marco Boni — Mídia Impressa · Murilo Ortega", description: "Mídia impressa e catálogos de alta performance para Marco Boni.", type: "article" }),
   component: ProjetoMarcoBoni,
 });
 

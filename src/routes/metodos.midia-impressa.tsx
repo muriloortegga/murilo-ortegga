@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, Book, Layers, FileText, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/midia-impressa")({
-  head: () => ({
-    meta: [
-      { title: "Autoridade de Marca - Murilo Ortega" },
-      { name: "description", content: "Catálogos, diagramação e materiais institucionais com alta performance gráfica." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/midia-impressa", title: "Mídia Impressa — Métodos · Murilo Ortega", description: "Método de mídia impressa: catálogos, editoriais e materiais institucionais." }),
   component: MidiaImpressaPage,
 });
 

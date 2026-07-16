@@ -1,15 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { motion } from "framer-motion";
 import { BrandHeader } from "@/components/brand-header";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/solid")({
-  head: () => ({
-    meta: [
-      { title: "Solid+ - Murilo Ortega" },
-      { name: "description", content: "Identidade Visual e Fintech Systems para Solid+." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/solid", title: "Solid+ — Case Study · Murilo Ortega", description: "Identidade Visual e Fintech Systems para Solid+.", type: "article" }),
   component: ProjetoSolid,
 });
 

@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight, Shield, Award, Eye, Target, TrendingUp, Zap } from "lucide-react";
@@ -13,12 +14,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/maxi")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "Colégio Maxi - Case Study - Murilo Ortega" },
-      { name: "description", content: "Estratégia de Social Media e Mídia OOH para o Colégio Maxi." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/maxi", title: "Colégio Maxi — Case Study · Murilo Ortega", description: "Estratégia de Social Media e mídia OOH para o Colégio Maxi.", type: "article" }),
   component: ProjetoMaxi,
 });
 
