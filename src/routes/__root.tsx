@@ -62,6 +62,18 @@ export const Route = createRootRoute({
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Murilo Ortega",
+          url: "https://murilo-ortegga.lovable.app/",
+          inLanguage: "pt-BR",
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
