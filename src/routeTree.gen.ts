@@ -14,6 +14,7 @@ import { Route as Talk2buyRouteImport } from './routes/talk2buy'
 import { Route as SympliceRouteImport } from './routes/symplice'
 import { Route as SolidRouteImport } from './routes/solid'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as NatraveRouteImport } from './routes/natrave'
 import { Route as MilgrowsRouteImport } from './routes/milgrows'
 import { Route as MetodosRouteImport } from './routes/metodos'
@@ -57,6 +58,11 @@ const SolidRoute = SolidRouteImport.update({
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NatraveRoute = NatraveRouteImport.update({
@@ -170,6 +176,7 @@ export interface FileRoutesByFullPath {
   '/metodos': typeof MetodosRouteWithChildren
   '/milgrows': typeof MilgrowsRoute
   '/natrave': typeof NatraveRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
   '/solid': typeof SolidRoute
   '/symplice': typeof SympliceRoute
@@ -195,6 +202,7 @@ export interface FileRoutesByTo {
   '/maxi': typeof MaxiRoute
   '/milgrows': typeof MilgrowsRoute
   '/natrave': typeof NatraveRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
   '/solid': typeof SolidRoute
   '/symplice': typeof SympliceRoute
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/metodos': typeof MetodosRouteWithChildren
   '/milgrows': typeof MilgrowsRoute
   '/natrave': typeof NatraveRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/sobre': typeof SobreRoute
   '/solid': typeof SolidRoute
   '/symplice': typeof SympliceRoute
@@ -250,6 +259,7 @@ export interface FileRouteTypes {
     | '/metodos'
     | '/milgrows'
     | '/natrave'
+    | '/sitemap.xml'
     | '/sobre'
     | '/solid'
     | '/symplice'
@@ -275,6 +285,7 @@ export interface FileRouteTypes {
     | '/maxi'
     | '/milgrows'
     | '/natrave'
+    | '/sitemap.xml'
     | '/sobre'
     | '/solid'
     | '/symplice'
@@ -301,6 +312,7 @@ export interface FileRouteTypes {
     | '/metodos'
     | '/milgrows'
     | '/natrave'
+    | '/sitemap.xml'
     | '/sobre'
     | '/solid'
     | '/symplice'
@@ -328,6 +340,7 @@ export interface RootRouteChildren {
   MetodosRoute: typeof MetodosRouteWithChildren
   MilgrowsRoute: typeof MilgrowsRoute
   NatraveRoute: typeof NatraveRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SobreRoute: typeof SobreRoute
   SolidRoute: typeof SolidRoute
   SympliceRoute: typeof SympliceRoute
@@ -371,6 +384,13 @@ declare module '@tanstack/react-router' {
       path: '/sobre'
       fullPath: '/sobre'
       preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/natrave': {
@@ -544,6 +564,7 @@ const rootRouteChildren: RootRouteChildren = {
   MetodosRoute: MetodosRouteWithChildren,
   MilgrowsRoute: MilgrowsRoute,
   NatraveRoute: NatraveRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SobreRoute: SobreRoute,
   SolidRoute: SolidRoute,
   SympliceRoute: SympliceRoute,
