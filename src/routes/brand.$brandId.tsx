@@ -1,8 +1,18 @@
 import { createFileRoute, useParams, Link } from "@tanstack/react-router";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { useEffect, useState } from "react";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/brand/$brandId")({
+  head: ({ params }) => {
+    const name = params.brandId.charAt(0).toUpperCase() + params.brandId.slice(1);
+    return routeSeo({
+      path: `/brand/${params.brandId}`,
+      title: `${name} — Brand Case · Murilo Ortega`,
+      description: `Exploração visual e estratégica para ${name}: sistema de identidade, presença digital e narrativa de marca.`,
+      type: "article",
+    });
+  },
   component: BrandPage,
 });
 
