@@ -4,14 +4,16 @@ import { useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ChevronDown, Plus, ArrowUpRight, Cpu, ClipboardList, Zap } from "lucide-react";
 import { ProjectMedia } from "@/components/project-media";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/sobre")({
-  head: () => ({
-    meta: [
-      { title: "Sobre Mim - Murilo Ortega - Design Estratégico & Identidade de Marca" },
-      { name: "description", content: "8 anos de experiência transformando marcas através de dados, criatividade e estratégia." },
-    ],
-  }),
+  head: () =>
+    routeSeo({
+      path: "/sobre",
+      title: "Sobre — Murilo Ortega",
+      description:
+        "8 anos entre agências, multinacionais e marcas. Design estratégico, branding e coordenação de projetos que precisam funcionar de verdade.",
+    }),
   component: SobrePage,
 });
 
@@ -225,7 +227,7 @@ function SobrePage() {
               {[...designTools, ...designTools, ...designTools, ...designTools, ...designTools].map((tool, i) => (
                 <div key={i} className="flex items-center gap-8 group">
                    <div className="w-24 h-24 md:w-32 md:h-32 bg-off-white flex items-center justify-center p-6 rounded-2xl transition-all duration-500 hover:scale-105">
-                      <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain" />
+                      <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain" />
                    </div>
                 </div>
               ))}
@@ -248,7 +250,7 @@ function SobrePage() {
               {[...aiTools, ...aiTools, ...aiTools, ...aiTools, ...aiTools].map((tool, i) => (
                 <div key={i} className="flex items-center gap-8 group">
                    <div className="w-24 h-24 md:w-32 md:h-32 bg-background flex items-center justify-center p-8 rounded-2xl transition-all duration-500 hover:scale-105">
-                      <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain" />
+                      <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain" />
                    </div>
                 </div>
               ))}
@@ -275,7 +277,7 @@ function SobrePage() {
                       <div key={tool.name} className="flex items-center justify-between border-b border-border pb-6 group">
                          <div className="flex items-center gap-6">
                             <div className="w-12 h-12 flex items-center justify-center">
-                               <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain transition-all" />
+                               <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain transition-all" />
                             </div>
                             <span className="text-xl md:text-2xl font-bold tracking-tighter">{tool.name}</span>
                          </div>

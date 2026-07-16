@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -13,12 +14,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/kapyi")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "Agência Kapyi - Case Study - Murilo Ortega" },
-      { name: "description", content: "Direção criativa, branding e estratégia digital na Agência Kapyi." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/kapyi", title: "Kapyi — Case Study · Murilo Ortega", description: "Direção criativa, branding e estratégia digital na Agência Kapyi.", type: "article" }),
   component: ProjetoKapyi,
 });
 

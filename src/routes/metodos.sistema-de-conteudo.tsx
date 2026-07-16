@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, Calendar, Users, CheckSquare, MessageSquare, Briefcase, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/sistema-de-conteudo")({
-  head: () => ({
-    meta: [
-      { title: "Comunicação de Marca, Murilo Ortega" },
-      { name: "description", content: "Esqueça postagens isoladas. Desenvolvo um sistema de conteúdo que sustenta sua marca ao longo do tempo e converte audiência em clientes reais." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/sistema-de-conteudo", title: "Sistema de Conteúdo — Métodos · Murilo Ortega", description: "Método de sistema de conteúdo: produção editorial e social contínua." }),
   component: SistemaConteudoPage,
 });
 

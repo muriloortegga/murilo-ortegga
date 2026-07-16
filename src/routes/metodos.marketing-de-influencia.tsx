@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, ArrowRight, CheckCircle2, Star, Users, Zap, MessageSquare } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/marketing-de-influencia")({
-  head: () => ({
-    meta: [
-      { title: "Expansão de Marca - Murilo Ortega" },
-      { name: "description", content: "Construindo sistemas de influência que transformam audiência em clientes." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/marketing-de-influencia", title: "Marketing de Influência — Métodos · Murilo Ortega", description: "Método de marketing de influência: curadoria, criação e mensuração." }),
   component: MarketingInfluenciaPage,
 });
 

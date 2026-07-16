@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { BrandHeader } from "@/components/brand-header";
@@ -14,12 +15,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/kmillion")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "Kmillion - Case Study - Murilo Ortega" },
-      { name: "description", content: "Identidade Visual e Inteligência Promocional para Kmillion Promotech." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/kmillion", title: "Kmillion — Case Study · Murilo Ortega", description: "Identidade Visual e Inteligência Promocional para Kmillion Promotech.", type: "article" }),
   component: ProjetoKmillion,
 });
 

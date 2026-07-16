@@ -35,17 +35,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Murilo Ortega - Branding, Conteúdo e Presença Digital" },
-      { name: "description", content: "Organizo marcas que precisam funcionar como marcas. Branding, conteúdo e presença digital conectados por um método infalível" },
+      { title: "Murilo Ortega — Branding, Conteúdo e Presença Digital" },
+      { name: "description", content: "Organizo marcas que precisam funcionar como marcas. Branding, conteúdo e presença digital conectados por um método infalível." },
       { name: "author", content: "Murilo Ortega" },
-      { property: "og:title", content: "Murilo Ortega - Branding, Conteúdo e Presença Digital" },
-      { property: "og:description", content: "Organizo marcas que precisam funcionar como marcas. Branding, conteúdo e presença digital conectados por um método infalível" },
+      { property: "og:site_name", content: "Murilo Ortega" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Murilo Ortega - Branding, Conteúdo e Presença Digital" },
-      { name: "twitter:description", content: "Organizo marcas que precisam funcionar como marcas. Branding, conteúdo e presença digital conectados por um método infalível" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/pTIVRkWw87ZCQBlo92IxpCmfmQr1/social-images/social-1779377423995-footer-bg.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/pTIVRkWw87ZCQBlo92IxpCmfmQr1/social-images/social-1779377423995-footer-bg.webp" },
+      { property: "og:locale", content: "pt_BR" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -66,6 +62,18 @@ export const Route = createRootRoute({
         href: appCss,
       },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Murilo Ortega",
+          url: "https://murilo-ortegga.lovable.app/",
+          inLanguage: "pt-BR",
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -74,7 +82,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>

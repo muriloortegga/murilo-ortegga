@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, BookOpen, PenTool, Search, Layout, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/estruturacao-de-marca")({
-  head: () => ({
-    meta: [
-      { title: "Estrutura de Marca, Murilo Ortega" },
-      { name: "description", content: "Construindo a base sólida que sua marca precisa para liderar." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/estruturacao-de-marca", title: "Estruturação de Marca — Métodos · Murilo Ortega", description: "Método de estruturação de marca: posicionamento, narrativa e sistema visual." }),
   component: EstruturacaoMarcaPage,
 });
 

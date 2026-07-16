@@ -1,16 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { BrandHeader } from "@/components/brand-header";
 
 export const Route = createFileRoute("/livin")({
-  head: () => ({
-    meta: [
-      { title: "Livin Company - Mídia Impressa - Murilo Ortega" },
-      { name: "description", content: "Projeto editorial e catálogos para a Livin Company." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/livin", title: "Livin Company — Mídia Impressa · Murilo Ortega", description: "Projeto editorial e catálogos para a Livin Company.", type: "article" }),
   component: ProjetoLivin,
 });
 

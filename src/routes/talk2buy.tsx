@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState } from "react";
 import { z } from "zod";
 import { 
@@ -20,12 +21,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/talk2buy")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "Talk2Buy - Social Media - Murilo Ortega" },
-      { name: "description", content: "Estratégia de Social Media e Posicionamento para a plataforma Talk2Buy." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/talk2buy", title: "Talk2Buy — Case Study · Murilo Ortega", description: "Design de sistema e social para Talk2Buy.", type: "article" }),
   component: ProjetoTalk2Buy,
 });
 

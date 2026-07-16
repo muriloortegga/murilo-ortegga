@@ -1,15 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { motion } from "framer-motion";
 import { BrandHeader } from "@/components/brand-header";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/symplice")({
-  head: () => ({
-    meta: [
-      { title: "Symplice, Murilo Ortega" },
-      { name: "description", content: "Identidade Visual para Symplice, Facilitando o complexo." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/symplice", title: "Symplice — Case Study · Murilo Ortega", description: "Sistema visual e presença digital para Symplice.", type: "article" }),
   component: ProjetoSymplice,
 });
 

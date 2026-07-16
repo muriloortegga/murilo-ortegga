@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useState, useRef } from "react";
 import { motion, useInView, useSpring, useTransform } from "framer-motion";
 import { ArrowRight, TrendingUp, Users, Eye, Zap, Target, Award, Shield } from "lucide-react";
@@ -13,12 +14,7 @@ const projectSearchSchema = z.object({
 
 export const Route = createFileRoute("/evidive")({
   validateSearch: (search) => projectSearchSchema.parse(search),
-  head: () => ({
-    meta: [
-      { title: "EviDive - Case Study - Murilo Ortega" },
-      { name: "description", content: "Estratégia de Social Media e Marketing de Influência para EviDive." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/evidive", title: "EviDive — Case Study · Murilo Ortega", description: "Estratégia de Social Media e Marketing de Influência para EviDive.", type: "article" }),
   component: ProjetoEviDive,
 });
 

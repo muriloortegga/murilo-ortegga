@@ -1,14 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { routeSeo } from "@/lib/seo";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, ArrowRight, Zap, Globe, ShieldCheck } from "lucide-react";
 
 export const Route = createFileRoute("/metodos/presenca-digital")({
-  head: () => ({
-    meta: [
-      { title: "Conversão de Marca - Murilo Ortega" },
-      { name: "description", content: "Sites e Landing Pages premium de alta performance. O diferencial que sua marca merece." },
-    ],
-  }),
+  head: () => routeSeo({ path: "/metodos/presenca-digital", title: "Presença Digital — Métodos · Murilo Ortega", description: "Método de presença digital: sites, sistemas e experiência de marca." }),
   component: PresencaDigitalPage,
 });
 
