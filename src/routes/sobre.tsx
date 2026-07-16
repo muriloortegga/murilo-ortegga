@@ -227,7 +227,7 @@ function SobrePage() {
               {[...designTools, ...designTools, ...designTools, ...designTools, ...designTools].map((tool, i) => (
                 <div key={i} className="flex items-center gap-8 group">
                    <div className="w-24 h-24 md:w-32 md:h-32 bg-off-white flex items-center justify-center p-6 rounded-2xl transition-all duration-500 hover:scale-105">
-                      <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain" />
+                      <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain" />
                    </div>
                 </div>
               ))}
@@ -250,7 +250,7 @@ function SobrePage() {
               {[...aiTools, ...aiTools, ...aiTools, ...aiTools, ...aiTools].map((tool, i) => (
                 <div key={i} className="flex items-center gap-8 group">
                    <div className="w-24 h-24 md:w-32 md:h-32 bg-background flex items-center justify-center p-8 rounded-2xl transition-all duration-500 hover:scale-105">
-                      <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain" />
+                      <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain" />
                    </div>
                 </div>
               ))}
@@ -277,7 +277,7 @@ function SobrePage() {
                       <div key={tool.name} className="flex items-center justify-between border-b border-border pb-6 group">
                          <div className="flex items-center gap-6">
                             <div className="w-12 h-12 flex items-center justify-center">
-                               <img src={tool.logo} alt={tool.name} className="w-full h-full object-contain transition-all" />
+                               <img src={tool.logo} alt={`Logo do ${tool.name}`} className="w-full h-full object-contain transition-all" />
                             </div>
                             <span className="text-xl md:text-2xl font-bold tracking-tighter">{tool.name}</span>
                          </div>
