@@ -51,14 +51,14 @@ function BrandPage() {
             <div className="scroll-reveal aspect-square bg-card overflow-hidden">
                <img 
                 src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1200&auto=format&fit=crop" 
-                alt="Detail 1"
+                alt="Detalhe visual do sistema de marca"
                 className="w-full h-full object-cover transition-all duration-700"
               />
             </div>
             <div className="scroll-reveal aspect-square bg-card overflow-hidden md:mt-24">
                <img 
                 src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop" 
-                alt="Detail 2"
+                alt="Aplicação secundária da identidade"
                 className="w-full h-full object-cover transition-all duration-700"
               />
             </div>
