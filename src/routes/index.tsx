@@ -307,7 +307,7 @@ function HomePage() {
       {/* Brand Marquee */}
       <section className="py-24 overflow-hidden border-t border-border/5">
         <div className="site-container mb-12">
- <h3 className="text-xl md:text-2xl font-bold tracking-tighter scroll-reveal">Marcas que já trabalhei</h3>
+ <h2 className="text-xl md:text-2xl font-bold tracking-tighter scroll-reveal">Marcas que já trabalhei</h2>
         </div>
         
         <DraggableMarquee 

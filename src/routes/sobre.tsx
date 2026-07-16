@@ -4,14 +4,16 @@ import { useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { ChevronDown, Plus, ArrowUpRight, Cpu, ClipboardList, Zap } from "lucide-react";
 import { ProjectMedia } from "@/components/project-media";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/sobre")({
-  head: () => ({
-    meta: [
-      { title: "Sobre Mim - Murilo Ortega - Design Estratégico & Identidade de Marca" },
-      { name: "description", content: "8 anos de experiência transformando marcas através de dados, criatividade e estratégia." },
-    ],
-  }),
+  head: () =>
+    routeSeo({
+      path: "/sobre",
+      title: "Sobre — Murilo Ortega",
+      description:
+        "8 anos entre agências, multinacionais e marcas. Design estratégico, branding e coordenação de projetos que precisam funcionar de verdade.",
+    }),
   component: SobrePage,
 });
 
