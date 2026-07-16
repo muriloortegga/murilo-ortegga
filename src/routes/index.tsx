@@ -4,16 +4,37 @@ import { useState, useEffect } from "react";
 import { DraggableMarquee } from "@/components/draggable-marquee";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { ProjectMedia } from "@/components/project-media";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Murilo Ortega - Design Estratégico & Identidade de Marca" },
-      { name: "description", content: "Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um sistema de alto nível." },
-      { property: "og:title", content: "Murilo Ortega - Design Estratégico & Identidade de Marca" },
-      { property: "og:description", content: "Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um sistema de alto nível." },
-    ],
-  }),
+  head: () => {
+    const seo = routeSeo({
+      path: "/",
+      title: "Murilo Ortega — Design Estratégico e Identidade de Marca",
+      description:
+        "Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um método infalível.",
+    });
+    return {
+      ...seo,
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Murilo Ortega",
+            jobTitle: "Design Estratégico & Identidade de Marca",
+            url: "https://murilo-ortegga.lovable.app/",
+            sameAs: [
+              "https://linkedin.com/in/muriloortega",
+              "https://instagram.com/muriloortega",
+              "https://behance.net/muriloortega",
+            ],
+          }),
+        },
+      ],
+    };
+  },
   component: HomePage,
 });
 
@@ -113,19 +134,46 @@ const galleryImages = [
   "/assets/projects/thumbnails/social/evidive.jpg",
 ];
 
+const galleryAlts = [
+  "Símbolo do sistema visual Symplice",
+  "Direção criativa social Kapyi",
+  "Identidade visual Solid Plus",
+  "Aplicação de marca NaTrave",
+  "Website institucional Kmillion",
+  "Peça social Talk2Buy",
+  "Campanha Maxi Colégio",
+  "Conteúdo educativo Milgrows",
+  "Case social Evidive Creators",
+];
+
 function HeroGallery() {
   return (
     <div className="hero-gallery">
       <div className="hero-gallery-track">
         {galleryImages.map((img, i) => (
           <div key={i} className="hero-gallery-item">
-            <img src={img} alt={`Gallery ${i}`} className="rounded-xl transition-all duration-700" />
+            <img
+              src={img}
+              alt={galleryAlts[i] ?? "Peça de portfolio Murilo Ortega"}
+              width={400}
+              height={500}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              className="rounded-xl transition-all duration-700"
+            />
           </div>
         ))}
         {/* Duplicate for seamless loop */}
         {galleryImages.map((img, i) => (
-          <div key={`dup-${i}`} className="hero-gallery-item">
-            <img src={img} alt={`Gallery Dup ${i}`} className="rounded-xl transition-all duration-700" />
+          <div key={`dup-${i}`} className="hero-gallery-item" aria-hidden="true">
+            <img
+              src={img}
+              alt=""
+              width={400}
+              height={500}
+              loading="lazy"
+              className="rounded-xl transition-all duration-700"
+            />
           </div>
         ))}
       </div>
