@@ -1,16 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Plus, ArrowRight } from "lucide-react";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/metodos/")({
-  head: () => ({
-    meta: [
-      { title: "Métodos, Murilo Ortega" },
-      { name: "description", content: "Metodologias aplicadas: Growth, Design Thinking e Posicionamento de Marca." },
-      { property: "og:title", content: "Métodos, Murilo Ortega" },
-      { property: "og:description", content: "Metodologias aplicadas para estruturar marcas e converter atenção." },
-    ],
-  }),
+  head: () =>
+    routeSeo({
+      path: "/metodos",
+      title: "Métodos — Murilo Ortega",
+      description:
+        "Metodologias aplicadas: estruturação de marca, sistema de conteúdo, presença digital, mídia impressa, OOH e marketing de influência.",
+    }),
   component: MetodosPage,
 });
 

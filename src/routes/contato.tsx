@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { ArrowRight, Calendar, MessageSquare } from "lucide-react";
+import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/contato")({
-  head: () => ({
-    meta: [
-      { title: "Contato - Murilo Ortega" },
-      { name: "description", content: "Vamos conversar. Se sua marca está abaixo do nível do seu negócio, é aqui que começa." },
-      { property: "og:title", content: "Contato - Murilo Ortega" },
-      { property: "og:description", content: "Vamos conversar sobre sua marca." },
-    ],
-  }),
+  head: () =>
+    routeSeo({
+      path: "/contato",
+      title: "Contato — Murilo Ortega",
+      description:
+        "Vamos conversar. Se sua marca está abaixo do nível do seu negócio, é aqui que começa. WhatsApp, e-mail ou agenda uma call.",
+    }),
   component: ContatoPage,
 });
 

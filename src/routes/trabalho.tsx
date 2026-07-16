@@ -6,15 +6,16 @@ import { Plus, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ProjectMedia } from "@/components/project-media";
 
+import { routeSeo } from "@/lib/seo";
+
 export const Route = createFileRoute("/trabalho")({
-  head: () => ({
-    meta: [
-      { title: "Portfolio - Murilo Ortega" },
-      { name: "description", content: "Projetos selecionados de branding, conteúdo e presença digital." },
-      { property: "og:title", content: "Portfolio - Murilo Ortega" },
-      { property: "og:description", content: "Projetos selecionados de branding, conteúdo e presença digital." },
-    ],
-  }),
+  head: () =>
+    routeSeo({
+      path: "/trabalho",
+      title: "Portfolio — Murilo Ortega",
+      description:
+        "Projetos selecionados de branding, conteúdo, presença digital, mídia impressa e OOH. Cases de marcas que precisavam funcionar.",
+    }),
   component: PortfolioPage,
 });
 
