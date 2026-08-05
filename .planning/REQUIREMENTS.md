@@ -16,9 +16,9 @@ Requirements for the home page restructure. Each maps to roadmap phases.
 ### Hero
 
 - [x] **HERO-01**: Headline dupla no hero — linha 1 comunica papel/valor profissional contratável (terminologia de cargo padrão de mercado), linha 2 comunica resultado/prova entregue
-- [ ] **HERO-02**: Foto/presença visual do Murilo em destaque no hero (não como camada de fundo em grayscale/baixa opacidade como hoje em `/sobre`)
-- [ ] **HERO-03**: Cluster de CTA primário no hero — LinkedIn + e-mail + CV com hierarquia visual dominante
-- [ ] **HERO-04**: CTA secundário no hero — "Ver Portfolio completo" (mantém acesso a `/trabalho`)
+- [x] **HERO-02**: Foto/presença visual do Murilo em destaque no hero (não como camada de fundo em grayscale/baixa opacidade como hoje em `/sobre`)
+- [x] **HERO-03**: Cluster de CTA primário no hero — LinkedIn + e-mail + CV com hierarquia visual dominante
+- [x] **HERO-04**: CTA secundário no hero — "Ver Portfolio completo" (mantém acesso a `/trabalho`)
 
 ### Prova Social
 
@@ -51,8 +51,8 @@ Requirements for the home page restructure. Each maps to roadmap phases.
 - [ ] **ANTI-01**: Não usar barras/gráficos de porcentagem de proficiência de skill
 - [x] **ANTI-02**: Não usar saudação genérica sem valor no hero ("Olá, sou o Murilo")
 - [ ] **ANTI-03**: Não replicar a lista completa de todos os projetos na home
-- [ ] **ANTI-04**: WhatsApp não pode ser o CTA dominante ou primeiro visualmente
-- [ ] **ANTI-05**: Não introduzir animação/vídeo pesado novo no hero
+- [x] **ANTI-04**: WhatsApp não pode ser o CTA dominante ou primeiro visualmente
+- [x] **ANTI-05**: Não introduzir animação/vídeo pesado novo no hero
 
 ## v2 Requirements
 
@@ -90,16 +90,16 @@ Explicitly excluded from this phase. Documented to prevent scope creep.
 | FIX-02 | Phase 1 | Complete |
 | FIX-03 | Phase 1 | Complete |
 | HERO-01 | Phase 2 | Complete |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| HERO-04 | Phase 2 | Complete |
 | CASE-01 | Phase 2 | Pending |
 | CASE-02 | Phase 2 | Pending |
 | CASE-03 | Phase 2 | Pending |
 | ANTI-02 | Phase 2 | Complete |
 | ANTI-03 | Phase 2 | Pending |
-| ANTI-04 | Phase 2 | Pending |
-| ANTI-05 | Phase 2 | Pending |
+| ANTI-04 | Phase 2 | Complete |
+| ANTI-05 | Phase 2 | Complete |
 | PROOF-01 | Phase 3 | Pending |
 | PROOF-02 | Phase 3 | Pending |
 | SKILL-01 | Phase 3 | Pending |

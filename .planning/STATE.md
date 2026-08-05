@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-08-05T22:11:20.461Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-08-05T22:22:34.137Z"
 last_activity: 2026-08-05
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 7
-  completed_plans: 4
+  completed_plans: 5
   percent: 25
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-08-04)
 ## Current Position
 
 Phase: 2 (home-ia-restructure-hero-cta-hierarchy-case-studies) — EXECUTING
-Plan: 2 of 4
+Plan: 3 of 4
 Status: Ready to execute
 Last activity: 2026-08-05
 
-Progress: [██████░░░░] 57%
+Progress: [███████░░░] 71%
 
 ## Performance Metrics
 
@@ -56,6 +56,7 @@ Progress: [██████░░░░] 57%
 | Phase 01 P02 | 10min | 2 tasks | 7 files |
 | Phase 01 P03 | 10min | 2 tasks | 1 files |
 | Phase 02 P01 | 8min | 3 tasks | 1 files |
+| Phase 02 P02 | 20min | 3 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [Phase 01-03]: All 5 human checkpoint items passed on first try (CV download, LinkedIn x2, hero crop, no breakage) — no fix routed back to 01-01 or 01-02
 - [Phase 01-03]: D-07 resolved: no preference on CV filename slug, keeps current percent-encoded path as-is
 - [Phase 02]: Draft A (UI-SPEC recommended) selected as hero H1 copy: 'Diretor de Arte & Designer de Marca' / '8 anos transformando marcas comuns em marcas com resultado real.'
+- [Phase 02-02]: Hero photo uses the existing .media-wrap bordered-card convention (no mask-image), per 02-UI-SPEC.md §1 — reuses zero-risk sitewide precedent instead of a new compositing technique
+- [Phase 02-02]: HeroGallery(), galleryImages, galleryAlts deleted from index.tsx outright (no commented-out remnant); reachability audit is the permanent record per UI-SPEC §5
 
 ### Pending Todos
 
@@ -98,6 +101,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-05T22:11:20.451Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-08-05T22:22:34.126Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
