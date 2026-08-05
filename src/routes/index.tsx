@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
             jobTitle: "Design Estratégico & Identidade de Marca",
             url: "https://murilo-ortegga.lovable.app/",
             sameAs: [
-              "https://linkedin.com/in/muriloortega",
+              "https://www.linkedin.com/in/murilo-ortega",
               "https://instagram.com/muriloortega",
               "https://behance.net/muriloortega",
             ],

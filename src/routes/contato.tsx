@@ -52,7 +52,7 @@ function ContatoPage() {
                     <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-secondary/40">Social</span>
                     <div className="flex flex-col gap-3">
                        {[
-                         { name: "LinkedIn", url: "https://linkedin.com/in/muriloortega" },
+                         { name: "LinkedIn", url: "https://www.linkedin.com/in/murilo-ortega" },
                          { name: "Instagram", url: "https://instagram.com/muriloortega" },
                          { name: "Behance", url: "https://behance.net/muriloortega" },
                          { name: "Upwork", url: "https://upwork.com" }

@@ -32,7 +32,7 @@ export function Footer() {
         </span>
         <div className="flex items-center gap-6 md:gap-12">
           {[
-            { name: "LinkedIn", url: "https://linkedin.com/in/muriloortega" },
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/murilo-ortega" },
             { name: "Instagram", url: "https://instagram.com/muriloortega" },
             { name: "Behance", url: "https://behance.net/muriloortega" },
             { name: "Upwork", url: "https://upwork.com" }
