@@ -1,7 +1,7 @@
 ---
 phase: 2
 slug: home-ia-restructure-hero-cta-hierarchy-case-studies
-status: draft
+status: approved
 shadcn_initialized: false
 preset: none
 created: 2026-08-05
@@ -302,11 +302,12 @@ projects/pages/assets, not in-place hero tagline copy that HERO-01 explicitly as
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: PASS
+- [x] Dimension 2 Visuals: PASS (FLAG, non-blocking)
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** pending
+**Approval:** approved — 2026-08-05 (gsd-ui-checker returned `## UI-SPEC VERIFIED`; the Dimension 2
+Visuals result was a non-blocking FLAG, not a blocking issue)
