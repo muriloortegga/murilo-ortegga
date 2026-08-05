@@ -84,24 +84,39 @@ Explicitly excluded from this phase. Documented to prevent scope creep.
 
 ## Traceability
 
-Empty initially — populated during roadmap creation.
-
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FIX-01, FIX-02, FIX-03 | TBD | Pending |
-| HERO-01 a HERO-04 | TBD | Pending |
-| PROOF-01, PROOF-02 | TBD | Pending |
-| CASE-01 a CASE-03 | TBD | Pending |
-| SKILL-01, SKILL-02 | TBD | Pending |
-| METHOD-01 | TBD | Pending |
-| CONTACT-01 a CONTACT-03 | TBD | Pending |
-| ANTI-01 a ANTI-05 | TBD | Pending |
+| FIX-01 | Phase 1 | Pending |
+| FIX-02 | Phase 1 | Pending |
+| FIX-03 | Phase 1 | Pending |
+| HERO-01 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Pending |
+| HERO-03 | Phase 2 | Pending |
+| HERO-04 | Phase 2 | Pending |
+| CASE-01 | Phase 2 | Pending |
+| CASE-02 | Phase 2 | Pending |
+| CASE-03 | Phase 2 | Pending |
+| ANTI-02 | Phase 2 | Pending |
+| ANTI-03 | Phase 2 | Pending |
+| ANTI-04 | Phase 2 | Pending |
+| ANTI-05 | Phase 2 | Pending |
+| PROOF-01 | Phase 3 | Pending |
+| PROOF-02 | Phase 3 | Pending |
+| SKILL-01 | Phase 3 | Pending |
+| SKILL-02 | Phase 3 | Pending |
+| METHOD-01 | Phase 3 | Pending |
+| CONTACT-01 | Phase 3 | Pending |
+| CONTACT-02 | Phase 3 | Pending |
+| CONTACT-03 | Phase 3 | Pending |
+| ANTI-01 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
-- Mapped to phases: 0 (roadmap pending)
-- Unmapped: 23 ⚠️ (resolved by `/gsd:roadmap` step next)
+- Mapped to phases: 23/23 ✓
+- Unmapped: 0
+
+Phase 4 (QA — Responsive, SEO/Meta, Links, Squint Test, Merge) carries no unique v1 requirements; it verifies the requirements delivered in Phases 1-3 and gates the merge to `main`.
 
 ---
 *Requirements defined: 2026-08-04*
-*Last updated: 2026-08-04 after initialization*
+*Last updated: 2026-08-05 after roadmap creation*
