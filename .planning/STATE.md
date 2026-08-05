@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-08-05T22:22:34.137Z"
+stopped_at: Completed 02-03-PLAN.md
+last_updated: "2026-08-05T22:38:14.990Z"
 last_activity: 2026-08-05
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 7
-  completed_plans: 5
+  completed_plans: 6
   percent: 25
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-08-04)
 ## Current Position
 
 Phase: 2 (home-ia-restructure-hero-cta-hierarchy-case-studies) — EXECUTING
-Plan: 3 of 4
+Plan: 4 of 4
 Status: Ready to execute
 Last activity: 2026-08-05
 
-Progress: [███████░░░] 71%
+Progress: [█████████░] 86%
 
 ## Performance Metrics
 
@@ -57,6 +57,7 @@ Progress: [███████░░░] 71%
 | Phase 01 P03 | 10min | 2 tasks | 1 files |
 | Phase 02 P01 | 8min | 3 tasks | 1 files |
 | Phase 02 P02 | 20min | 3 tasks | 2 files |
+| Phase 02 P03 | 15min | 3 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Draft A (UI-SPEC recommended) selected as hero H1 copy: 'Diretor de Arte & Designer de Marca' / '8 anos transformando marcas comuns em marcas com resultado real.'
 - [Phase 02-02]: Hero photo uses the existing .media-wrap bordered-card convention (no mask-image), per 02-UI-SPEC.md §1 — reuses zero-risk sitewide precedent instead of a new compositing technique
 - [Phase 02-02]: HeroGallery(), galleryImages, galleryAlts deleted from index.tsx outright (no commented-out remnant); reachability audit is the permanent record per UI-SPEC §5
+- [Phase 02-03]: 5th case is Kapyi (D-01), qualitative result line with zero fabricated numbers (D-02) — 2,5 anos figure kept only in the action line, sourced verbatim from kapyi.tsx:43
+- [Phase 02-03]: NaTrave's 2.250 seguidores is the only numeric result across all 5 cards, traced to natrave.tsx:69 followers={2250}
+- [Phase 02-03]: Kmillion, Evidive, Talk2Buy removed from the home projects array only — routes and /trabalho listing untouched, satisfying CASE-03
 
 ### Pending Todos
 
@@ -101,6 +105,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-05T22:22:34.126Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-08-05T22:38:14.946Z
+Stopped at: Completed 02-03-PLAN.md
 Resume file: None

@@ -27,9 +27,9 @@ Requirements for the home page restructure. Each maps to roadmap phases.
 
 ### Cases
 
-- [ ] **CASE-01**: 5 cases em destaque na home com narrativa Problema → Ação → Resultado: NaTrave, Symplice, Maxi, Solid+, e o 5º a decidir entre Milgrows ou Kapyi
-- [ ] **CASE-02**: Cada case mostra resultado/contexto visível sem precisar clicar (não é só thumbnail bonito)
-- [ ] **CASE-03**: Demais projetos (além dos 5 em destaque) continuam acessíveis via `/trabalho`, sem sumir de lugar nenhum
+- [x] **CASE-01**: 5 cases em destaque na home com narrativa Problema → Ação → Resultado: NaTrave, Symplice, Maxi, Solid+, e o 5º a decidir entre Milgrows ou Kapyi
+- [x] **CASE-02**: Cada case mostra resultado/contexto visível sem precisar clicar (não é só thumbnail bonito)
+- [x] **CASE-03**: Demais projetos (além dos 5 em destaque) continuam acessíveis via `/trabalho`, sem sumir de lugar nenhum
 
 ### Competências
 
@@ -50,7 +50,7 @@ Requirements for the home page restructure. Each maps to roadmap phases.
 
 - [ ] **ANTI-01**: Não usar barras/gráficos de porcentagem de proficiência de skill
 - [x] **ANTI-02**: Não usar saudação genérica sem valor no hero ("Olá, sou o Murilo")
-- [ ] **ANTI-03**: Não replicar a lista completa de todos os projetos na home
+- [x] **ANTI-03**: Não replicar a lista completa de todos os projetos na home
 - [x] **ANTI-04**: WhatsApp não pode ser o CTA dominante ou primeiro visualmente
 - [x] **ANTI-05**: Não introduzir animação/vídeo pesado novo no hero
 
@@ -93,11 +93,11 @@ Explicitly excluded from this phase. Documented to prevent scope creep.
 | HERO-02 | Phase 2 | Complete |
 | HERO-03 | Phase 2 | Complete |
 | HERO-04 | Phase 2 | Complete |
-| CASE-01 | Phase 2 | Pending |
-| CASE-02 | Phase 2 | Pending |
-| CASE-03 | Phase 2 | Pending |
+| CASE-01 | Phase 2 | Complete |
+| CASE-02 | Phase 2 | Complete |
+| CASE-03 | Phase 2 | Complete |
 | ANTI-02 | Phase 2 | Complete |
-| ANTI-03 | Phase 2 | Pending |
+| ANTI-03 | Phase 2 | Complete |
 | ANTI-04 | Phase 2 | Complete |
 | ANTI-05 | Phase 2 | Complete |
 | PROOF-01 | Phase 3 | Pending |
