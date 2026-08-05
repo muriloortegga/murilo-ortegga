@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 1 context gathered
-last_updated: "2026-08-05T05:51:02.404Z"
-last_activity: 2026-08-05 -- Phase 1 execution started
+stopped_at: Completed 01-01-PLAN.md
+last_updated: "2026-08-05T05:58:23.114Z"
+last_activity: 2026-08-05
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 3
-  completed_plans: 0
+  completed_plans: 1
   percent: 0
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-08-04)
 ## Current Position
 
 Phase: 1 (foundation-fixes-hero-decision) — EXECUTING
-Plan: 1 of 3
-Status: Executing Phase 1
-Last activity: 2026-08-05 -- Phase 1 execution started
+Plan: 2 of 3
+Status: Ready to execute
+Last activity: 2026-08-05
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [███░░░░░░░] 33%
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01 P01 | 5min | 3 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -63,6 +64,8 @@ Recent decisions affecting current work:
 - Roadmap: Scope is `src/routes/index.tsx` only — no other route is touched this milestone.
 - Roadmap: Coarse granularity (4 phases) — matches research-recommended structure, no compression or padding applied.
 - Roadmap: Phase 4 (QA) carries no unique v1 requirements — it verifies Phases 1-3 and gates the merge to `main`.
+- [Phase 01-01]: Feature branch feature/home-recruiter-redesign created off main; baseline SHA bbf8382b9b6776d89ac793c1fd4874dd81a9be8a recorded for Phase 1-4 — Milestone ships on one branch/PR (Phases 1-4); baseline lets later plans verify no source change reached main
+- [Phase 01-01]: LinkedIn URL corrected to https://www.linkedin.com/in/murilo-ortega in all 3 src/ occurrences; CV href corrected to /cv/CV%20MURILO%20ORTEGA%202026.pdf — FIX-01/FIX-02: both recruiter action links (LinkedIn, CV download) now resolve correctly
 
 ### Pending Todos
 
@@ -86,6 +89,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-05T04:13:15.220Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation-fixes-hero-decision/01-CONTEXT.md
+Last session: 2026-08-05T05:58:23.101Z
+Stopped at: Completed 01-01-PLAN.md
+Resume file: None
