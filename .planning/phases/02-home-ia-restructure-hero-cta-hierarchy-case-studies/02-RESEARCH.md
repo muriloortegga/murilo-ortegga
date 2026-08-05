@@ -432,22 +432,22 @@ This confirms `ContextNav`'s "back to category" breadcrumb will work correctly f
 | A3 | `HeroGallery`/`galleryImages` can be removed from the hero's rendered JSX (kept as unused dead code or fully deleted) without violating the "nothing may be deleted" constraint, since underlying image assets remain used elsewhere | Pitfall 3 | If the user interprets "no deletion" as "no code deletion, period," removing `HeroGallery()`'s JSX call requires explicit confirmation, not silent execution |
 | A4 | The 8.2MB `solid-full.png` should never be used as a home-page card image (use `thumbnails/solid.jpg` at 1.9MB instead) | Pitfall 2, Code Examples | Low risk — this is a straightforward performance judgment, not a subjective call, but flagging as assumption since no explicit requirement states the file-size ceiling |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Should the hero section itself become a `bg-foreground text-background` (genuinely dark) band, matching the "Positioning" section's existing inversion pattern?**
+1. **Should the hero section itself become a `bg-foreground text-background` (genuinely dark) band, matching the "Positioning" section's existing inversion pattern?** — **RESOLVED** in `02-UI-SPEC.md` §1: hero stays on the site's actual light background (`#f4f4f4`), no inversion. Confirmed directly by the user this session — "dark mode" in `PROJECT.md`/`CLAUDE.md` is sitewide-identity framing, not a literal global-dark requirement; the hero was never meant to invert.
    - What we know: The site's actual default background is light (`#f4f4f4`); "dark mode" as described in `PROJECT.md`/`CLAUDE.md` is achieved through localized section inversion, not a global theme.
-   - What's unclear: Whether the user's mental model of "the hero should look dark" (implied by CONTEXT.md's inherited framing) means the hero section's background should be explicitly inverted this phase, or whether "dark mode, editorial" is meant at the sitewide-identity level and the hero staying light (matching its current, never-complained-about state) is fine.
-   - Recommendation: Surface this explicitly at the UI-SPEC stage (`/gsd:ui-phase`, already flagged as `ui_hint: yes` for this phase) rather than the planner silently choosing a hero background color — this single decision determines which of Pattern 1's two mask-strength options (subtle feather vs. stronger vignette) is correct.
+   - What's unclear: ~~Whether the user's mental model...~~ No longer unclear — resolved as above.
+   - Recommendation: ~~Surface this explicitly at the UI-SPEC stage~~ Done — see `02-UI-SPEC.md` §1 for the photo-compositing treatment (bordered card, `aspect-[4/5]`, no mask/vignette needed since there's no light-on-dark boundary to soften).
 
-2. **Exact `sizes` attribute values and hero container width split (desktop/mobile).**
+2. **Exact `sizes` attribute values and hero container width split (desktop/mobile).** — **RESOLVED** in `02-UI-SPEC.md` §3: `sizes="(min-width: 1024px) 420px, (min-width: 640px) 360px, 85vw"`, hero grid `grid-cols-1 lg:grid-cols-[1.4fr_1fr]`.
    - What we know: `01-HERO-PHOTO.md` §6 explicitly defers this to Phase 2's own layout work; three width tiers (480/960/1440) are ready.
-   - What's unclear: What fraction of viewport width the photo occupies at each breakpoint — depends on the final hero grid split (currently `lg:grid-cols-2` in the existing hero).
-   - Recommendation: Resolve during the UI-SPEC step; this research provides the markup shape but not the final `sizes` string.
+   - What's unclear: ~~What fraction of viewport width...~~ No longer unclear — resolved as above.
+   - Recommendation: ~~Resolve during the UI-SPEC step~~ Done.
 
-3. **Grid layout for 5 case cards — 3+2, uniform 3-col with last row partial, or a "featured first card" asymmetric layout?**
+3. **Grid layout for 5 case cards — 3+2, uniform 3-col with last row partial, or a "featured first card" asymmetric layout?** — **RESOLVED** in `02-UI-SPEC.md` §4: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`, natural flow, no spanning/featured treatment.
    - What we know: `ARCHITECTURE.md` recommends 5 cards, 2-3 sentences each, scannable without scrolling excessively; no existing 5-item grid precedent exists elsewhere in the codebase to copy verbatim (the closest precedent, `/trabalho`, uses a different filterable-list pattern, not a fixed-5 grid).
-   - What's unclear: Exact column count / responsive breakpoints for a 5-item grid (5 doesn't divide evenly into 2 or 3 columns without an intentional layout decision).
-   - Recommendation: UI-SPEC step should resolve this; a `grid-cols-1 md:grid-cols-2 lg:grid-cols-3` with the 5th card either spanning or sitting alone in its row is a reasonable default consistent with existing Tailwind grid usage patterns in `trabalho.tsx`/`MethodsSection`.
+   - What's unclear: ~~Exact column count...~~ No longer unclear — resolved as above.
+   - Recommendation: ~~UI-SPEC step should resolve this~~ Done — the UI-SPEC's chosen default (uniform 3-col, natural flow) matches this research's own recommendation.
 
 ## Environment Availability
 
