@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { useState, useEffect } from "react";
 import { DraggableMarquee } from "@/components/draggable-marquee";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight, Linkedin, Mail, Download } from "lucide-react";
 import { ProjectMedia } from "@/components/project-media";
 import { routeSeo } from "@/lib/seo";
 
@@ -278,15 +278,20 @@ function HomePage() {
                 </h1>
               </div>
               <div className="mt-12 flex flex-wrap gap-4 anim-fade-in delay-500" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
-                <Link to="/trabalho" className="btn btn-hero-primary">
-                  Ver Portfolio
-                </Link>
-                <Link to="/sobre" className="btn btn-hero-secondary">
-                  Ver mais sobre mim
-                </Link>
-                <a href="/cv/CV%20MURILO%20ORTEGA%202026.pdf" download className="btn btn-hero-secondary">
-                  Baixar CV
+                <a href="https://www.linkedin.com/in/murilo-ortega" target="_blank" rel="noopener noreferrer" className="btn btn-hero-primary gap-2 text-xs">
+                  <Linkedin size={16} /> Conectar no LinkedIn
                 </a>
+                <a href="mailto:contato@muriloortega.com" className="btn btn-hero-secondary gap-2 text-xs">
+                  <Mail size={16} /> Enviar E-mail
+                </a>
+                <a href="/cv/CV%20MURILO%20ORTEGA%202026.pdf" download className="btn btn-hero-secondary gap-2 text-xs">
+                  <Download size={16} /> Baixar CV
+                </a>
+              </div>
+              <div className="mt-8 anim-fade-in delay-500" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
+                <Link to="/trabalho" className="text-link">
+                  Ver Portfolio completo
+                </Link>
               </div>
             </div>
 
