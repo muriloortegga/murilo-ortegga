@@ -6,7 +6,8 @@ const navLinks = [
   { to: "/trabalho", label: "Portfolio" },
   { to: "/metodos", label: "Métodos" },
   { to: "/sobre", label: "Sobre Mim" },
-  { to: "https://wa.me/5511941765691?text=gostaria%20de%20fazer%20um%20or%C3%A7amento!", label: "Contato", isExternal: true },
+  { to: "/contato", label: "Contato" },
+  { to: "/cv/curriculo-murilo-ortega.pdf", label: "Currículo", isExternal: true, isDownload: true },
 ];
 
 export function Header() {
@@ -39,8 +40,7 @@ export function Header() {
                 <a
                   key={link.to}
                   href={link.to}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(link.isDownload ? { download: true } : { target: "_blank", rel: "noopener noreferrer" })}
  className="text-sm font-regular tracking-tight text-foreground/60 transition-opacity duration-250 hover:opacity-100"
                 >
                   {link.label}
@@ -103,8 +103,7 @@ export function Header() {
                 <a
                   key={link.to}
                   href={link.to}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(link.isDownload ? { download: true } : { target: "_blank", rel: "noopener noreferrer" })}
  className="text-[40px] text-foreground font-bold leading-none tracking-tight"
                   onClick={() => setMenuOpen(false)}
                 >
