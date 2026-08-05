@@ -297,6 +297,23 @@ function HomePage() {
         />
       </section>
 
+      {/* Case Studies */}
+      <section className="site-section border-t border-border relative z-10 bg-background">
+        <div className="site-container">
+          <div className="mb-16">
+            <span className="tag-mono scroll-reveal mb-4 inline-block">Prova de Trabalho</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[1.1] max-w-4xl scroll-reveal">
+              Resultados que já entreguei
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+            {projects.map((project, i) => (
+              <ProjectCard key={project.to} project={project} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Positioning */}
       <section className="site-section border-t border-border bg-foreground text-background">
         <div className="site-container">

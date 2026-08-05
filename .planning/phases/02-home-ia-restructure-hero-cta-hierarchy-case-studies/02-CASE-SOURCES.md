@@ -54,4 +54,14 @@ reachable — their routes were not touched and `/trabalho` still lists all thre
 
 ## Post-render verification
 
-_Filled in after Task 3 renders the Case Studies section and the SSR dev server is verified._
+Verified against `npm run dev` (port 8080) SSR output on 2026-08-05:
+
+- `curl -s http://localhost:8080/ | grep -ao "Resultado:" | wc -l` → **5** (CASE-02 — every card's outcome is in the SSR'd HTML, no click/hover/expand required)
+- `curl -s http://localhost:8080/ | grep -ao "Prova de Trabalho" | wc -l` → **1** (eyebrow renders once)
+- `href="/natrave"`, `href="/symplice"`, `href="/maxi"`, `href="/solid"` each present (≥1; observed 5 — additional occurrences come from unrelated nav/breadcrumb context elsewhere on the page, not from duplicate cards)
+- `href="/kapyi"` present (≥1; observed 1)
+- The Case Studies `<section>` sits between the Brand Marquee `</section>` and the `{/* Positioning */}` comment in `src/routes/index.tsx`, confirmed via `awk '/Case Studies \*\//,/Positioning \*\//' src/routes/index.tsx` — the slice contains exactly one `projects.map` call and zero `bg-foreground text-background` occurrences (not inverted, stays on the default light section background per UI-SPEC §1)
+- `git status --porcelain src/routes/trabalho.tsx` → empty (unmodified)
+- `git diff --stat src/styles.css` → empty (unmodified)
+- `git status --porcelain public/` → empty (no asset changes)
+- `npx tsc --noEmit` exits 0; `npm run lint` shows the same 6 pre-existing problems as the pre-task baseline (5 errors in `draggable-marquee.tsx`, `project-media.tsx`, `social-media-case.tsx`, and 2 pre-existing `any`-typed `ProjectCard` params in `index.tsx`; 1 pre-existing warning in `router.tsx`) — zero new errors introduced by this plan
