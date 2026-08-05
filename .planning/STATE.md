@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-08-05T05:58:23.114Z"
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-08-05T06:04:26.185Z"
 last_activity: 2026-08-05
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 3
-  completed_plans: 1
+  completed_plans: 2
   percent: 0
 ---
 
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-08-04)
 ## Current Position
 
 Phase: 1 (foundation-fixes-hero-decision) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 Status: Ready to execute
 Last activity: 2026-08-05
 
-Progress: [███░░░░░░░] 33%
+Progress: [███████░░░] 67%
 
 ## Performance Metrics
 
@@ -53,6 +53,7 @@ Progress: [███░░░░░░░] 33%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 5min | 3 tasks | 3 files |
+| Phase 01 P02 | 10min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,9 @@ Recent decisions affecting current work:
 - Roadmap: Phase 4 (QA) carries no unique v1 requirements — it verifies Phases 1-3 and gates the merge to `main`.
 - [Phase 01-01]: Feature branch feature/home-recruiter-redesign created off main; baseline SHA bbf8382b9b6776d89ac793c1fd4874dd81a9be8a recorded for Phase 1-4 — Milestone ships on one branch/PR (Phases 1-4); baseline lets later plans verify no source change reached main
 - [Phase 01-01]: LinkedIn URL corrected to https://www.linkedin.com/in/murilo-ortega in all 3 src/ occurrences; CV href corrected to /cv/CV%20MURILO%20ORTEGA%202026.pdf — FIX-01/FIX-02: both recruiter action links (LinkedIn, CV download) now resolve correctly
+- [Phase 01-02]: Crop y-offset 257 (crop=3376:4220:0:257) confirmed correct on visual inspection - no adjustment needed
+- [Phase 01-02]: No WebP tier shipped for hero images - ffmpeg lacks libwebp encoder, sips cannot write webp, and adding a package would violate the fixed-stack constraint; AVIF+JPEG already bracket the coverage
+- [Phase 01-02]: 1200x630 Open Graph image flagged in 01-HERO-PHOTO.md as out of scope and currently unowned by any phase, for Phase 4 to pick up
 
 ### Pending Todos
 
@@ -89,6 +93,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-05T05:58:23.101Z
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-08-05T06:04:26.173Z
+Stopped at: Completed 01-02-PLAN.md
 Resume file: None

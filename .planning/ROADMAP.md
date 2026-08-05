@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Feature branch + working recruiter action links: correct the LinkedIn URL in all 3 source occurrences and point the home page CV download at the real PDF (FIX-01, FIX-02)
-- [ ] 01-02-PLAN.md — Export web-ready full-colour hero variants (480/960/1440 in AVIF+JPEG) from `hero-bg.jpg` and write the Phase 2 handoff decision record (FIX-03)
+- [x] 01-02-PLAN.md — Export web-ready full-colour hero variants (480/960/1440 in AVIF+JPEG) from `hero-bg.jpg` and write the Phase 2 handoff decision record (FIX-03)
 - [ ] 01-03-PLAN.md — End-to-end dev-server audit plus blocking human click-test of the CV download, the LinkedIn profile, and the hero crop (FIX-01, FIX-02, FIX-03)
 
 ### Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies
@@ -94,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation Fixes & Hero Decision | 1/3 | In Progress|  |
+| 1. Foundation Fixes & Hero Decision | 2/3 | In Progress|  |
 | 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 0/TBD | Not started | - |
 | 3. Skills, Methods Reframe, Social Proof & Final CTA | 0/TBD | Not started | - |
 | 4. QA — Responsive, SEO/Meta, Links, Squint Test, Merge | 0/TBD | Not started | - |

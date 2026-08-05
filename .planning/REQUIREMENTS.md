@@ -11,7 +11,7 @@ Requirements for the home page restructure. Each maps to roadmap phases.
 
 - [x] **FIX-01**: Link de download do CV na home aponta para o arquivo real (`public/cv/CV MURILO ORTEGA 2026.pdf`), testado manualmente
 - [x] **FIX-02**: URL do LinkedIn confirmada pelo usuário como correta (hoje `https://linkedin.com/in/muriloortega`, não verificada)
-- [ ] **FIX-03**: Asset de foto para o hero resolvido — origem definida (foto real do usuário, ou fallback explícito no tratamento visual atual) antes do trabalho de layout do hero começar
+- [x] **FIX-03**: Asset de foto para o hero resolvido — origem definida (foto real do usuário, ou fallback explícito no tratamento visual atual) antes do trabalho de layout do hero começar
 
 ### Hero
 
@@ -88,7 +88,7 @@ Explicitly excluded from this phase. Documented to prevent scope creep.
 |-------------|-------|--------|
 | FIX-01 | Phase 1 | Complete |
 | FIX-02 | Phase 1 | Complete |
-| FIX-03 | Phase 1 | Pending |
+| FIX-03 | Phase 1 | Complete |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
 | HERO-03 | Phase 2 | Pending |
