@@ -1,7 +1,10 @@
 ---
-status: pending-approval
+status: approved
 phase: 02
 requirement: HERO-01
+approved_by: user
+approved_on: 2026-08-05
+selected: draft-a
 ---
 
 # Hero Headline Copy — Decision Record
@@ -14,6 +17,35 @@ string into `src/routes/index.tsx`'s hero H1.
 
 Three draft pairs are transcribed verbatim below — no paraphrasing, no re-drafting, no fourth option
 invented at this stage (a placeholder for the user's own wording, Option D, is included separately).
+
+---
+
+## Approved Copy
+
+line_1: "Diretor de Arte & Designer de Marca"
+line_2: "8 anos transformando marcas comuns em marcas com resultado real."
+
+Selected: `draft-a` (UI-SPEC recommended). Approved by the user at the `02-01-PLAN.md` Task 2 blocking
+checkpoint. These are the exact strings plan `02-02` writes into the hero H1 — no re-derivation,
+no re-drafting.
+
+---
+
+## HERO-01 / ANTI-02 Compliance
+
+- **HERO-01:** `line_1` states a hireable role in standard market terminology ("Diretor de Arte",
+  "Designer de Marca") and `line_2` states a delivered result ("8 anos transformando marcas comuns
+  em marcas com resultado real.").
+- **ANTI-02:** Neither `line_1` nor `line_2` is a generic greeting — no "Olá", "Oi", "sou o Murilo",
+  or "Hi, I'm" token appears in either line.
+
+---
+
+## Drafts Presented
+
+Three draft pairs transcribed verbatim from `02-UI-SPEC.md`'s Copywriting Contract, presented to the
+user at the Task 2 checkpoint. Draft A was selected as-is (see `## Approved Copy` above); Drafts B and
+C remain on record as rejected options.
 
 ---
 
@@ -62,7 +94,6 @@ of selecting Draft A, B, or C. To be filled in only if selected.
 
 ## Status
 
-`status: pending-approval` — awaiting the user's selection at the `02-01-PLAN.md` Task 2 blocking
-checkpoint. Once approved, this file will be updated in place (Task 3) with `status: approved`,
-`approved_by`, `approved_on`, `selected`, and an `## Approved Copy` section containing the final
-`line_1:` / `line_2:` strings that plan `02-02` reads verbatim.
+`status: approved` — the user selected Draft A at the `02-01-PLAN.md` Task 2 blocking checkpoint on
+2026-08-05. The final `line_1:` / `line_2:` strings are recorded verbatim under `## Approved Copy`
+above; plan `02-02` reads them from there and does not re-derive or re-draft.
