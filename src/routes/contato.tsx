@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-import { ArrowRight, Calendar, MessageSquare } from "lucide-react";
+import { ArrowRight, Calendar, MessageSquare, Download } from "lucide-react";
 import { routeSeo } from "@/lib/seo";
 
 export const Route = createFileRoute("/contato")({
@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contato")({
       path: "/contato",
       title: "Contato — Murilo Ortega",
       description:
-        "Vamos conversar. Se sua marca está abaixo do nível do seu negócio, é aqui que começa. WhatsApp, e-mail ou agenda uma call.",
+        "Recrutador? Currículo, LinkedIn e e-mail em destaque. Buscando um serviço sob demanda? WhatsApp e agenda de call também estão aqui.",
     }),
   component: ContatoPage,
 });
@@ -24,10 +24,37 @@ function ContatoPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
             <div className="lg:col-span-12 anim-fade-in">
  <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[1.1] mb-8 md:mb-12">Contato</h1>
+
+              {/* Recruiter block (primary) */}
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/60 mb-4 block">
+                Para recrutadores
+              </span>
+ <p className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
+                Avaliando meu perfil <span className="text-secondary font-medium italic">para uma vaga?</span>
+              </p>
+ <p className="mt-6 text-base md:text-lg text-foreground font-medium tracking-tight leading-[1.1] max-w-md">
+                Currículo, LinkedIn e e-mail — o caminho mais direto pra falar comigo sobre uma posição remota em Social Media, Branding, Marketing ou Design.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a href="/cv/curriculo-murilo-ortega.pdf" download className="btn btn-primary px-10 py-5 rounded-full flex items-center justify-center gap-2">
+                  Baixar Currículo <Download size={18} />
+                </a>
+                <a href="https://linkedin.com/in/muriloortega" target="_blank" rel="noopener noreferrer" className="btn btn-secondary px-10 py-5 rounded-full flex items-center justify-center gap-2">
+                  LinkedIn <ArrowRight size={18} />
+                </a>
+                <a href="mailto:contato@muriloortega.com" className="btn btn-secondary px-10 py-5 rounded-full flex items-center justify-center gap-2">
+                  contato@muriloortega.com
+                </a>
+              </div>
+
+              {/* Freelance block (secondary, kept verbatim) */}
+              <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-secondary/40 mt-16 md:mt-20 mb-4 block">
+                Prefere um projeto sob demanda?
+              </span>
  <p className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter leading-[1.1] max-w-4xl">
                 Vamos <span className="text-secondary font-medium italic">conversar.</span>
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 md:pt-16 border-t border-border mt-12 md:mt-16">
                 <div className="space-y-10 md:space-y-12">
  <p className="text-lg md:text-xl text-foreground font-medium tracking-tight leading-[1.1] max-w-md">
