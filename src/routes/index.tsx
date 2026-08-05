@@ -178,12 +178,19 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
             className="transition-all duration-700 group-hover:scale-105"
           />
         </div>
-        <figcaption className="mt-6 flex justify-between items-start">
-          <div>
-            <span className="text-[10px] font-mono uppercase tracking-widest text-secondary mb-1 block">{project.category}</span>
- <span className="font-bold text-lg leading-tight block tracking-tight">{project.name}</span>
+        <figcaption className="mt-6">
+          <div className="flex justify-between items-start">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-secondary mb-1 block">{project.category}</span>
+              <span className="font-bold text-lg leading-tight block tracking-tight mb-3">{project.name}</span>
+            </div>
+            <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
           </div>
-          <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+          <dl className="text-sm text-secondary space-y-1">
+            <div><dt className="inline font-bold text-foreground">Problema: </dt><dd className="inline">{project.problem}</dd></div>
+            <div><dt className="inline font-bold text-foreground">Ação: </dt><dd className="inline">{project.action}</dd></div>
+            <div><dt className="inline font-bold text-foreground">Resultado: </dt><dd className="inline">{project.result}</dd></div>
+          </dl>
         </figcaption>
       </figure>
     </Link>
