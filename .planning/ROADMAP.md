@@ -28,10 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   1. Clicking "Baixar CV" on the home page downloads the real file (`public/cv/CV MURILO ORTEGA 2026.pdf`) — verified by an actual manual click-test, not just a code review.
   2. The LinkedIn URL used on the home page (and anywhere else it appears) has been explicitly confirmed correct by Murilo, not assumed from the current `https://linkedin.com/in/muriloortega` value.
   3. A decision on the hero photo — a real photo sourced and ready to use, or an explicit fallback treatment consistent with the site's existing grayscale/desaturated aesthetic — is made and documented, ready to hand off to Phase 2's hero build.
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
+- [ ] 01-01-PLAN.md — Feature branch + working recruiter action links: correct the LinkedIn URL in all 3 source occurrences and point the home page CV download at the real PDF (FIX-01, FIX-02)
+- [ ] 01-02-PLAN.md — Export web-ready full-colour hero variants (480/960/1440 in AVIF+JPEG) from `hero-bg.jpg` and write the Phase 2 handoff decision record (FIX-03)
+- [ ] 01-03-PLAN.md — End-to-end dev-server audit plus blocking human click-test of the CV download, the LinkedIn profile, and the hero crop (FIX-01, FIX-02, FIX-03)
 
 ### Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies
 **Goal**: A recruiter landing on the home page immediately sees who Murilo is (role + top result), a visually unambiguous CTA hierarchy favoring LinkedIn/e-mail/CV, and real proof of delivered work via 5 featured case studies — without losing access to any other project.
@@ -83,6 +85,8 @@ Plans:
 Plans:
 - [ ] 04-01: TBD
 
+> **Open asset gap (raised during Phase 1 planning):** Success criterion 4 above requires a 1200×630 Open Graph image for the home page. No phase currently owns *creating* that asset — Phase 1 scope is FIX-01/02/03 only, and its hero exports are 4:5 portraits, not 1.91:1 OG cards. Assign OG-image production to Phase 2 or Phase 3 before Phase 4 starts, or Phase 4 will block on a missing asset.
+
 ## Progress
 
 **Execution Order:**
@@ -90,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation Fixes & Hero Decision | 0/TBD | Not started | - |
+| 1. Foundation Fixes & Hero Decision | 0/3 | Planned | - |
 | 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 0/TBD | Not started | - |
 | 3. Skills, Methods Reframe, Social Proof & Final CTA | 0/TBD | Not started | - |
 | 4. QA — Responsive, SEO/Meta, Links, Squint Test, Merge | 0/TBD | Not started | - |
