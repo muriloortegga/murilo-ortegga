@@ -257,25 +257,25 @@ function HomePage() {
       {/* Hero */}
       <section className="min-h-screen flex items-center pt-24 pb-0 lg:pb-0 overflow-hidden relative">
         <div className="site-container w-full h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0 items-center min-h-[80vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-16 items-center min-h-[80vh]">
             {/* Left side: Copy */}
             <div className="lg:pr-20 py-12 lg:py-0 relative z-10">
               <div
-                style={{ 
+                style={{
                   transform: `translateY(${scrollY * 0.1}px)`,
                   opacity: Math.max(1 - scrollY * 0.003, 0),
                   filter: `blur(${scrollY > 20 ? Math.min((scrollY - 20) * 0.04, 12) : 0}px)`,
                   transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease-out'
                 }}
               >
- <h1 className="anim-fade-in text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tighter ">
-                  Trabalho para transformar <br />
-                  marcas comuns em marcas <br />
-                  com <span className="text-secondary font-medium italic">impacto real</span>
+                <h1 className="anim-fade-in font-bold leading-[1.05] tracking-tighter">
+                  <span className="block" style={{ fontSize: "clamp(2rem, 3.5vw, 4rem)" }}>
+                    Diretor de Arte & Designer de Marca
+                  </span>
+                  <span className="block text-secondary font-medium italic mt-2" style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.75rem)" }}>
+                    8 anos transformando marcas comuns em marcas com resultado real.
+                  </span>
                 </h1>
- <p className="mt-8 text-base md:text-xl text-secondary leading-relaxed max-w-[600px] anim-fade-in delay-250 font-medium">
-                  Design que confronta o comum e eleva o digital. Branding, conteúdo e presença digital conectados em um método infalível.
-                </p>
               </div>
               <div className="mt-12 flex flex-wrap gap-4 anim-fade-in delay-500" style={{ transform: `translateY(${scrollY * 0.1}px)` }}>
                 <Link to="/trabalho" className="btn btn-hero-primary">
@@ -290,15 +290,34 @@ function HomePage() {
               </div>
             </div>
 
-            {/* Right side: Gallery */}
-            <div 
-              className="relative h-[60vh] lg:h-screen w-full lg:w-[120%] lg:ml-8 overflow-hidden anim-fade-in delay-250 border-l border-border/10"
-              style={{ 
-                transform: `translateY(${scrollY * -0.05}px)`,
-                transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
-              }}
-            >
-              <HeroGallery />
+            {/* Right side: Photo */}
+            <div className="media-wrap aspect-[4/5] rounded-2xl overflow-hidden border border-border/5 max-w-[420px] mx-auto lg:mx-0 lg:ml-auto anim-fade-in delay-250">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet="
+                    /assets/home/hero/murilo-hero-480.avif 480w,
+                    /assets/home/hero/murilo-hero-960.avif 960w,
+                    /assets/home/hero/murilo-hero-1440.avif 1440w
+                  "
+                  sizes="(min-width: 1024px) 420px, (min-width: 640px) 360px, 85vw"
+                />
+                <img
+                  src="/assets/home/hero/murilo-hero-960.jpg"
+                  srcSet="
+                    /assets/home/hero/murilo-hero-480.jpg 480w,
+                    /assets/home/hero/murilo-hero-960.jpg 960w,
+                    /assets/home/hero/murilo-hero-1440.jpg 1440w
+                  "
+                  sizes="(min-width: 1024px) 420px, (min-width: 640px) 360px, 85vw"
+                  alt="Murilo Ortega"
+                  width={960}
+                  height={1200}
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-full object-cover"
+                />
+              </picture>
             </div>
           </div>
         </div>
