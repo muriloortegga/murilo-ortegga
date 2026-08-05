@@ -13,7 +13,7 @@ This roadmap covers a single scope: restructuring the home page (`src/routes/ind
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation Fixes & Hero Decision** - Fix the broken CV link, confirm the LinkedIn URL, and resolve the hero photo asset before any hierarchy work is built on top of them. (completed 2026-08-05)
-- [ ] **Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies** - Rebuild the hero with dual headline + photo + recruiter-first CTA cluster, and activate 5 case studies with Problem→Ação→Resultado narrative.
+- [x] **Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies** - Rebuild the hero with dual headline + photo + recruiter-first CTA cluster, and activate 5 case studies with Problem→Ação→Resultado narrative. (completed 2026-08-05)
 - [ ] **Phase 3: Skills, Methods Reframe, Social Proof & Final CTA** - Add condensed skills, reframe methods as competency-first, contextualize the client-logo marquee, and add the missing final contact block.
 - [ ] **Phase 4: QA — Responsive, SEO/Meta, Links, Squint Test, Merge** - Verify the fully restructured home page across viewports and metadata, confirm no links broke, then merge the feature branch to `main`.
 
@@ -53,7 +53,7 @@ Plans:
 - [x] 02-01-PLAN.md — Blocking user approval of the two-line hero headline copy, recorded in 02-COPY.md (HERO-01, ANTI-02)
 - [x] 02-02-PLAN.md — Hero rebuild: responsive portrait replaces the gallery, approved two-line H1, three-tier LinkedIn/E-mail/CV CTA cluster, gallery-image reachability audit (HERO-01..04, ANTI-02, ANTI-04, ANTI-05)
 - [x] 02-03-PLAN.md — Activate the 5 featured case studies with sourced Problema/Ação/Resultado copy and a provenance record (CASE-01, CASE-02, CASE-03, ANTI-03)
-- [ ] 02-04-PLAN.md — Automated pre-flight sweep plus blocking human review against ROADMAP Phase 2's 5 success criteria (verifies all 11 phase requirement IDs)
+- [x] 02-04-PLAN.md — Automated pre-flight sweep plus blocking human review against ROADMAP Phase 2's 5 success criteria (verifies all 11 phase requirement IDs)
 
 ### Phase 3: Skills, Methods Reframe, Social Proof & Final CTA
 **Goal**: A recruiter who has already seen proof (case studies) sees skills that validate that proof, methods framed as professional competency first, client logos with context instead of bare marks, and a final contact block that closes the funnel with the same recruiter-first hierarchy established in Phase 2.
@@ -98,6 +98,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation Fixes & Hero Decision | 3/3 | Complete    | 2026-08-05 |
-| 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 3/4 | In Progress|  |
+| 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 4/4 | Complete   | 2026-08-05 |
 | 3. Skills, Methods Reframe, Social Proof & Final CTA | 0/TBD | Not started | - |
 | 4. QA — Responsive, SEO/Meta, Links, Squint Test, Merge | 0/TBD | Not started | - |
