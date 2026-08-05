@@ -67,12 +67,29 @@ Declared values (multiples of 4, matches the 8-point scale already implicit in t
 Scoped to the new/changed elements this phase introduces. All other type on the page (h2–h6, existing
 body copy) is untouched and already declared in `src/styles.css` — not re-specified here.
 
+**4 sizes declared this phase:**
+
 | Role | Size | Weight | Line Height | Where used |
 |------|------|--------|-------------|------------|
 | Display (hero result line) | `clamp(1.5rem, 2.5vw, 2.75rem)` (24–44px) | 700 | 1.1 | H1 line 2 — the delivered-result statement |
-| Heading (hero role line + case-card name) | `clamp(2rem, 3.5vw, 4rem)` (32–64px) for hero role line; `1.125rem`/18px for case-card `<figcaption>` name | 700 | 1.05 (hero role) / 1.3 (card name, existing `.project-card figcaption` convention) | H1 line 1 (role); each of the 5 case-card titles |
-| Body (P→A→R text, CTA button labels) | `0.875rem`/14px (P→A→R `<dl>` text); `0.8125rem`/13px uppercase (CTA button labels, existing `.btn-hero-primary`/`.btn-hero-secondary` size) | 400 (P→A→R body) / 700 (CTA labels, existing convention) | 1.6 | Problem/Action/Result sentences; LinkedIn/E-mail/CV/Ver Portfolio button text |
-| Label (kicker line, category tags, P→A→R `<dt>`) | `0.75rem`/12px (case category tag, reuses existing `.site-card-label`); `0.8125rem`/13px uppercase (hero role-line kicker, if used as a small eyebrow above H1 — see Layout Decisions) | 700 | 1.4, uppercase, `letter-spacing: 0.05em`–`0.1em` | Case category tags; P→A→R "Problema:"/"Ação:"/"Resultado:" bold inline labels |
+| Heading (hero role line) | `clamp(2rem, 3.5vw, 4rem)` (32–64px) | 700 | 1.05 | H1 line 1 — the role statement |
+| Body (P→A→R sentences) | `0.875rem`/14px | 400 | 1.6 | Problem/Action/Result `<dd>` sentences inside each case card |
+| Label (kicker, tags, P→A→R `<dt>`, CTA button labels) | `0.75rem`/12px, uppercase | 700 | 1.4, `letter-spacing: 0.05em`–`0.1em` | Case category tags (reuses existing `.site-card-label`, 0.75rem — no change); hero role-line kicker (if used as a small eyebrow above H1 — see Layout Decisions); P→A→R "Problema:"/"Ação:"/"Resultado:" bold inline labels; LinkedIn/E-mail/CV/Ver Portfolio CTA button text |
+
+**Case-card `<figcaption>` name — not a 5th size, grandfathered:** the 5 case-card titles reuse the
+**existing, unmodified** `.project-card figcaption` class already declared in `src/styles.css`
+(`font-size: 1.2rem; font-weight: 500; line-height: 1.3`). This is untouched sitewide convention — the
+same class already renders every project title on `/trabalho` and elsewhere — so it is not a new
+typographic value introduced by this phase, the same way `.btn-hero-primary`'s padding is grandfathered
+in the Spacing section above. No `1.125rem`/18px value is introduced.
+
+**CTA button label sizing note:** `.btn-hero-primary` / `.btn-hero-secondary` currently ship at
+`0.8125rem`/13px in `src/styles.css` (existing, unmodified declaration). To keep this phase's Label tier
+at a single unified value (12px) across tags, kicker, and CTA text, the CTA `<a>` elements in the hero
+cluster (Layout Decisions §3) add the Tailwind utility `text-xs` (0.75rem) alongside the existing
+`btn btn-hero-primary`/`btn btn-hero-secondary` classes. Tailwind's utilities layer loads after the
+`@layer components` block in this project's Tailwind v4 setup, so `text-xs` wins the cascade over the
+component class's `font-size: 0.8125rem` without editing the existing class definition itself.
 
 **Weights used, exactly 2:** `400` (regular — body/P-A-R sentences) and `700` (bold — all headings,
 labels, and button text). No new weight is introduced; this matches the sitewide rule already declared
@@ -208,13 +225,13 @@ secondary buttons). A **three-tier hybrid**, all three visible-label:
 
 ```tsx
 <div className="mt-12 flex flex-wrap gap-4 anim-fade-in delay-500">
-  <a href="https://www.linkedin.com/in/murilo-ortega" target="_blank" rel="noopener noreferrer" className="btn btn-hero-primary gap-2">
+  <a href="https://www.linkedin.com/in/murilo-ortega" target="_blank" rel="noopener noreferrer" className="btn btn-hero-primary gap-2 text-xs">
     <Linkedin size={16} /> Conectar no LinkedIn
   </a>
-  <a href="mailto:contato@muriloortega.com" className="btn btn-hero-secondary gap-2">
+  <a href="mailto:contato@muriloortega.com" className="btn btn-hero-secondary gap-2 text-xs">
     <Mail size={16} /> Enviar E-mail
   </a>
-  <a href="/cv/CV%20MURILO%20ORTEGA%202026.pdf" download className="btn btn-hero-secondary gap-2">
+  <a href="/cv/CV%20MURILO%20ORTEGA%202026.pdf" download className="btn btn-hero-secondary gap-2 text-xs">
     <Download size={16} /> Baixar CV
   </a>
 </div>
@@ -224,6 +241,11 @@ secondary buttons). A **three-tier hybrid**, all three visible-label:
   </Link>
 </div>
 ```
+
+`text-xs` (0.75rem/12px) is added to each CTA `<a>` so button labels match the unified Label-tier size
+declared in Typography above, overriding `.btn-hero-primary`/`.btn-hero-secondary`'s existing
+`font-size: 0.8125rem` via Tailwind's utilities-after-components cascade — no edit to the existing class
+definitions themselves.
 
 **Rationale:** LinkedIn is the single filled `.btn-hero-primary` (highest weight — it's the action a
 recruiter is most likely to take and most likely to already have an account/session for). E-mail and CV
