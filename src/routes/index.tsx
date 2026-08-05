@@ -284,7 +284,7 @@ function HomePage() {
                 <Link to="/sobre" className="btn btn-hero-secondary">
                   Ver mais sobre mim
                 </Link>
-                <a href="/cv/curriculo.pdf" download className="btn btn-hero-secondary">
+                <a href="/cv/CV%20MURILO%20ORTEGA%202026.pdf" download className="btn btn-hero-secondary">
                   Baixar CV
                 </a>
               </div>
