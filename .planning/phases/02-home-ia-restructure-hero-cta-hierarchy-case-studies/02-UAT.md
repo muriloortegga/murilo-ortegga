@@ -1,8 +1,8 @@
 ---
 phase: 02
 plan: 04
-status: pending-human-review
-verdict: pending
+status: complete
+verdict: pass
 dev_server: http://localhost:8080/
 swept_at: 2026-08-05T22:44:10Z
 ---
@@ -64,16 +64,42 @@ finding.
 
 ## Success Criteria
 
-Verbatim from `.planning/ROADMAP.md`, Phase 2 "Success Criteria" (5 items). Human verdict and notes
-to be filled in during Task 2 / Task 3 — left empty here.
+Verbatim from `.planning/ROADMAP.md`, Phase 2 "Success Criteria" (5 items). Human verdict recorded
+in Task 3 from the user's blanket approval reply "Tudo aprovado" (everything approved) to the Task 2
+review script, covering SC-1 through SC-5 explicitly — including the squint test (SC-2), the
+no-fabricated-claim spot-check (SC-3), and the `/trabalho` reachability check (SC-4).
 
 | ID | Criterion (verbatim from ROADMAP.md) | Human verdict | Notes |
 |----|----------------------------------------|----------------|-------|
-| SC-1 | Scanning the hero for 6-10 seconds, a recruiter sees a real photo of Murilo (not a grayscale background layer) plus a two-line headline: line 1 states his hireable role in standard market terminology, line 2 states a delivered result. | | |
-| SC-2 | In the hero, LinkedIn, e-mail, and CV form the visually dominant, first-seen CTA cluster; "Ver Portfolio completo" is present but visually secondary; WhatsApp is not the dominant or first CTA anywhere in the hero. | | |
-| SC-3 | Scrolling past the hero, a recruiter sees 5 featured case studies (NaTrave, Symplice, Maxi, Solid+, and Milgrows or Kapyi), each showing a Problema → Ação → Resultado narrative with a visible outcome — no click-through required to see the result. | | |
-| SC-4 | Every other project not featured on the home page remains fully reachable via a clear path to `/trabalho` — nothing disappears. | | |
-| SC-5 | The hero contains no generic unearned greeting ("Olá, sou o Murilo") and no new heavy animation or video was introduced. | | |
+| SC-1 | Scanning the hero for 6-10 seconds, a recruiter sees a real photo of Murilo (not a grayscale background layer) plus a two-line headline: line 1 states his hireable role in standard market terminology, line 2 states a delivered result. | PASS | User reviewed the live hero in browser and confirmed the portrait and two-line headline read correctly within the scan window. Verbatim reply: "Tudo aprovado". |
+| SC-2 | In the hero, LinkedIn, e-mail, and CV form the visually dominant, first-seen CTA cluster; "Ver Portfolio completo" is present but visually secondary; WhatsApp is not the dominant or first CTA anywhere in the hero. | PASS | User explicitly confirmed the squint test showed exactly one dominant CTA style, and no WhatsApp button appears in the hero (corroborates automated check #10a). Verbatim reply: "Tudo aprovado". |
+| SC-3 | Scrolling past the hero, a recruiter sees 5 featured case studies (NaTrave, Symplice, Maxi, Solid+, and Milgrows or Kapyi), each showing a Problema → Ação → Resultado narrative with a visible outcome — no click-through required to see the result. | PASS | User confirmed all 5 cards (NaTrave, Symplice, Maxi, Solid+, Kapyi) show readable P/A/R without clicking, and confirmed no "Resultado" line makes a claim not stood behind — including NaTrave's "2.250 seguidores" and Kapyi's non-numeric line. Verbatim reply: "Tudo aprovado". |
+| SC-4 | Every other project not featured on the home page remains fully reachable via a clear path to `/trabalho` — nothing disappears. | PASS | User confirmed `/trabalho` still lists the non-featured projects (Kmillion, Evidive, Talk2Buy, Milgrows) and that case-card links open their own project pages normally. Verbatim reply: "Tudo aprovado". |
+| SC-5 | The hero contains no generic unearned greeting ("Olá, sou o Murilo") and no new heavy animation or video was introduced. | PASS | User confirmed no greeting text and no new heavy motion/video in the hero, consistent with automated check #11. Verbatim reply: "Tudo aprovado". |
+
+## Sign-off
+
+**Date:** 2026-08-05
+**Reviewer:** Murilo Ortega
+**Approval phrase (verbatim):** "Tudo aprovado"
+
+The user personally reviewed the rebuilt home page in a browser at `http://localhost:8080/` against
+all 5 ROADMAP Phase 2 success criteria and gave a blanket PASS covering SC-1 through SC-5, explicitly
+confirming the squint test (SC-2), the case-claim spot-check (SC-3), and `/trabalho` reachability
+(SC-4). No FAIL was recorded — no gap routing is needed for this plan.
+
+Phase 2 requirement IDs (HERO-01, HERO-02, HERO-03, HERO-04, CASE-01, CASE-02, CASE-03, ANTI-02,
+ANTI-03, ANTI-04, ANTI-05) are confirmed Complete in `.planning/REQUIREMENTS.md`'s Traceability table
+— these were already flipped to Complete during plan execution (02-02/02-03 commits); this sign-off
+is the formal human-verification gate that validates that prior status, per the plan's Task 3
+instructions, rather than a first-time flip.
+
+### Carried-forward concern for Phase 3 planning
+
+The Open Graph image gap flagged at the bottom of `.planning/ROADMAP.md` remains unassigned: a
+1200×630 home-page Open Graph card is required by Phase 4 success criterion 4, but no phase currently
+owns producing that asset (Phase 1's hero exports are 4:5 portraits, not 1.91:1 OG cards). Phase 3
+planning should pick this up explicitly or Phase 4 will block on a missing asset.
 
 ## Evidence Index
 
