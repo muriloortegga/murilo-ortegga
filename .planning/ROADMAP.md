@@ -12,7 +12,7 @@ This roadmap covers a single scope: restructuring the home page (`src/routes/ind
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation Fixes & Hero Decision** - Fix the broken CV link, confirm the LinkedIn URL, and resolve the hero photo asset before any hierarchy work is built on top of them.
+- [x] **Phase 1: Foundation Fixes & Hero Decision** - Fix the broken CV link, confirm the LinkedIn URL, and resolve the hero photo asset before any hierarchy work is built on top of them. (completed 2026-08-05)
 - [ ] **Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies** - Rebuild the hero with dual headline + photo + recruiter-first CTA cluster, and activate 5 case studies with Problem→Ação→Resultado narrative.
 - [ ] **Phase 3: Skills, Methods Reframe, Social Proof & Final CTA** - Add condensed skills, reframe methods as competency-first, contextualize the client-logo marquee, and add the missing final contact block.
 - [ ] **Phase 4: QA — Responsive, SEO/Meta, Links, Squint Test, Merge** - Verify the fully restructured home page across viewports and metadata, confirm no links broke, then merge the feature branch to `main`.
@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md — Feature branch + working recruiter action links: correct the LinkedIn URL in all 3 source occurrences and point the home page CV download at the real PDF (FIX-01, FIX-02)
 - [x] 01-02-PLAN.md — Export web-ready full-colour hero variants (480/960/1440 in AVIF+JPEG) from `hero-bg.jpg` and write the Phase 2 handoff decision record (FIX-03)
-- [ ] 01-03-PLAN.md — End-to-end dev-server audit plus blocking human click-test of the CV download, the LinkedIn profile, and the hero crop (FIX-01, FIX-02, FIX-03)
+- [x] 01-03-PLAN.md — End-to-end dev-server audit plus blocking human click-test of the CV download, the LinkedIn profile, and the hero crop (FIX-01, FIX-02, FIX-03)
 
 ### Phase 2: Home IA Restructure — Hero, CTA Hierarchy, Case Studies
 **Goal**: A recruiter landing on the home page immediately sees who Murilo is (role + top result), a visually unambiguous CTA hierarchy favoring LinkedIn/e-mail/CV, and real proof of delivered work via 5 featured case studies — without losing access to any other project.
@@ -94,7 +94,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation Fixes & Hero Decision | 2/3 | In Progress|  |
+| 1. Foundation Fixes & Hero Decision | 3/3 | Complete   | 2026-08-05 |
 | 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 0/TBD | Not started | - |
 | 3. Skills, Methods Reframe, Social Proof & Final CTA | 0/TBD | Not started | - |
 | 4. QA — Responsive, SEO/Meta, Links, Squint Test, Merge | 0/TBD | Not started | - |
