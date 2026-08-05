@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 01-03-PLAN.md — Phase 1 complete, ready for verification
-last_updated: "2026-08-05T06:22:06.779Z"
+status: ready_to_plan
+stopped_at: Phase 1 complete (3/3) — ready to discuss Phase 2
+last_updated: 2026-08-05T09:37:31.587Z
 last_activity: 2026-08-05
 progress:
   total_phases: 4
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-08-04)
 
 **Core value:** Em poucos segundos de home page, um recrutador entende quem é Murilo, com o que ele trabalha, os resultados que já entregou, e consegue agir (LinkedIn, e-mail, CV) — sem que nada do conteúdo/projetos/páginas existentes seja perdido ou fique inacessível.
-**Current focus:** Phase 1 — foundation-fixes-hero-decision
+**Current focus:** Phase 2 — home ia restructure — hero, cta hierarchy, case studies
 
 ## Current Position
 
-Phase: 1 (foundation-fixes-hero-decision) — EXECUTING
-Plan: 3 of 3
-Status: Phase complete — ready for verification
+Phase: 2
+Plan: Not started
+Status: Ready to plan
 Last activity: 2026-08-05
 
 Progress: [██████████] 100%
@@ -36,7 +36,7 @@ Progress: [██████████] 100%
 
 **Velocity:**
 
-- Total plans completed: 0
+- Total plans completed: 3
 - Average duration: - min
 - Total execution time: 0 hours
 
@@ -44,7 +44,7 @@ Progress: [██████████] 100%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 1 | 3 | - | - |
 
 **Recent Trend:**
 
