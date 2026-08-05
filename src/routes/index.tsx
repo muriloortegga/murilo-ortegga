@@ -122,65 +122,6 @@ const services = [
   },
 ];
 
-const galleryImages = [
-  "/assets/projects/thumbnails/symplice.jpg",
-  "/assets/projects/thumbnails/social/kapyi.jpg",
-  "/assets/projects/thumbnails/solid.jpg",
-  "/assets/projects/thumbnails/natrave.jpg",
-  "/assets/projects/thumbnails/kmillion.jpg",
-  "/assets/projects/thumbnails/social/talk2buy.jpg",
-  "/assets/projects/thumbnails/social/maxi.jpg",
-  "/assets/projects/thumbnails/social/milgrows.jpg",
-  "/assets/projects/thumbnails/social/evidive.jpg",
-];
-
-const galleryAlts = [
-  "Símbolo do sistema visual Symplice",
-  "Direção criativa social Kapyi",
-  "Identidade visual Solid Plus",
-  "Aplicação de marca NaTrave",
-  "Website institucional Kmillion",
-  "Peça social Talk2Buy",
-  "Campanha Maxi Colégio",
-  "Conteúdo educativo Milgrows",
-  "Case social Evidive Creators",
-];
-
-function HeroGallery() {
-  return (
-    <div className="hero-gallery">
-      <div className="hero-gallery-track">
-        {galleryImages.map((img, i) => (
-          <div key={i} className="hero-gallery-item">
-            <img
-              src={img}
-              alt={galleryAlts[i] ?? "Peça de portfolio Murilo Ortega"}
-              width={400}
-              height={500}
-              loading={i === 0 ? "eager" : "lazy"}
-              fetchPriority={i === 0 ? "high" : "auto"}
-              className="rounded-xl transition-all duration-700"
-            />
-          </div>
-        ))}
-        {/* Duplicate for seamless loop */}
-        {galleryImages.map((img, i) => (
-          <div key={`dup-${i}`} className="hero-gallery-item" aria-hidden="true">
-            <img
-              src={img}
-              alt=""
-              width={400}
-              height={500}
-              loading="lazy"
-              className="rounded-xl transition-all duration-700"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 const logoFiles = import.meta.glob("/src/assets/logos/*.{png,jpg,jpeg,svg,webp}", { eager: true, query: "?url", import: "default" });
 const dynamicLogos = Object.entries(logoFiles).map(([path, url]) => {
   const name = path.split("/").pop()?.split(".")[0] || "";
