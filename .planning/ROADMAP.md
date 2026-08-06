@@ -98,6 +98,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation Fixes & Hero Decision | 3/3 | Complete    | 2026-08-05 |
-| 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 4/4 | Complete   | 2026-08-05 |
+| 2. Home IA Restructure — Hero, CTA Hierarchy, Case Studies | 4/4 | Complete    | 2026-08-06 |
 | 3. Skills, Methods Reframe, Social Proof & Final CTA | 0/TBD | Not started | - |
 | 4. QA — Responsive, SEO/Meta, Links, Squint Test, Merge | 0/TBD | Not started | - |
