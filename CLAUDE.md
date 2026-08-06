@@ -10,7 +10,7 @@ Site de portfólio pessoal de Murilo Ortega (murilo-ortegga.lovable.app), profis
 ### Constraints
 
 - **Conteúdo**: Nenhum conteúdo/página/projeto/texto/asset existente pode ser excluído — só reorganizado, reescrito ou movido de posição/hierarquia.
-- **Deploy/Sync**: Toda mudança de código do site deve refletir automaticamente no Lovable via push em `main`. Mudanças estruturais grandes vão por branch separada + PR, nunca commit direto em `main` (exceto documentação em `.planning/`, que não afeta o site).
+- **Deploy/Sync**: Toda mudança de código do site deve refletir automaticamente no Lovable via push em `main`. Mudanças estruturais grandes continuam sendo feitas em branch separada (`feature/home-recruiter-redesign`), nunca commit direto de código em `main` durante a execução da fase (exceto documentação em `.planning/`, que não afeta o site) — **mas, a partir de 2026-08-05, o merge da branch pra `main` acontece a cada fase aprovada pelo usuário no checkpoint final dela**, não mais só uma vez no final da Fase 4. Isso significa que o site ao vivo é atualizado incrementalmente conforme cada fase fecha, e a Fase 4 (QA completa: responsivo, SEO/meta, integridade de links, squint test) passa a ser uma passada de polimento final sobre o que já está no ar, não mais um gate obrigatório antes do primeiro deploy.
 - **Estética**: Dark mode, editorial, tipograficamente minimalista, premium — linguagem visual não muda, só arquitetura de informação e hierarquia de conversão. Consultar skill `ui-ux-pro-max` antes de gerar componente novo.
 - **Tech stack**: React 19 + TanStack Start + Tailwind CSS 4 + Framer Motion + Vite 7 — fixo, não é decisão desta fase.
 <!-- GSD:project-end -->
